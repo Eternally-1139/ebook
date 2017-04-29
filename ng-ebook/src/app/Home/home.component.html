@@ -1,0 +1,53 @@
+<carousel>
+  <slide *ngFor="let sw of swipe">
+    <a href="#" [routerLink]="['/detail', sw.url]">
+      <img src="{{sw.img}}" alt="" style="height: 220px">
+    </a>
+    <div class="carousel-caption">
+      <p>{{sw.title}}</p>
+    </div>
+  </slide>
+</carousel>
+<div class="white-box">
+
+  <div class="row" style="text-align: center">
+    <div class="height15"></div>
+
+    <a *ngFor="let categorie of categories" [routerLink]="['/product', categorie.Id]" class=" col-xs-3 col-md-3 category_box ">
+      <div class="weui-grid__icon" style="color: #777">
+        <i class="fa fa-bars fa-2x"> </i>
+      </div>
+      <p class="weui-grid__label">
+        {{categorie.Name}}
+      </p>
+    </a>
+
+  </div>
+  <div class="height15"></div>
+</div>
+
+<div class="height10"></div>
+<div class="textCenter">
+  <span class="line">--- </span><span><i class="fa fa-gift"></i> 本周热读</span><span class="line"> ---</span>
+</div>
+<div class="white-box" style="padding: 15px">
+  <div class="height15"></div>
+  <div class="container">
+    <div class="row" id="#list">
+      <a *ngFor="let product of products" [routerLink]="['/detail', product.Id]" class="col-xs-6 category_box" style="margin-bottom: 15px">
+        <div class="box">
+          <div [ngStyle]="{'background-image':+'url('+ product.Image+')'}" style="position: relative;background-position: center;background-size: cover;">
+            <img src="assets/book.png" width="100%" height="auto" alt="">
+          </div>
+          <div class="box-text" style="height: 39px;overflow: hidden">
+            <p class="hot-product-name">{{product.Name}}</p>
+          </div>
+          <span style="font-size: 10px;color: #e35b5a">￥</span><span style="color: #e35b5a;font-size: 16px">{{product.Price}}</span>&nbsp;&nbsp;<span style="font-size: 1px;color: #aaa;font-size: 12px">{{product.Buy}}人已读</span>
+
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+

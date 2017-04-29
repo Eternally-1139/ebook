@@ -1,0 +1,10 @@
+2017/03/13 20:34:59 [1;34m[I] [router.go:232] /root/go/src/shopktl/controllers/admin no changed[0m
+2017/03/13 20:34:59 [1;34m[I] [router.go:232] /root/go/src/shopktl/controllers no changed[0m
+2017/03/13 20:34:59 [1;34m[I] [router.go:232] /root/go/src/shopktl/controllers/web no changed[0m
+2017/03/13 20:34:59 [1;34m[I] [asm_amd64.s:2086] http server Running on http://:8083[0m
+2017/03/13 20:37:32 [1;34m[D] [server.go:2202] |   42.48.101.14|[43m 404 [0m|    616.974µs| nomatch|[46m POST    [0m /api/query/listQuery[0m
+2017/03/13 20:37:32 [1;34m[D] [server.go:2202] |   42.48.101.14|[42m 200 [0m|   3.713339ms|   match|[44m GET     [0m /static/fonts/icomoon.ttf[0m
+2017/03/13 20:37:39 [1;34m[D] [server.go:2202] |   42.48.101.14|[43m 404 [0m|    376.699µs| nomatch|[46m POST    [0m /api/query/listQuery[0m
+2017/03/13 20:37:44 [1;34m[D] [server.go:2202] |   42.48.101.14|[42m 200 [0m|    571.777µs|   match|[44m GET     [0m /static/images/user_bg.jpg[0m
+2017/03/13 20:39:47 [1;34m[D] [server.go:2202] |   42.48.101.14|[42m 200 [0m|    957.152µs|   match|[44m GET     [0m //api/listCarousel   r:/api/listCarousel[0m
+2017/03/13 20:40:00 [1;34m[D] [server.go:2202] |   180.97.35.91|[42m 200 [0m|    738.425µs|   match|[44m GET     [0m //api/listCarousel   r:/api/listCarousel[0m

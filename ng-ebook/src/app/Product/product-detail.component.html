@@ -1,0 +1,109 @@
+<carousel>
+  <slide *ngFor="let pic of products.Pic">
+    <img src="{{pic.Image}}" alt="First slide" style="height: 400px;">
+  </slide>
+</carousel>
+<div class="white-box">
+  <div class="container">
+    <div style="height: 7px"></div>
+    <p style="color: #555;font-size: 14px;font-weight: 700">{{this.products.Name}} - {{products.Content}}</p>
+    <div style="height: 10px"></div>
+    <div class="row">
+      <div class="col-xs-7">
+        <span style="font-size: 10px;color: #e35b5a">￥</span><span style="color: #e35b5a;font-size: 16px">{{this.products.Price}}</span>&nbsp;&nbsp;<span style="color: #aaa;font-size: 12px">{{this.products.Buy}}人已读</span>
+      </div>
+      <div class="col-xs-5" style="text-align: right">
+        <span style="color: #aaa;font-size: 12px"><s>原价￥499</s></span>
+      </div>
+    </div>
+    <div style="height: 5px"></div>
+    <a href="#" class="text"><span class="fa fa-heart-o"></span> 收藏</a>
+
+  </div>
+  <div class="height15"></div>
+</div>
+<div class="height10"></div>
+<div class="address white-box container">
+  <div class="height10"></div>
+  <div class="row">
+    <div class="col-xs-4" style="text-align: center">
+      <button class="btn btn-default" style="background-color: #ddd;width: 100px">加入购物车</button>
+    </div>
+    <div class="col-xs-4" style="text-align: center">
+      <a [routerLink]="['/rent', products.Id]" class="btn btn-default uploadOrderBtn" style="background-color: orangered;color: #fff;width: 100px">租赁</a>
+    </div>
+    <div class="col-xs-4" style="text-align: center">
+      <a [routerLink]="['/buy', products.Id]" class="btn btn-default uploadOrderBtn" style="background-color: orange;color: #fff;width: 100px">立即购买</a>
+    </div>
+  </div>
+  <div class="height10"></div>
+
+</div>
+
+<div class="textCenter">
+  <div class="height10"></div>
+  <span class="line">--- </span><span><i class="fa fa-comments-o"></i> 书籍评价</span><span class="line"> ---</span>
+  <div class="height10"></div>
+</div>
+
+<div class="comments">
+  <div class="white-box container padding10 margin-bottom10">
+    <img src="assets/admin/images/avatar.jpg" alt="" class="img-circle" width="30px" height="30px">
+    <span style="color: #333;font-size: 14px;margin-left: 5px">yifan</span>
+    <div style="margin-top: 5px">
+      <span style="color: #aaa;font-size: 8px;">2017-03-08</span>
+    </div>
+    <div class="content">
+      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+    </div>
+  </div>
+
+  <div class="white-box container padding10 margin-bottom10">
+    <img src="assets/admin/images/avatar.jpg" alt="" class="img-circle" width="30px" height="30px">
+    <span style="color: #333;font-size: 14px;margin-left: 5px">yifan</span>
+    <div style="margin-top: 5px">
+      <span style="color: #aaa;font-size: 8px;">2017-03-08</span>
+    </div>
+    <div class="content">
+      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+    </div>
+  </div>
+
+  <div class="white-box container padding10 margin-bottom10">
+    <img src="assets/admin/images/avatar.jpg" alt="" class="img-circle" width="30px" height="30px">
+    <span style="color: #333;font-size: 14px;margin-left: 5px">yifan</span>
+    <div style="margin-top: 5px">
+      <span style="color: #aaa;font-size: 8px;">2017-03-08</span>
+    </div>
+    <div class="content">
+      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+    </div>
+  </div>
+
+  <div class="white-box container padding10 margin-bottom10">
+    <img src="assets/admin/images/avatar.jpg" alt="" class="img-circle" width="30px" height="30px">
+    <span style="color: #333;font-size: 14px;margin-left: 5px">yifan</span>
+    <div style="margin-top: 5px">
+      <span style="color: #aaa;font-size: 8px;">2017-03-08</span>
+    </div>
+    <div class="content">
+      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+    </div>
+  </div>
+
+  <div class="white-box container padding10 margin-bottom10">
+    <img src="assets/admin/images/avatar.jpg" alt="" class="img-circle" width="30px" height="30px">
+    <span style="color: #333;font-size: 14px;margin-left: 5px">yifan</span>
+    <div style="margin-top: 5px">
+      <span style="color: #aaa;font-size: 8px;">2017-03-08</span>
+    </div>
+    <div class="content">
+      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+    </div>
+  </div>
+
+  <div style="height:30px"></div>
+</div>
+
+
+

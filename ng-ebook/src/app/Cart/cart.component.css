@@ -1,0 +1,53 @@
+.checkboxFour {
+  width: 30px;
+  height: 30px;
+  background: #eee;
+  margin: 0;
+
+  border-radius: 100%;
+  position: relative;
+  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+}
+.checkboxFour label {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+
+  background: #fff;
+
+  -webkit-box-shadow:inset 0px 1px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow:inset 0px 1px 1px rgba(0,0,0,0.5);
+  box-shadow:inset 0px 1px 1px rgba(0,0,0,0.5);
+}
+.checkboxFour input[type=checkbox]:checked + label {
+  background: #26ca28;
+}
+
+.car_product{
+  height: 80px;
+  padding: 5px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.checkboxInput{
+  height: 23px;
+  width: 23px;
+  margin-left: 4px;
+  border:1px solid #ddd;
+  border-radius: 20px;
+  color: #fff;
+}

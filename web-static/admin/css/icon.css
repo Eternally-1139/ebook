@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?jumuok');
+  src:  url('../fonts/icomoon.eot?jumuok#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?jumuok') format('truetype'),
+    url('../fonts/icomoon.woff?jumuok') format('woff'),
+    url('../fonts/icomoon.svg?jumuok#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-question:before {
+  content: "\e90f";
+}
+.icon-footprint:before {
+  content: "\e90c";
+}
+.icon-my_collection:before {
+  content: "\e90d";
+}
+.icon-my_publish:before {
+  content: "\e90e";
+}
+.icon-tender:before {
+  content: "\e907";
+}
+.icon-market:before {
+  content: "\e908";
+}
+.icon-consultation:before {
+  content: "\e909";
+}
+.icon-quotation:before {
+  content: "\e90a";
+}
+.icon-supply:before {
+  content: "\e90b";
+}
+.icon-guessing:before {
+  content: "\e905";
+}
+.icon-publish:before {
+  content: "\e906";
+}
+.icon-message:before {
+  content: "\e900";
+}
+.icon-user:before {
+  content: "\e901";
+}
+.icon-add:before {
+  content: "\e902";
+}
+.icon-position:before {
+  content: "\e903";
+}
+.icon-home:before {
+  content: "\e904";
+}
+
