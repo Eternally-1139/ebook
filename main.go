@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/astaxie/beego"
-	"shopktl/models"
-	_ "shopktl/routers"
+	"ebook/models"
+	_ "ebook/routers"
 	"os"
 )
 

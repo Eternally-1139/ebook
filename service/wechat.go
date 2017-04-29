@@ -5,7 +5,7 @@ import (
 	"strings"
 	"bytes"
 	"fmt"
-	"shopktl/models"
+	"ebook/models"
 	"sort"
 	"strconv"
 	"crypto/sha1"
@@ -27,7 +27,57 @@ type JsApiTicketResponse struct {
 	JsApiTicket string `json:"ticket"`
 	ExpiresIn   float64 `json:"expires_in"`
 }
+type WechatUser struct {
+	Subscribe int `json:"subscribe"`
+	Openid string  `json:"openid"`
+	Nickname string `json:"nickname"`
+	Sex string `json:"sex"`
+	Language string `json:"language"`
+	City string `json:"city"`
+	Province string `json:"province"`
+	Country string	`json:"country"`
+	Headimgurl string `json:"headimgurl"`
+	Subscribe_time string `json:"subscribe_time"`
+	Unionid string `json:"unionid"`
+	Remark string `json:"remark"`
+	Groupid string `json:"groupid"`
+}
 
+
+func  GetUserInfo(ac string) (Subscribe int,Openid string,Nickname string,Sex string,Language string,City string,Province string,Country string,Headimgurl string){
+	requestLine:="https://api.weixin.qq.com/cgi-bin/user/info?access_token="+ac+"&openid=OPENID&lang=zh_CN"
+
+	resp, err := http.Get(requestLine)
+
+	if err != nil || resp.StatusCode != http.StatusOK {
+		fmt.Println("发送get请求获取 openid 错误", err)
+	}
+	defer resp.Body.Close()
+	body, err := ioutil.ReadAll(resp.Body)
+
+	if err != nil {
+		fmt.Println("发送get请求获取 atoken 读取返回body错误", err)
+	}
+
+	if bytes.Contains(body, []byte("access_token")) {
+		atr := WechatUser{}
+		err = json.Unmarshal(body, &atr)
+		if err != nil {
+			fmt.Println("发送get请求获取 atoken 返回数据json解析错误", err)
+		}
+		fmt.Println("userinfo:",atr)
+
+
+		//createWxMenu(atr.AccessToken)
+		defer resp.Body.Close()
+		return atr.Subscribe,atr.Openid,atr.Nickname,atr.Sex,atr.Language,atr.City,atr.Province,atr.Country,atr.Headimgurl
+
+	} else {
+
+	}
+	return 1,"","","","","","","",""
+
+}
 func  GetAccessToken(appid string,secret string) string{
 
 	wx:=models.Weixin{Id:1}

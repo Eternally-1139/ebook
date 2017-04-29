@@ -5,13 +5,22 @@ import (
 	"ebook/service"
 	"github.com/astaxie/beego"
 	"time"
+
+	"fmt"
 )
 
 //@router /api/user/autoLogin [*]
 func (this *ApiController) UserAutoLogin(){
 
-	openid:=this.GetString("openid")
-	user:=models.User{OpenId:openid}
+	ac:=service.GetAccessToken("wxfcb057b3c57cee69","218f0ea06e24651010db6a1f0eb8f40c")
+	Subscribe, Openid, Nickname, Sex, Language, City, Province, Country, Headimgurl:=service.GetUserInfo(ac)
+	address:=City+Province+Country
+	if(address==""){
+		fmt.Println("error")
+		return
+	}
+	beego.Debug("openid"+address)
+	user:=models.User{OpenId:Openid}
 
 	if err:=user.FindByOpenId();err==nil{
 		user.Read()
@@ -19,16 +28,14 @@ func (this *ApiController) UserAutoLogin(){
 		this.ReturnSuccess()
 		return
 	}else{
-		name := this.GetString("nickName")
-		sex := this.GetString("sex")
-		image := this.GetString("headimgurl")
 
-		user.Name=name
-		user.Sex=sex
-		user.HeadImage=image
+		user.Name=Nickname
+		user.Language=Language
+		user.Subscribe=Subscribe
+		user.Sex=Sex
+		user.HeadImage=Headimgurl
 		user.CreateIp = "localhost"
 		user.Account = 0
-		user.Address = nil
 		user.CreateTime = time.Now()
 		user.LastLoginTime = time.Now()
 		user.LastLoginIp = "localhost"
