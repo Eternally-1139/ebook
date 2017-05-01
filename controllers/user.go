@@ -42,6 +42,7 @@ func (this *ApiController) LoginDo(){
 			fmt.Println("发送get请求获取 atoken 返回数据json解析错误", err)
 		}
 
+		fmt.Println("access_token",ctk.AccessToken)
 		Openid:=ctk.Openid
 		user:=models.User{OpenId:Openid}
 		Subscribe,Openid,Nickname,Sex,Language,City,Province,Country,Headimgurl:=service.GetUserInfo(ctk.AccessToken,Openid)
