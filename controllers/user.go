@@ -35,7 +35,7 @@ func (this *ApiController) LoginDo(){
 		fmt.Println("发送get请求获取 atoken 读取返回body错误", err)
 	}
 
-	if bytes.Contains(body, []byte("code")) {
+	if bytes.Contains(body, []byte("access_token")) {
 		ctk := CodeToken{}
 		err = json.Unmarshal(body, &ctk)
 		if err != nil {
