@@ -21,7 +21,7 @@ import 'rxjs/add/operator/switchMap';
 
 @Injectable()
 export class UserService {
-  private url = '/api/listCarousel';
+  private url = '/api/getUserInfo';
   constructor(private http: Http) { }
 
   getUserInfo (): Observable<User> {

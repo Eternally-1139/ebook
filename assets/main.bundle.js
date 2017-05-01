@@ -268,7 +268,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 let UserService = class UserService {
     constructor(http) {
         this.http = http;
-        this.url = '/api/listCarousel';
+        this.url = '/api/getUserInfo';
     }
     getUserInfo() {
         return this.http.get(this.url)
