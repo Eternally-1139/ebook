@@ -106,46 +106,6 @@ func (this *ApiController) UserAutoLogin(){
 
 }
 
-//@router /api/userRegister [*]
-func (this *ApiController) UserRegister(){
-
-
-	var user models.User
-	username := this.GetString("username")
-	name := this.GetString("nickName")
-	sex := this.GetString("sex")
-	image := this.GetString("headimgurl")
-	password := service.StrToMd5Sha1(this.GetString("password"))
-
-	user.Username=username
-	user.Name=name
-	user.Sex=sex
-	user.HeadImage=image
-	user.Password=password
-	user.CreateIp = "localhost"
-	user.Account = 0
-	user.Address = nil
-	user.CreateTime = time.Now()
-	user.LastLoginTime = time.Now()
-	user.LastLoginIp = "localhost"
-	user.Mark = 0
-	user.Mobile = ""
-
-	if err:=user.FindByUserName();err==nil{
-		this.ReturnJson(10001,"Username Has Exist")
-		return
-	}
-
-	if _,err:=user.Insert();err!=nil{
-		beego.Error("User Insert Error:",err)
-		this.ReturnJson(10002,"User Insert Error")
-	}else{
-		this.SetSession("userinfo",user)
-		this.ReturnSuccess()
-	}
-}
-
-
 
 //@router /api/getUserInfo [*]
 func (this *ApiController) GetUserInfo(){
