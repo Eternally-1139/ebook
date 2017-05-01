@@ -47,7 +47,7 @@ func (this *ApiController) LoginDo(){
 		Subscribe,Openid,Nickname,Sex,Language,City,Province,Country,Headimgurl:=service.GetUserInfo(ctk.AccessToken,Openid)
 		if(City+Province+Country==""){
 			fmt.Println("用户地址信息为空")
-			this.SetSession("userinfo","test")
+			this.SetSession("users","test")
 			return
 		}
 		if err:=user.FindByOpenId();err==nil{
