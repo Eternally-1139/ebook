@@ -3,6 +3,7 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"ebook/models"
+	"fmt"
 )
 
 
@@ -22,7 +23,8 @@ func (this *AngularController) AngularRender(){
 			this.SetSession("users",user)
 			this.IsLogin = true
 			this.TplName="angular/index.html"
-			return
+		}else{
+			fmt.Println("用户读取失败")
 		}
 
 	}else{
