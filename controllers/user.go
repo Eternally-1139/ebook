@@ -5,51 +5,91 @@ import (
 	"ebook/service"
 	"github.com/astaxie/beego"
 	"time"
-
+	"net/http"
 	"fmt"
+	"io/ioutil"
+	"bytes"
+	"encoding/json"
 )
 
+type CodeToken struct {
+	Openid string `json:"openid"`
+	AccessToken string `json:"access_token"`
+}
+//@router /api/user/loginAuto [*]
+func (this *ApiController) LoginDo(){
+
+
+	code:=this.GetString("code")
+	requestLine:="https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxfcb057b3c57cee69&secret=218f0ea06e24651010db6a1f0eb8f40c&code="+code+"&grant_type=authorization_code"
+	resp, err := http.Get(requestLine)
+
+	if err != nil || resp.StatusCode != http.StatusOK {
+		fmt.Println("发送get请求获取 openid 错误", err)
+	}
+	defer resp.Body.Close()
+	body, err := ioutil.ReadAll(resp.Body)
+
+	if err != nil {
+		fmt.Println("发送get请求获取 atoken 读取返回body错误", err)
+	}
+
+	if bytes.Contains(body, []byte("code")) {
+		ctk := CodeToken{}
+		err = json.Unmarshal(body, &ctk)
+		if err != nil {
+			fmt.Println("发送get请求获取 atoken 返回数据json解析错误", err)
+		}
+
+		Openid:=ctk.Openid
+		fmt.Println("code:"+code)
+		user:=models.User{OpenId:Openid}
+		Subscribe,Openid,Nickname,Sex,Language,City,Province,Country,Headimgurl:=service.GetUserInfo(ctk.AccessToken,Openid)
+		if(City+Province+Country==""){
+			fmt.Println("用户地址信息为空")
+		}
+		if err:=user.FindByOpenId();err==nil{
+			user.Read()
+			this.SetSession("userinfo",user)
+			this.ReturnSuccess()
+			return
+		}else{
+
+			user.Name=Nickname
+			user.Language=Language
+			user.Subscribe=Subscribe
+			user.Sex=Sex
+			user.HeadImage=Headimgurl
+			user.CreateIp = "localhost"
+			user.Account = 0
+			user.CreateTime = time.Now()
+			user.LastLoginTime = time.Now()
+			user.LastLoginIp = "localhost"
+			user.Mark = 0
+			user.Mobile = ""
+			if _,err:=user.Insert();err!=nil{
+				beego.Error("User Insert Error:",err)
+				this.ReturnJson(10002,"User Insert Error")
+			}else{
+				this.SetSession("userinfo",user)
+				this.ReturnSuccess()
+			}
+		}
+
+		//createWxMenu(atr.AccessToken)
+		defer resp.Body.Close()
+
+	} else {
+
+	}
+	return
+
+}
 //@router /api/user/autoLogin [*]
 func (this *ApiController) UserAutoLogin(){
 
-	ac:=service.GetAccessToken("wxfcb057b3c57cee69","218f0ea06e24651010db6a1f0eb8f40c")
-	Subscribe, Openid, Nickname, Sex, Language, City, Province, Country, Headimgurl:=service.GetUserInfo(ac)
-	address:=City+Province+Country
-	if(address==""){
-		fmt.Println("error")
-		return
-	}
-	beego.Debug("openid"+address)
-	user:=models.User{OpenId:Openid}
-
-	if err:=user.FindByOpenId();err==nil{
-		user.Read()
-		this.SetSession("userinfo",user)
-		this.ReturnSuccess()
-		return
-	}else{
-
-		user.Name=Nickname
-		user.Language=Language
-		user.Subscribe=Subscribe
-		user.Sex=Sex
-		user.HeadImage=Headimgurl
-		user.CreateIp = "localhost"
-		user.Account = 0
-		user.CreateTime = time.Now()
-		user.LastLoginTime = time.Now()
-		user.LastLoginIp = "localhost"
-		user.Mark = 0
-		user.Mobile = ""
-		if _,err:=user.Insert();err!=nil{
-			beego.Error("User Insert Error:",err)
-			this.ReturnJson(10002,"User Insert Error")
-		}else{
-			this.SetSession("userinfo",user)
-			this.ReturnSuccess()
-		}
-	}
-
+	requestLine:="https://open.weixin.qq.com/connect/qrconnect?appid="+"wxfcb057b3c57cee69"+"&redirect_uri="+"http://ebook.hnhqjk.com/api/user/loginAuto"+"&response_type=code&scope="+"snsapi_base"+"&state=STATE#wechat_redirect"
+	http.Get(requestLine)
 
 
 }

@@ -36,6 +36,13 @@ func init() {
 
 	beego.GlobalControllerRouter["ebook/controllers:ApiController"] = append(beego.GlobalControllerRouter["ebook/controllers:ApiController"],
 		beego.ControllerComments{
+			Method: "LoginDo",
+			Router: `/api/user/loginAuto`,
+			AllowHTTPMethods: []string{"*"},
+			Params: nil})
+
+	beego.GlobalControllerRouter["ebook/controllers:ApiController"] = append(beego.GlobalControllerRouter["ebook/controllers:ApiController"],
+		beego.ControllerComments{
 			Method: "UserAutoLogin",
 			Router: `/api/user/autoLogin`,
 			AllowHTTPMethods: []string{"*"},

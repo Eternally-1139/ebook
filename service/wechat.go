@@ -27,6 +27,9 @@ type JsApiTicketResponse struct {
 	JsApiTicket string `json:"ticket"`
 	ExpiresIn   float64 `json:"expires_in"`
 }
+type CodeInfo struct {
+	Code string `json:"code"`
+}
 type WechatUser struct {
 	Subscribe int `json:"subscribe"`
 	Openid string  `json:"openid"`
@@ -43,9 +46,47 @@ type WechatUser struct {
 	Groupid string `json:"groupid"`
 }
 
+func GetCode(APPID string,REDIRECT_URI string,SCOPE string) (code string){
 
-func  GetUserInfo(ac string) (Subscribe int,Openid string,Nickname string,Sex string,Language string,City string,Province string,Country string,Headimgurl string){
-	requestLine:="https://api.weixin.qq.com/cgi-bin/user/info?access_token="+ac+"&openid=OPENID&lang=zh_CN"
+
+		requestLine:="https://open.weixin.qq.com/connect/qrconnect?appid="+APPID+"&redirect_uri="+REDIRECT_URI+"&response_type=code&scope="+SCOPE+"&state=STATE#wechat_redirect"
+		resp, err := http.Get(requestLine)
+
+		if err != nil || resp.StatusCode != http.StatusOK {
+			fmt.Println("发送get请求获取 openid 错误", err)
+			return ""
+		}
+		defer resp.Body.Close()
+		body, err := ioutil.ReadAll(resp.Body)
+
+		if err != nil {
+			fmt.Println("发送get请求获取 atoken 读取返回body错误", err)
+			return ""
+		}
+
+		if bytes.Contains(body, []byte("code")) {
+			atr := CodeInfo{}
+			err = json.Unmarshal(body, &atr)
+			if err != nil {
+				fmt.Println("发送get请求获取 atoken 返回数据json解析错误", err)
+				return ""
+			}
+			fmt.Println("Code:",atr.Code)
+
+			//createWxMenu(atr.AccessToken)
+			defer resp.Body.Close()
+			return atr.Code
+
+		} else {
+
+		}
+
+		return ""
+
+}
+
+func  GetUserInfo(ac string,openid string) (Subscribe int,Openid string,Nickname string,Sex string,Language string,City string,Province string,Country string,Headimgurl string){
+	requestLine:="https://api.weixin.qq.com/sns/userinfo?access_token="+ac+"&openid="+openid+"&lang=zh_CN"
 
 	resp, err := http.Get(requestLine)
 
