@@ -33,12 +33,11 @@ type CodeInfo struct {
 type WechatUser struct {
 	Openid string  `json:"openid"`
 	Nickname string `json:"nickname"`
-	Sex string `json:"sex"`
+	Sex int `json:"sex"`
 	City string `json:"city"`
 	Province string `json:"province"`
 	Country string	`json:"country"`
 	Headimgurl string `json:"headimgurl"`
-	Unionid string `json:"unionid"`
 }
 
 func GetCode(APPID string,REDIRECT_URI string,SCOPE string) (code string){
@@ -82,7 +81,7 @@ func GetCode(APPID string,REDIRECT_URI string,SCOPE string) (code string){
 
 func  GetUserInfo(ac string,openid string) (WechatUser){
 	atr := WechatUser{}
-	requestLine:="https://api.weixin.qq.com/sns/userinfo?access_token=" +ac+"&openid="+openid+"&lang=zh_CN"
+	requestLine:="https://api.weixin.qq.com/sns/userinfo?access_token="+ac+"&openid="+openid+"&lang=zh_CN"
 
 	resp, err := http.Get(requestLine)
 
