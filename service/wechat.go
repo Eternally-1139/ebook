@@ -99,9 +99,7 @@ func  GetUserInfo(ac string,openid string) (WechatUser){
 	if bytes.Contains(body, []byte("openid")) {
 
 		err = json.Unmarshal(body, &atr)
-		if err != nil {
-			fmt.Println("发送get请求获取 atoken 返回数据json解析错误", err)
-		}
+		
 		defer resp.Body.Close()
 		fmt.Println("username:"+atr.Nickname)
 		return atr
