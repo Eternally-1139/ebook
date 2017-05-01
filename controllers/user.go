@@ -47,6 +47,7 @@ func (this *ApiController) LoginDo(){
 		Subscribe,Openid,Nickname,Sex,Language,City,Province,Country,Headimgurl:=service.GetUserInfo(ctk.AccessToken,Openid)
 		if(City+Province+Country==""){
 			fmt.Println("用户地址信息为空")
+			this.SetSession("userinfo","test")
 			return
 		}
 		if err:=user.FindByOpenId();err==nil{
@@ -89,7 +90,7 @@ func (this *ApiController) LoginDo(){
 //@router /api/user/autoLogin [*]
 func (this *ApiController) UserAutoLogin(){
 
-	requestLine:="https://open.weixin.qq.com/connect/qrconnect?appid="+"wxfcb057b3c57cee69"+"&redirect_uri="+"http%3a%2f%2febook.hnhqjk.com%2fapi%2fuser%2floginAuto"+"&response_type=code&scope="+"snsapi_base"+"&state=STATE#wechat_redirect"
+	requestLine:="https://open.weixin.qq.com/connect/qrconnect?appid="+"wxfcb057b3c57cee69"+"&redirect_uri="+"http://ebook.hnhqjk.com/api/user/loginAuto"+"&response_type=code&scope="+"snsapi_userinfo"+"&state=STATE#wechat_redirect"
 	resp, err := http.Get(requestLine)
 
 	if err != nil || resp.StatusCode != http.StatusOK {
