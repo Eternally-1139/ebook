@@ -21,6 +21,7 @@ func (this *ApiController) LoginDo(){
 
 
 	code:=this.GetString("code")
+	fmt.Println("code:"+code)
 	requestLine:="https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxfcb057b3c57cee69&secret=218f0ea06e24651010db6a1f0eb8f40c&code="+code+"&grant_type=authorization_code"
 	resp, err := http.Get(requestLine)
 
@@ -42,12 +43,11 @@ func (this *ApiController) LoginDo(){
 		}
 
 		Openid:=ctk.Openid
-		fmt.Println("code:"+code)
 		user:=models.User{OpenId:Openid}
 		Subscribe,Openid,Nickname,Sex,Language,City,Province,Country,Headimgurl:=service.GetUserInfo(ctk.AccessToken,Openid)
 		if(City+Province+Country==""){
 			fmt.Println("用户地址信息为空")
-			return 
+			return
 		}
 		if err:=user.FindByOpenId();err==nil{
 			user.Read()
