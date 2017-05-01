@@ -82,7 +82,7 @@ func GetCode(APPID string,REDIRECT_URI string,SCOPE string) (code string){
 
 func  GetUserInfo(ac string,openid string) (WechatUser){
 	atr := WechatUser{}
-	requestLine:="https://api.weixin.qq.com/sns/userinfo?access_token="+ac+"&openid="+openid+"&lang=zh_CN"
+	requestLine:="https://api.weixin.qq.com/sns/userinfo?access_token=" +ac+"&openid="+openid+"&lang=zh_CN"
 
 	resp, err := http.Get(requestLine)
 
@@ -96,7 +96,7 @@ func  GetUserInfo(ac string,openid string) (WechatUser){
 		fmt.Println("发送get请求获取 atoken 读取返回body错误", err)
 	}
 
-	if bytes.Contains(body, []byte("access_token")) {
+	if bytes.Contains(body, []byte("openid")) {
 
 		err = json.Unmarshal(body, &atr)
 		if err != nil {
