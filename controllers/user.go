@@ -47,6 +47,7 @@ func (this *ApiController) LoginDo(){
 		Openid:=ctk.Openid
 		user:=models.User{OpenId:Openid}
 		userinfo:=service.GetUserInfo(ctk.AccessToken,Openid)
+		fmt.Println(userinfo)
 		if(userinfo.Nickname==""){
 			fmt.Println("用户信息为空")
 			this.ReturnJson(10002,"自动注册失败！请重试")
@@ -55,6 +56,7 @@ func (this *ApiController) LoginDo(){
 		if err:=user.FindByOpenId();err==nil{
 			user.Read()
 			this.SetSession("users",user)
+
 			this.Ctx.Redirect(302,"/")
 			return
 		}else{

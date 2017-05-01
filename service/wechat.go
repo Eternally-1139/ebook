@@ -99,7 +99,7 @@ func  GetUserInfo(ac string,openid string) (WechatUser){
 	if bytes.Contains(body, []byte("openid")) {
 
 		err = json.Unmarshal(body, &atr)
-		
+
 		defer resp.Body.Close()
 		fmt.Println("username:"+atr.Nickname)
 		return atr
