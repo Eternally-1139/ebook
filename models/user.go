@@ -13,8 +13,6 @@ type User struct {
 	Password      string           `orm:"null"`
 	Account       float32          `orm:"default(0)"`
 	Mark	      int64            `orm:"default(0)"`
-	Subscribe     int	       `orm:"default(0)"`
-	Language      string	       `orm:"null"`
 	HeadImage     string	       `orm:"null"`
 	Sex 	      string	       `orm:"null"`
 	OpenId        string           `orm:"null"`

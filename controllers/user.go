@@ -46,24 +46,22 @@ func (this *ApiController) LoginDo(){
 		fmt.Println("openid",ctk.Openid)
 		Openid:=ctk.Openid
 		user:=models.User{OpenId:Openid}
-		Subscribe,Openid,Nickname,Sex,Language,City,Province,Country,Headimgurl:=service.GetUserInfo(ctk.AccessToken,Openid)
-		if(City+Province+Country==""){
-			fmt.Println("用户地址信息为空")
-			this.SetSession("users","test")
+		userinfo:=service.GetUserInfo(ctk.AccessToken,Openid)
+		if(userinfo.Nickname==""){
+			fmt.Println("用户信息为空")
+			this.ReturnJson(10002,"自动注册失败！请重试")
 			return
 		}
 		if err:=user.FindByOpenId();err==nil{
 			user.Read()
-			this.SetSession("userinfo",user)
-			this.ReturnSuccess()
+			this.SetSession("users",user)
+			this.Ctx.Redirect(302,"/")
 			return
 		}else{
 
-			user.Name=Nickname
-			user.Language=Language
-			user.Subscribe=Subscribe
-			user.Sex=Sex
-			user.HeadImage=Headimgurl
+			user.Name=userinfo.Nickname
+			user.Sex=userinfo.Sex
+			user.HeadImage=userinfo.Headimgurl
 			user.CreateIp = "localhost"
 			user.Account = 0
 			user.CreateTime = time.Now()
@@ -76,7 +74,8 @@ func (this *ApiController) LoginDo(){
 				this.ReturnJson(10002,"User Insert Error")
 			}else{
 				this.SetSession("userinfo",user)
-				this.ReturnSuccess()
+				this.Ctx.Redirect(302,"/")
+				return
 			}
 		}
 
@@ -86,7 +85,7 @@ func (this *ApiController) LoginDo(){
 	} else {
 
 	}
-	this.ReturnSuccess()
+	this.ReturnJson(10003,"access_token获取失败！")
 
 }
 //@router /api/user/autoLogin [*]

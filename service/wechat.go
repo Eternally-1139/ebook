@@ -31,19 +31,14 @@ type CodeInfo struct {
 	Code string `json:"code"`
 }
 type WechatUser struct {
-	Subscribe int `json:"subscribe"`
 	Openid string  `json:"openid"`
 	Nickname string `json:"nickname"`
 	Sex string `json:"sex"`
-	Language string `json:"language"`
 	City string `json:"city"`
 	Province string `json:"province"`
 	Country string	`json:"country"`
 	Headimgurl string `json:"headimgurl"`
-	Subscribe_time string `json:"subscribe_time"`
 	Unionid string `json:"unionid"`
-	Remark string `json:"remark"`
-	Groupid string `json:"groupid"`
 }
 
 func GetCode(APPID string,REDIRECT_URI string,SCOPE string) (code string){
@@ -85,7 +80,8 @@ func GetCode(APPID string,REDIRECT_URI string,SCOPE string) (code string){
 
 }
 
-func  GetUserInfo(ac string,openid string) (Subscribe int,Openid string,Nickname string,Sex string,Language string,City string,Province string,Country string,Headimgurl string){
+func  GetUserInfo(ac string,openid string) (WechatUser){
+	atr := WechatUser{}
 	requestLine:="https://api.weixin.qq.com/sns/userinfo?access_token="+ac+"&openid="+openid+"&lang=zh_CN"
 
 	resp, err := http.Get(requestLine)
@@ -101,22 +97,18 @@ func  GetUserInfo(ac string,openid string) (Subscribe int,Openid string,Nickname
 	}
 
 	if bytes.Contains(body, []byte("access_token")) {
-		atr := WechatUser{}
+
 		err = json.Unmarshal(body, &atr)
 		if err != nil {
 			fmt.Println("发送get请求获取 atoken 返回数据json解析错误", err)
 		}
-		fmt.Println("userinfo:",atr)
-
-
-		//createWxMenu(atr.AccessToken)
 		defer resp.Body.Close()
-		return atr.Subscribe,atr.Openid,atr.Nickname,atr.Sex,atr.Language,atr.City,atr.Province,atr.Country,atr.Headimgurl
+		return atr
 
 	} else {
 
 	}
-	return 1,"","","","","","","",""
+	return atr
 
 }
 func  GetAccessToken(appid string,secret string) string{
