@@ -4,9 +4,9 @@
 
     <div class="height30"></div>
     <div class="height30"></div>
-    <img src="assets/admin/images/avatar.jpg" alt="" class="img-circle" width="70px" height="70px" ><br>
+    <img src="{{user.HeadImage}}" alt="" class="img-circle" width="70px" height="70px" ><br>
     <div class="height30"></div>
-    会员名:yifan
+    会员名:{{user.Name}}
   </div>
 
 </div>
@@ -17,7 +17,7 @@
 
     <a href="#" class="weui-grid js_grid" style="height: 70px">
       <div class="weui-grid__icon" style="height: 16px;font-size: 16px;color:#666;">
-        0.00
+        {{user.Account}}
       </div>
       <p class="weui-grid__label">
         我的余额
@@ -33,7 +33,7 @@
     </a>
     <a href="#" class="weui-grid js_grid" style="height: 70px">
       <div class="weui-grid__icon" style="height: 16px;font-size: 16px;color:#666;">
-        100
+        {{user.Mark}}
       </div>
       <p class="weui-grid__label">
         商城积分

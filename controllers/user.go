@@ -105,23 +105,12 @@ func (this *ApiController) UserAutoLogin(){
 //@router /api/getUserInfo [*]
 func (this *ApiController) GetUserInfo(){
 
-	userinfo:=this.GetSession("userinfo")
+	userinfo:=this.GetSession("users")
 	if userinfo==nil{
 		this.ReturnJson(10403,"请先登录")
 	}
 	user:=userinfo.(models.User)
-	result := make(map[string]interface{})
-	result["status"]=10000
-	result["id"] = user.Id
-	result["mobile"] = user.Mobile
-	result["name"] = user.Name
-	result["account"] = user.Account
-	result["mark"] = user.Mark
-	result["sex"] = user.Sex
-	result["headImage"] = user.HeadImage
-
-	this.Data["json"] = result
-	this.ServeJSON()
+	this.ReturnSuccess("userinfo",user)
 
 
 }

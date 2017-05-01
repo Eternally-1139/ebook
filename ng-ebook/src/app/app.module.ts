@@ -18,6 +18,7 @@ import { ProductBuyComponent} from './Product/product-buy.component'
 import {CategoryService} from './Service/category.service'
 import {ProductService} from './Service/product.service'
 import {SwipeService} from './Service/swipe.service'
+import {UserService} from './Service/user.service'
 
 //前端模拟接口api
 import { InMemoryDataService }  from './in-memory-data.service';//test
@@ -65,7 +66,7 @@ const appRoutes: Routes = [
     // InMemoryWebApiModule.forRoot(InMemoryDataService),
 
   ],
-  providers: [CategoryService,requestOptionsProvider,ProductService,SwipeService],
+  providers: [CategoryService,requestOptionsProvider,ProductService,SwipeService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

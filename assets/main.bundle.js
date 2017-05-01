@@ -18,28 +18,28 @@ class Product {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_throw__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_throw__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_throw__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_distinctUntilChanged__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_do__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_do__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_filter__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_filter__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_filter__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_switchMap__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_switchMap__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_switchMap__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategoryService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -116,28 +116,28 @@ var _a;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_throw__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_throw__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_throw__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_distinctUntilChanged__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_do__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_do__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_filter__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_filter__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_filter__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_switchMap__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_switchMap__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_switchMap__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SwipeService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -209,34 +209,132 @@ var _a;
 
 /***/ }),
 
-/***/ 29:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_of__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_throw__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_throw__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_distinctUntilChanged__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_do__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_do__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_filter__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_filter__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_switchMap__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_switchMap__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+// Observable class extensions
+
+
+// Observable operators
+
+
+
+
+
+
+
+let UserService = class UserService {
+    constructor(http) {
+        this.http = http;
+        this.url = '/api/listCarousel';
+    }
+    getUserInfo() {
+        return this.http.get(this.url)
+            .map(this.extractData)
+            .catch(this.handleError);
+    }
+    extractData(res) {
+        let body = res.json(); //解析为json
+        // return body.categories || { };//解析body中自己包装的categories；Beego
+        return body.userinfo || {}; //test
+    }
+    handleError(error) {
+        // In a real world app, we might use a remote logging infrastructure
+        let errMsg;
+        if (error instanceof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Response */]) {
+            const body = error.json() || '';
+            const err = body.error || JSON.stringify(body);
+            errMsg = `${error.status} - ${error.statusText || ''} ${err}`;
+        }
+        else {
+            errMsg = error.message ? error.message : error.toString();
+        }
+        console.error(errMsg);
+        return __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__["Observable"].throw(errMsg);
+    }
+    ngOnInit() {
+    }
+};
+UserService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */]) === "function" && _a || Object])
+], UserService);
+
+var _a;
+//# sourceMappingURL=user.service.js.map
+
+/***/ }),
+
+/***/ 30:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_of__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_throw__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_throw__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_throw__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_debounceTime__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_debounceTime__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_debounceTime__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_distinctUntilChanged__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_do__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_do__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_filter__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_filter__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_filter__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_switchMap__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_switchMap__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_switchMap__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -339,7 +437,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 305:
+/***/ 306:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -348,20 +446,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 305;
+webpackEmptyContext.id = 306;
 
 
 /***/ }),
 
-/***/ 306:
+/***/ 307:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(311);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(320);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(324);
 
 
 
@@ -374,7 +472,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 312:
+/***/ 313:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -394,8 +492,8 @@ let CartComponent = class CartComponent {
 };
 CartComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* Component */])({
-        template: __webpack_require__(415),
-        styles: [__webpack_require__(377)]
+        template: __webpack_require__(417),
+        styles: [__webpack_require__(379)]
     })
 ], CartComponent);
 
@@ -403,15 +501,15 @@ CartComponent = __decorate([
 
 /***/ }),
 
-/***/ 313:
+/***/ 314:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Service_category_service__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Service_product_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Service_product_service__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Service_swipe_service__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(22);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -455,8 +553,8 @@ let HomeComponent = class HomeComponent {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* Component */])({
         selector: 'my-app',
-        template: __webpack_require__(416),
-        styles: [__webpack_require__(378)]
+        template: __webpack_require__(418),
+        styles: [__webpack_require__(380)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__Service_category_service__["a" /* CategoryService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__Service_category_service__["a" /* CategoryService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__Service_product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__Service_product_service__["a" /* ProductService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__Service_swipe_service__["a" /* SwipeService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__Service_swipe_service__["a" /* SwipeService */]) === "function" && _d || Object])
 ], HomeComponent);
@@ -466,7 +564,7 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
-/***/ 314:
+/***/ 315:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -483,8 +581,8 @@ let MessageComponent = class MessageComponent {
 };
 MessageComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* Component */])({
-        template: __webpack_require__(417),
-        styles: [__webpack_require__(379)]
+        template: __webpack_require__(419),
+        styles: [__webpack_require__(381)]
     })
 ], MessageComponent);
 
@@ -492,14 +590,27 @@ MessageComponent = __decorate([
 
 /***/ }),
 
-/***/ 315:
+/***/ 316:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+class User {
+    constructor() { }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = User;
+
+//# sourceMappingURL=User.js.map
+
+/***/ }),
+
+/***/ 317:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Models_Product__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Service_product_service__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Service_product_service__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__(4);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductBuyComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -543,8 +654,8 @@ let ProductBuyComponent = class ProductBuyComponent {
 ProductBuyComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* Component */])({
         selector: 'my-app',
-        template: __webpack_require__(418),
-        styles: [__webpack_require__(380)]
+        template: __webpack_require__(420),
+        styles: [__webpack_require__(382)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__Service_product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__Service_product_service__["a" /* ProductService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_common__["e" /* Location */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_common__["e" /* Location */]) === "function" && _c || Object])
 ], ProductBuyComponent);
@@ -554,14 +665,14 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 316:
+/***/ 318:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Models_Product__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Service_product_service__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Service_product_service__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__(4);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductDetailComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -602,8 +713,8 @@ let ProductDetailComponent = class ProductDetailComponent {
 ProductDetailComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* Component */])({
         selector: 'my-app',
-        template: __webpack_require__(419),
-        styles: [__webpack_require__(381)]
+        template: __webpack_require__(421),
+        styles: [__webpack_require__(383)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__Service_product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__Service_product_service__["a" /* ProductService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_common__["e" /* Location */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_common__["e" /* Location */]) === "function" && _c || Object])
 ], ProductDetailComponent);
@@ -613,13 +724,13 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 317:
+/***/ 319:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Service_product_service__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Service_product_service__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(4);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -650,8 +761,8 @@ let ProductComponent = class ProductComponent {
 ProductComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* Component */])({
         selector: 'my-app',
-        template: __webpack_require__(420),
-        styles: [__webpack_require__(382)]
+        template: __webpack_require__(422),
+        styles: [__webpack_require__(384)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__Service_product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__Service_product_service__["a" /* ProductService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_common__["e" /* Location */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_common__["e" /* Location */]) === "function" && _c || Object])
 ], ProductComponent);
@@ -661,11 +772,15 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 318:
+/***/ 320:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Models_User__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Service_user_service__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__(4);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -673,24 +788,50 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
 
 let UserComponent = class UserComponent {
-    constructor() {
-        this.user = 'this is user!';
+    constructor(userService, route, location) {
+        this.userService = userService;
+        this.route = route;
+        this.location = location;
+        this.user = new __WEBPACK_IMPORTED_MODULE_1__Models_User__["a" /* User */]();
+    }
+    ngOnInit() {
+        this.userService.getUserInfo()
+            .subscribe(userinfo => {
+            this.user.Id = userinfo.Id;
+            this.user.Name = userinfo.Name;
+            this.user.Mobile = userinfo.Mobile;
+            this.user.Account = userinfo.Account;
+            this.user.Mark = userinfo.Mark;
+            this.user.HeadImage = userinfo.HeadImage;
+            this.user.Collection = userinfo.Collection;
+            this.user.SelectAddress = userinfo.SelectAddress;
+        });
     }
 };
 UserComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* Component */])({
-        template: __webpack_require__(421),
-        styles: [__webpack_require__(383)]
-    })
+        selector: 'my-app',
+        template: __webpack_require__(423),
+        styles: [__webpack_require__(385)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__Service_user_service__["a" /* UserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__Service_user_service__["a" /* UserService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_common__["e" /* Location */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_common__["e" /* Location */]) === "function" && _c || Object])
 ], UserComponent);
 
+var _a, _b, _c;
 //# sourceMappingURL=user.component.js.map
 
 /***/ }),
 
-/***/ 319:
+/***/ 321:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -711,8 +852,8 @@ let AppComponent = class AppComponent {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(422),
-        styles: [__webpack_require__(384), __webpack_require__(386), __webpack_require__(385), __webpack_require__(387)]
+        template: __webpack_require__(424),
+        styles: [__webpack_require__(386), __webpack_require__(388), __webpack_require__(387), __webpack_require__(389)]
     })
 ], AppComponent);
 
@@ -720,28 +861,29 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 320:
+/***/ 322:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__ = __webpack_require__(399);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(319);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__default_request_options_service__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Home_home_component__ = __webpack_require__(313);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__User_user_component__ = __webpack_require__(318);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Cart_cart_component__ = __webpack_require__(312);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__Message_message_component__ = __webpack_require__(314);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__Product_product_component__ = __webpack_require__(317);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__Product_product_detail_component__ = __webpack_require__(316);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__Product_product_buy_component__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__default_request_options_service__ = __webpack_require__(323);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Home_home_component__ = __webpack_require__(314);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__User_user_component__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Cart_cart_component__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__Message_message_component__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__Product_product_component__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__Product_product_detail_component__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__Product_product_buy_component__ = __webpack_require__(317);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__Service_category_service__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__Service_product_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__Service_product_service__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__Service_swipe_service__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__Service_user_service__ = __webpack_require__(109);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -766,6 +908,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 //导入service
+
 
 
 
@@ -808,7 +951,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(appRoutes),
             __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["a" /* CarouselModule */].forRoot(),
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_15__Service_category_service__["a" /* CategoryService */], __WEBPACK_IMPORTED_MODULE_7__default_request_options_service__["a" /* requestOptionsProvider */], __WEBPACK_IMPORTED_MODULE_16__Service_product_service__["a" /* ProductService */], __WEBPACK_IMPORTED_MODULE_17__Service_swipe_service__["a" /* SwipeService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_15__Service_category_service__["a" /* CategoryService */], __WEBPACK_IMPORTED_MODULE_7__default_request_options_service__["a" /* requestOptionsProvider */], __WEBPACK_IMPORTED_MODULE_16__Service_product_service__["a" /* ProductService */], __WEBPACK_IMPORTED_MODULE_17__Service_swipe_service__["a" /* SwipeService */], __WEBPACK_IMPORTED_MODULE_18__Service_user_service__["a" /* UserService */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -817,12 +960,12 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 321:
+/***/ 323:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(12);
 /* unused harmony export DefaultRequestOptions */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -859,7 +1002,7 @@ const requestOptionsProvider = { provide: __WEBPACK_IMPORTED_MODULE_1__angular_h
 
 /***/ }),
 
-/***/ 322:
+/***/ 324:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -877,7 +1020,7 @@ const environment = {
 
 /***/ }),
 
-/***/ 377:
+/***/ 379:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)();
@@ -895,7 +1038,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 378:
+/***/ 380:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)();
@@ -913,7 +1056,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 379:
+/***/ 381:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)();
@@ -931,7 +1074,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 380:
+/***/ 382:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)();
@@ -949,7 +1092,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 381:
+/***/ 383:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)();
@@ -967,7 +1110,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 382:
+/***/ 384:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)();
@@ -985,7 +1128,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 383:
+/***/ 385:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)();
@@ -1003,7 +1146,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 384:
+/***/ 386:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)();
@@ -1021,7 +1164,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 385:
+/***/ 387:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)();
@@ -1039,7 +1182,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 386:
+/***/ 388:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)();
@@ -1057,7 +1200,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 387:
+/***/ 389:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)();
@@ -1065,7 +1208,7 @@ exports = module.exports = __webpack_require__(8)();
 
 
 // module
-exports.push([module.i, "/*!\n *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */@font-face{font-family:'FontAwesome';src:url(" + __webpack_require__(389) + ");src:url(" + __webpack_require__(388) + "?#iefix&v=4.7.0) format('embedded-opentype'),url(" + __webpack_require__(463) + ") format('woff2'),url(" + __webpack_require__(464) + ") format('woff'),url(" + __webpack_require__(462) + ") format('truetype'),url(" + __webpack_require__(390) + "#fontawesomeregular) format('svg');font-weight:normal;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-fw{width:1.28571429em;text-align:center}.fa-ul{padding-left:0;margin-left:2.14285714em;list-style-type:none}.fa-ul>li{position:relative}.fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em;text-align:center}.fa-li.fa-lg{left:-1.85714286em}.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left{margin-right:.3em}.fa.fa-pull-right{margin-left:.3em}.pull-right{float:right}.pull-left{float:left}.fa.pull-left{margin-right:.3em}.fa.pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.fa-rotate-90{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";-webkit-transform:scale(-1, 1);transform:scale(-1, 1)}.fa-flip-vertical{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";-webkit-transform:scale(1, -1);transform:scale(1, -1)}:root .fa-rotate-90,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-flip-horizontal,:root .fa-flip-vertical{-webkit-filter:none;filter:none}.fa-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}.fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}.fa-inverse{color:#fff}.fa-glass:before{content:\"\\F000\"}.fa-music:before{content:\"\\F001\"}.fa-search:before{content:\"\\F002\"}.fa-envelope-o:before{content:\"\\F003\"}.fa-heart:before{content:\"\\F004\"}.fa-star:before{content:\"\\F005\"}.fa-star-o:before{content:\"\\F006\"}.fa-user:before{content:\"\\F007\"}.fa-film:before{content:\"\\F008\"}.fa-th-large:before{content:\"\\F009\"}.fa-th:before{content:\"\\F00A\"}.fa-th-list:before{content:\"\\F00B\"}.fa-check:before{content:\"\\F00C\"}.fa-remove:before,.fa-close:before,.fa-times:before{content:\"\\F00D\"}.fa-search-plus:before{content:\"\\F00E\"}.fa-search-minus:before{content:\"\\F010\"}.fa-power-off:before{content:\"\\F011\"}.fa-signal:before{content:\"\\F012\"}.fa-gear:before,.fa-cog:before{content:\"\\F013\"}.fa-trash-o:before{content:\"\\F014\"}.fa-home:before{content:\"\\F015\"}.fa-file-o:before{content:\"\\F016\"}.fa-clock-o:before{content:\"\\F017\"}.fa-road:before{content:\"\\F018\"}.fa-download:before{content:\"\\F019\"}.fa-arrow-circle-o-down:before{content:\"\\F01A\"}.fa-arrow-circle-o-up:before{content:\"\\F01B\"}.fa-inbox:before{content:\"\\F01C\"}.fa-play-circle-o:before{content:\"\\F01D\"}.fa-rotate-right:before,.fa-repeat:before{content:\"\\F01E\"}.fa-refresh:before{content:\"\\F021\"}.fa-list-alt:before{content:\"\\F022\"}.fa-lock:before{content:\"\\F023\"}.fa-flag:before{content:\"\\F024\"}.fa-headphones:before{content:\"\\F025\"}.fa-volume-off:before{content:\"\\F026\"}.fa-volume-down:before{content:\"\\F027\"}.fa-volume-up:before{content:\"\\F028\"}.fa-qrcode:before{content:\"\\F029\"}.fa-barcode:before{content:\"\\F02A\"}.fa-tag:before{content:\"\\F02B\"}.fa-tags:before{content:\"\\F02C\"}.fa-book:before{content:\"\\F02D\"}.fa-bookmark:before{content:\"\\F02E\"}.fa-print:before{content:\"\\F02F\"}.fa-camera:before{content:\"\\F030\"}.fa-font:before{content:\"\\F031\"}.fa-bold:before{content:\"\\F032\"}.fa-italic:before{content:\"\\F033\"}.fa-text-height:before{content:\"\\F034\"}.fa-text-width:before{content:\"\\F035\"}.fa-align-left:before{content:\"\\F036\"}.fa-align-center:before{content:\"\\F037\"}.fa-align-right:before{content:\"\\F038\"}.fa-align-justify:before{content:\"\\F039\"}.fa-list:before{content:\"\\F03A\"}.fa-dedent:before,.fa-outdent:before{content:\"\\F03B\"}.fa-indent:before{content:\"\\F03C\"}.fa-video-camera:before{content:\"\\F03D\"}.fa-photo:before,.fa-image:before,.fa-picture-o:before{content:\"\\F03E\"}.fa-pencil:before{content:\"\\F040\"}.fa-map-marker:before{content:\"\\F041\"}.fa-adjust:before{content:\"\\F042\"}.fa-tint:before{content:\"\\F043\"}.fa-edit:before,.fa-pencil-square-o:before{content:\"\\F044\"}.fa-share-square-o:before{content:\"\\F045\"}.fa-check-square-o:before{content:\"\\F046\"}.fa-arrows:before{content:\"\\F047\"}.fa-step-backward:before{content:\"\\F048\"}.fa-fast-backward:before{content:\"\\F049\"}.fa-backward:before{content:\"\\F04A\"}.fa-play:before{content:\"\\F04B\"}.fa-pause:before{content:\"\\F04C\"}.fa-stop:before{content:\"\\F04D\"}.fa-forward:before{content:\"\\F04E\"}.fa-fast-forward:before{content:\"\\F050\"}.fa-step-forward:before{content:\"\\F051\"}.fa-eject:before{content:\"\\F052\"}.fa-chevron-left:before{content:\"\\F053\"}.fa-chevron-right:before{content:\"\\F054\"}.fa-plus-circle:before{content:\"\\F055\"}.fa-minus-circle:before{content:\"\\F056\"}.fa-times-circle:before{content:\"\\F057\"}.fa-check-circle:before{content:\"\\F058\"}.fa-question-circle:before{content:\"\\F059\"}.fa-info-circle:before{content:\"\\F05A\"}.fa-crosshairs:before{content:\"\\F05B\"}.fa-times-circle-o:before{content:\"\\F05C\"}.fa-check-circle-o:before{content:\"\\F05D\"}.fa-ban:before{content:\"\\F05E\"}.fa-arrow-left:before{content:\"\\F060\"}.fa-arrow-right:before{content:\"\\F061\"}.fa-arrow-up:before{content:\"\\F062\"}.fa-arrow-down:before{content:\"\\F063\"}.fa-mail-forward:before,.fa-share:before{content:\"\\F064\"}.fa-expand:before{content:\"\\F065\"}.fa-compress:before{content:\"\\F066\"}.fa-plus:before{content:\"\\F067\"}.fa-minus:before{content:\"\\F068\"}.fa-asterisk:before{content:\"\\F069\"}.fa-exclamation-circle:before{content:\"\\F06A\"}.fa-gift:before{content:\"\\F06B\"}.fa-leaf:before{content:\"\\F06C\"}.fa-fire:before{content:\"\\F06D\"}.fa-eye:before{content:\"\\F06E\"}.fa-eye-slash:before{content:\"\\F070\"}.fa-warning:before,.fa-exclamation-triangle:before{content:\"\\F071\"}.fa-plane:before{content:\"\\F072\"}.fa-calendar:before{content:\"\\F073\"}.fa-random:before{content:\"\\F074\"}.fa-comment:before{content:\"\\F075\"}.fa-magnet:before{content:\"\\F076\"}.fa-chevron-up:before{content:\"\\F077\"}.fa-chevron-down:before{content:\"\\F078\"}.fa-retweet:before{content:\"\\F079\"}.fa-shopping-cart:before{content:\"\\F07A\"}.fa-folder:before{content:\"\\F07B\"}.fa-folder-open:before{content:\"\\F07C\"}.fa-arrows-v:before{content:\"\\F07D\"}.fa-arrows-h:before{content:\"\\F07E\"}.fa-bar-chart-o:before,.fa-bar-chart:before{content:\"\\F080\"}.fa-twitter-square:before{content:\"\\F081\"}.fa-facebook-square:before{content:\"\\F082\"}.fa-camera-retro:before{content:\"\\F083\"}.fa-key:before{content:\"\\F084\"}.fa-gears:before,.fa-cogs:before{content:\"\\F085\"}.fa-comments:before{content:\"\\F086\"}.fa-thumbs-o-up:before{content:\"\\F087\"}.fa-thumbs-o-down:before{content:\"\\F088\"}.fa-star-half:before{content:\"\\F089\"}.fa-heart-o:before{content:\"\\F08A\"}.fa-sign-out:before{content:\"\\F08B\"}.fa-linkedin-square:before{content:\"\\F08C\"}.fa-thumb-tack:before{content:\"\\F08D\"}.fa-external-link:before{content:\"\\F08E\"}.fa-sign-in:before{content:\"\\F090\"}.fa-trophy:before{content:\"\\F091\"}.fa-github-square:before{content:\"\\F092\"}.fa-upload:before{content:\"\\F093\"}.fa-lemon-o:before{content:\"\\F094\"}.fa-phone:before{content:\"\\F095\"}.fa-square-o:before{content:\"\\F096\"}.fa-bookmark-o:before{content:\"\\F097\"}.fa-phone-square:before{content:\"\\F098\"}.fa-twitter:before{content:\"\\F099\"}.fa-facebook-f:before,.fa-facebook:before{content:\"\\F09A\"}.fa-github:before{content:\"\\F09B\"}.fa-unlock:before{content:\"\\F09C\"}.fa-credit-card:before{content:\"\\F09D\"}.fa-feed:before,.fa-rss:before{content:\"\\F09E\"}.fa-hdd-o:before{content:\"\\F0A0\"}.fa-bullhorn:before{content:\"\\F0A1\"}.fa-bell:before{content:\"\\F0F3\"}.fa-certificate:before{content:\"\\F0A3\"}.fa-hand-o-right:before{content:\"\\F0A4\"}.fa-hand-o-left:before{content:\"\\F0A5\"}.fa-hand-o-up:before{content:\"\\F0A6\"}.fa-hand-o-down:before{content:\"\\F0A7\"}.fa-arrow-circle-left:before{content:\"\\F0A8\"}.fa-arrow-circle-right:before{content:\"\\F0A9\"}.fa-arrow-circle-up:before{content:\"\\F0AA\"}.fa-arrow-circle-down:before{content:\"\\F0AB\"}.fa-globe:before{content:\"\\F0AC\"}.fa-wrench:before{content:\"\\F0AD\"}.fa-tasks:before{content:\"\\F0AE\"}.fa-filter:before{content:\"\\F0B0\"}.fa-briefcase:before{content:\"\\F0B1\"}.fa-arrows-alt:before{content:\"\\F0B2\"}.fa-group:before,.fa-users:before{content:\"\\F0C0\"}.fa-chain:before,.fa-link:before{content:\"\\F0C1\"}.fa-cloud:before{content:\"\\F0C2\"}.fa-flask:before{content:\"\\F0C3\"}.fa-cut:before,.fa-scissors:before{content:\"\\F0C4\"}.fa-copy:before,.fa-files-o:before{content:\"\\F0C5\"}.fa-paperclip:before{content:\"\\F0C6\"}.fa-save:before,.fa-floppy-o:before{content:\"\\F0C7\"}.fa-square:before{content:\"\\F0C8\"}.fa-navicon:before,.fa-reorder:before,.fa-bars:before{content:\"\\F0C9\"}.fa-list-ul:before{content:\"\\F0CA\"}.fa-list-ol:before{content:\"\\F0CB\"}.fa-strikethrough:before{content:\"\\F0CC\"}.fa-underline:before{content:\"\\F0CD\"}.fa-table:before{content:\"\\F0CE\"}.fa-magic:before{content:\"\\F0D0\"}.fa-truck:before{content:\"\\F0D1\"}.fa-pinterest:before{content:\"\\F0D2\"}.fa-pinterest-square:before{content:\"\\F0D3\"}.fa-google-plus-square:before{content:\"\\F0D4\"}.fa-google-plus:before{content:\"\\F0D5\"}.fa-money:before{content:\"\\F0D6\"}.fa-caret-down:before{content:\"\\F0D7\"}.fa-caret-up:before{content:\"\\F0D8\"}.fa-caret-left:before{content:\"\\F0D9\"}.fa-caret-right:before{content:\"\\F0DA\"}.fa-columns:before{content:\"\\F0DB\"}.fa-unsorted:before,.fa-sort:before{content:\"\\F0DC\"}.fa-sort-down:before,.fa-sort-desc:before{content:\"\\F0DD\"}.fa-sort-up:before,.fa-sort-asc:before{content:\"\\F0DE\"}.fa-envelope:before{content:\"\\F0E0\"}.fa-linkedin:before{content:\"\\F0E1\"}.fa-rotate-left:before,.fa-undo:before{content:\"\\F0E2\"}.fa-legal:before,.fa-gavel:before{content:\"\\F0E3\"}.fa-dashboard:before,.fa-tachometer:before{content:\"\\F0E4\"}.fa-comment-o:before{content:\"\\F0E5\"}.fa-comments-o:before{content:\"\\F0E6\"}.fa-flash:before,.fa-bolt:before{content:\"\\F0E7\"}.fa-sitemap:before{content:\"\\F0E8\"}.fa-umbrella:before{content:\"\\F0E9\"}.fa-paste:before,.fa-clipboard:before{content:\"\\F0EA\"}.fa-lightbulb-o:before{content:\"\\F0EB\"}.fa-exchange:before{content:\"\\F0EC\"}.fa-cloud-download:before{content:\"\\F0ED\"}.fa-cloud-upload:before{content:\"\\F0EE\"}.fa-user-md:before{content:\"\\F0F0\"}.fa-stethoscope:before{content:\"\\F0F1\"}.fa-suitcase:before{content:\"\\F0F2\"}.fa-bell-o:before{content:\"\\F0A2\"}.fa-coffee:before{content:\"\\F0F4\"}.fa-cutlery:before{content:\"\\F0F5\"}.fa-file-text-o:before{content:\"\\F0F6\"}.fa-building-o:before{content:\"\\F0F7\"}.fa-hospital-o:before{content:\"\\F0F8\"}.fa-ambulance:before{content:\"\\F0F9\"}.fa-medkit:before{content:\"\\F0FA\"}.fa-fighter-jet:before{content:\"\\F0FB\"}.fa-beer:before{content:\"\\F0FC\"}.fa-h-square:before{content:\"\\F0FD\"}.fa-plus-square:before{content:\"\\F0FE\"}.fa-angle-double-left:before{content:\"\\F100\"}.fa-angle-double-right:before{content:\"\\F101\"}.fa-angle-double-up:before{content:\"\\F102\"}.fa-angle-double-down:before{content:\"\\F103\"}.fa-angle-left:before{content:\"\\F104\"}.fa-angle-right:before{content:\"\\F105\"}.fa-angle-up:before{content:\"\\F106\"}.fa-angle-down:before{content:\"\\F107\"}.fa-desktop:before{content:\"\\F108\"}.fa-laptop:before{content:\"\\F109\"}.fa-tablet:before{content:\"\\F10A\"}.fa-mobile-phone:before,.fa-mobile:before{content:\"\\F10B\"}.fa-circle-o:before{content:\"\\F10C\"}.fa-quote-left:before{content:\"\\F10D\"}.fa-quote-right:before{content:\"\\F10E\"}.fa-spinner:before{content:\"\\F110\"}.fa-circle:before{content:\"\\F111\"}.fa-mail-reply:before,.fa-reply:before{content:\"\\F112\"}.fa-github-alt:before{content:\"\\F113\"}.fa-folder-o:before{content:\"\\F114\"}.fa-folder-open-o:before{content:\"\\F115\"}.fa-smile-o:before{content:\"\\F118\"}.fa-frown-o:before{content:\"\\F119\"}.fa-meh-o:before{content:\"\\F11A\"}.fa-gamepad:before{content:\"\\F11B\"}.fa-keyboard-o:before{content:\"\\F11C\"}.fa-flag-o:before{content:\"\\F11D\"}.fa-flag-checkered:before{content:\"\\F11E\"}.fa-terminal:before{content:\"\\F120\"}.fa-code:before{content:\"\\F121\"}.fa-mail-reply-all:before,.fa-reply-all:before{content:\"\\F122\"}.fa-star-half-empty:before,.fa-star-half-full:before,.fa-star-half-o:before{content:\"\\F123\"}.fa-location-arrow:before{content:\"\\F124\"}.fa-crop:before{content:\"\\F125\"}.fa-code-fork:before{content:\"\\F126\"}.fa-unlink:before,.fa-chain-broken:before{content:\"\\F127\"}.fa-question:before{content:\"\\F128\"}.fa-info:before{content:\"\\F129\"}.fa-exclamation:before{content:\"\\F12A\"}.fa-superscript:before{content:\"\\F12B\"}.fa-subscript:before{content:\"\\F12C\"}.fa-eraser:before{content:\"\\F12D\"}.fa-puzzle-piece:before{content:\"\\F12E\"}.fa-microphone:before{content:\"\\F130\"}.fa-microphone-slash:before{content:\"\\F131\"}.fa-shield:before{content:\"\\F132\"}.fa-calendar-o:before{content:\"\\F133\"}.fa-fire-extinguisher:before{content:\"\\F134\"}.fa-rocket:before{content:\"\\F135\"}.fa-maxcdn:before{content:\"\\F136\"}.fa-chevron-circle-left:before{content:\"\\F137\"}.fa-chevron-circle-right:before{content:\"\\F138\"}.fa-chevron-circle-up:before{content:\"\\F139\"}.fa-chevron-circle-down:before{content:\"\\F13A\"}.fa-html5:before{content:\"\\F13B\"}.fa-css3:before{content:\"\\F13C\"}.fa-anchor:before{content:\"\\F13D\"}.fa-unlock-alt:before{content:\"\\F13E\"}.fa-bullseye:before{content:\"\\F140\"}.fa-ellipsis-h:before{content:\"\\F141\"}.fa-ellipsis-v:before{content:\"\\F142\"}.fa-rss-square:before{content:\"\\F143\"}.fa-play-circle:before{content:\"\\F144\"}.fa-ticket:before{content:\"\\F145\"}.fa-minus-square:before{content:\"\\F146\"}.fa-minus-square-o:before{content:\"\\F147\"}.fa-level-up:before{content:\"\\F148\"}.fa-level-down:before{content:\"\\F149\"}.fa-check-square:before{content:\"\\F14A\"}.fa-pencil-square:before{content:\"\\F14B\"}.fa-external-link-square:before{content:\"\\F14C\"}.fa-share-square:before{content:\"\\F14D\"}.fa-compass:before{content:\"\\F14E\"}.fa-toggle-down:before,.fa-caret-square-o-down:before{content:\"\\F150\"}.fa-toggle-up:before,.fa-caret-square-o-up:before{content:\"\\F151\"}.fa-toggle-right:before,.fa-caret-square-o-right:before{content:\"\\F152\"}.fa-euro:before,.fa-eur:before{content:\"\\F153\"}.fa-gbp:before{content:\"\\F154\"}.fa-dollar:before,.fa-usd:before{content:\"\\F155\"}.fa-rupee:before,.fa-inr:before{content:\"\\F156\"}.fa-cny:before,.fa-rmb:before,.fa-yen:before,.fa-jpy:before{content:\"\\F157\"}.fa-ruble:before,.fa-rouble:before,.fa-rub:before{content:\"\\F158\"}.fa-won:before,.fa-krw:before{content:\"\\F159\"}.fa-bitcoin:before,.fa-btc:before{content:\"\\F15A\"}.fa-file:before{content:\"\\F15B\"}.fa-file-text:before{content:\"\\F15C\"}.fa-sort-alpha-asc:before{content:\"\\F15D\"}.fa-sort-alpha-desc:before{content:\"\\F15E\"}.fa-sort-amount-asc:before{content:\"\\F160\"}.fa-sort-amount-desc:before{content:\"\\F161\"}.fa-sort-numeric-asc:before{content:\"\\F162\"}.fa-sort-numeric-desc:before{content:\"\\F163\"}.fa-thumbs-up:before{content:\"\\F164\"}.fa-thumbs-down:before{content:\"\\F165\"}.fa-youtube-square:before{content:\"\\F166\"}.fa-youtube:before{content:\"\\F167\"}.fa-xing:before{content:\"\\F168\"}.fa-xing-square:before{content:\"\\F169\"}.fa-youtube-play:before{content:\"\\F16A\"}.fa-dropbox:before{content:\"\\F16B\"}.fa-stack-overflow:before{content:\"\\F16C\"}.fa-instagram:before{content:\"\\F16D\"}.fa-flickr:before{content:\"\\F16E\"}.fa-adn:before{content:\"\\F170\"}.fa-bitbucket:before{content:\"\\F171\"}.fa-bitbucket-square:before{content:\"\\F172\"}.fa-tumblr:before{content:\"\\F173\"}.fa-tumblr-square:before{content:\"\\F174\"}.fa-long-arrow-down:before{content:\"\\F175\"}.fa-long-arrow-up:before{content:\"\\F176\"}.fa-long-arrow-left:before{content:\"\\F177\"}.fa-long-arrow-right:before{content:\"\\F178\"}.fa-apple:before{content:\"\\F179\"}.fa-windows:before{content:\"\\F17A\"}.fa-android:before{content:\"\\F17B\"}.fa-linux:before{content:\"\\F17C\"}.fa-dribbble:before{content:\"\\F17D\"}.fa-skype:before{content:\"\\F17E\"}.fa-foursquare:before{content:\"\\F180\"}.fa-trello:before{content:\"\\F181\"}.fa-female:before{content:\"\\F182\"}.fa-male:before{content:\"\\F183\"}.fa-gittip:before,.fa-gratipay:before{content:\"\\F184\"}.fa-sun-o:before{content:\"\\F185\"}.fa-moon-o:before{content:\"\\F186\"}.fa-archive:before{content:\"\\F187\"}.fa-bug:before{content:\"\\F188\"}.fa-vk:before{content:\"\\F189\"}.fa-weibo:before{content:\"\\F18A\"}.fa-renren:before{content:\"\\F18B\"}.fa-pagelines:before{content:\"\\F18C\"}.fa-stack-exchange:before{content:\"\\F18D\"}.fa-arrow-circle-o-right:before{content:\"\\F18E\"}.fa-arrow-circle-o-left:before{content:\"\\F190\"}.fa-toggle-left:before,.fa-caret-square-o-left:before{content:\"\\F191\"}.fa-dot-circle-o:before{content:\"\\F192\"}.fa-wheelchair:before{content:\"\\F193\"}.fa-vimeo-square:before{content:\"\\F194\"}.fa-turkish-lira:before,.fa-try:before{content:\"\\F195\"}.fa-plus-square-o:before{content:\"\\F196\"}.fa-space-shuttle:before{content:\"\\F197\"}.fa-slack:before{content:\"\\F198\"}.fa-envelope-square:before{content:\"\\F199\"}.fa-wordpress:before{content:\"\\F19A\"}.fa-openid:before{content:\"\\F19B\"}.fa-institution:before,.fa-bank:before,.fa-university:before{content:\"\\F19C\"}.fa-mortar-board:before,.fa-graduation-cap:before{content:\"\\F19D\"}.fa-yahoo:before{content:\"\\F19E\"}.fa-google:before{content:\"\\F1A0\"}.fa-reddit:before{content:\"\\F1A1\"}.fa-reddit-square:before{content:\"\\F1A2\"}.fa-stumbleupon-circle:before{content:\"\\F1A3\"}.fa-stumbleupon:before{content:\"\\F1A4\"}.fa-delicious:before{content:\"\\F1A5\"}.fa-digg:before{content:\"\\F1A6\"}.fa-pied-piper-pp:before{content:\"\\F1A7\"}.fa-pied-piper-alt:before{content:\"\\F1A8\"}.fa-drupal:before{content:\"\\F1A9\"}.fa-joomla:before{content:\"\\F1AA\"}.fa-language:before{content:\"\\F1AB\"}.fa-fax:before{content:\"\\F1AC\"}.fa-building:before{content:\"\\F1AD\"}.fa-child:before{content:\"\\F1AE\"}.fa-paw:before{content:\"\\F1B0\"}.fa-spoon:before{content:\"\\F1B1\"}.fa-cube:before{content:\"\\F1B2\"}.fa-cubes:before{content:\"\\F1B3\"}.fa-behance:before{content:\"\\F1B4\"}.fa-behance-square:before{content:\"\\F1B5\"}.fa-steam:before{content:\"\\F1B6\"}.fa-steam-square:before{content:\"\\F1B7\"}.fa-recycle:before{content:\"\\F1B8\"}.fa-automobile:before,.fa-car:before{content:\"\\F1B9\"}.fa-cab:before,.fa-taxi:before{content:\"\\F1BA\"}.fa-tree:before{content:\"\\F1BB\"}.fa-spotify:before{content:\"\\F1BC\"}.fa-deviantart:before{content:\"\\F1BD\"}.fa-soundcloud:before{content:\"\\F1BE\"}.fa-database:before{content:\"\\F1C0\"}.fa-file-pdf-o:before{content:\"\\F1C1\"}.fa-file-word-o:before{content:\"\\F1C2\"}.fa-file-excel-o:before{content:\"\\F1C3\"}.fa-file-powerpoint-o:before{content:\"\\F1C4\"}.fa-file-photo-o:before,.fa-file-picture-o:before,.fa-file-image-o:before{content:\"\\F1C5\"}.fa-file-zip-o:before,.fa-file-archive-o:before{content:\"\\F1C6\"}.fa-file-sound-o:before,.fa-file-audio-o:before{content:\"\\F1C7\"}.fa-file-movie-o:before,.fa-file-video-o:before{content:\"\\F1C8\"}.fa-file-code-o:before{content:\"\\F1C9\"}.fa-vine:before{content:\"\\F1CA\"}.fa-codepen:before{content:\"\\F1CB\"}.fa-jsfiddle:before{content:\"\\F1CC\"}.fa-life-bouy:before,.fa-life-buoy:before,.fa-life-saver:before,.fa-support:before,.fa-life-ring:before{content:\"\\F1CD\"}.fa-circle-o-notch:before{content:\"\\F1CE\"}.fa-ra:before,.fa-resistance:before,.fa-rebel:before{content:\"\\F1D0\"}.fa-ge:before,.fa-empire:before{content:\"\\F1D1\"}.fa-git-square:before{content:\"\\F1D2\"}.fa-git:before{content:\"\\F1D3\"}.fa-y-combinator-square:before,.fa-yc-square:before,.fa-hacker-news:before{content:\"\\F1D4\"}.fa-tencent-weibo:before{content:\"\\F1D5\"}.fa-qq:before{content:\"\\F1D6\"}.fa-wechat:before,.fa-weixin:before{content:\"\\F1D7\"}.fa-send:before,.fa-paper-plane:before{content:\"\\F1D8\"}.fa-send-o:before,.fa-paper-plane-o:before{content:\"\\F1D9\"}.fa-history:before{content:\"\\F1DA\"}.fa-circle-thin:before{content:\"\\F1DB\"}.fa-header:before{content:\"\\F1DC\"}.fa-paragraph:before{content:\"\\F1DD\"}.fa-sliders:before{content:\"\\F1DE\"}.fa-share-alt:before{content:\"\\F1E0\"}.fa-share-alt-square:before{content:\"\\F1E1\"}.fa-bomb:before{content:\"\\F1E2\"}.fa-soccer-ball-o:before,.fa-futbol-o:before{content:\"\\F1E3\"}.fa-tty:before{content:\"\\F1E4\"}.fa-binoculars:before{content:\"\\F1E5\"}.fa-plug:before{content:\"\\F1E6\"}.fa-slideshare:before{content:\"\\F1E7\"}.fa-twitch:before{content:\"\\F1E8\"}.fa-yelp:before{content:\"\\F1E9\"}.fa-newspaper-o:before{content:\"\\F1EA\"}.fa-wifi:before{content:\"\\F1EB\"}.fa-calculator:before{content:\"\\F1EC\"}.fa-paypal:before{content:\"\\F1ED\"}.fa-google-wallet:before{content:\"\\F1EE\"}.fa-cc-visa:before{content:\"\\F1F0\"}.fa-cc-mastercard:before{content:\"\\F1F1\"}.fa-cc-discover:before{content:\"\\F1F2\"}.fa-cc-amex:before{content:\"\\F1F3\"}.fa-cc-paypal:before{content:\"\\F1F4\"}.fa-cc-stripe:before{content:\"\\F1F5\"}.fa-bell-slash:before{content:\"\\F1F6\"}.fa-bell-slash-o:before{content:\"\\F1F7\"}.fa-trash:before{content:\"\\F1F8\"}.fa-copyright:before{content:\"\\F1F9\"}.fa-at:before{content:\"\\F1FA\"}.fa-eyedropper:before{content:\"\\F1FB\"}.fa-paint-brush:before{content:\"\\F1FC\"}.fa-birthday-cake:before{content:\"\\F1FD\"}.fa-area-chart:before{content:\"\\F1FE\"}.fa-pie-chart:before{content:\"\\F200\"}.fa-line-chart:before{content:\"\\F201\"}.fa-lastfm:before{content:\"\\F202\"}.fa-lastfm-square:before{content:\"\\F203\"}.fa-toggle-off:before{content:\"\\F204\"}.fa-toggle-on:before{content:\"\\F205\"}.fa-bicycle:before{content:\"\\F206\"}.fa-bus:before{content:\"\\F207\"}.fa-ioxhost:before{content:\"\\F208\"}.fa-angellist:before{content:\"\\F209\"}.fa-cc:before{content:\"\\F20A\"}.fa-shekel:before,.fa-sheqel:before,.fa-ils:before{content:\"\\F20B\"}.fa-meanpath:before{content:\"\\F20C\"}.fa-buysellads:before{content:\"\\F20D\"}.fa-connectdevelop:before{content:\"\\F20E\"}.fa-dashcube:before{content:\"\\F210\"}.fa-forumbee:before{content:\"\\F211\"}.fa-leanpub:before{content:\"\\F212\"}.fa-sellsy:before{content:\"\\F213\"}.fa-shirtsinbulk:before{content:\"\\F214\"}.fa-simplybuilt:before{content:\"\\F215\"}.fa-skyatlas:before{content:\"\\F216\"}.fa-cart-plus:before{content:\"\\F217\"}.fa-cart-arrow-down:before{content:\"\\F218\"}.fa-diamond:before{content:\"\\F219\"}.fa-ship:before{content:\"\\F21A\"}.fa-user-secret:before{content:\"\\F21B\"}.fa-motorcycle:before{content:\"\\F21C\"}.fa-street-view:before{content:\"\\F21D\"}.fa-heartbeat:before{content:\"\\F21E\"}.fa-venus:before{content:\"\\F221\"}.fa-mars:before{content:\"\\F222\"}.fa-mercury:before{content:\"\\F223\"}.fa-intersex:before,.fa-transgender:before{content:\"\\F224\"}.fa-transgender-alt:before{content:\"\\F225\"}.fa-venus-double:before{content:\"\\F226\"}.fa-mars-double:before{content:\"\\F227\"}.fa-venus-mars:before{content:\"\\F228\"}.fa-mars-stroke:before{content:\"\\F229\"}.fa-mars-stroke-v:before{content:\"\\F22A\"}.fa-mars-stroke-h:before{content:\"\\F22B\"}.fa-neuter:before{content:\"\\F22C\"}.fa-genderless:before{content:\"\\F22D\"}.fa-facebook-official:before{content:\"\\F230\"}.fa-pinterest-p:before{content:\"\\F231\"}.fa-whatsapp:before{content:\"\\F232\"}.fa-server:before{content:\"\\F233\"}.fa-user-plus:before{content:\"\\F234\"}.fa-user-times:before{content:\"\\F235\"}.fa-hotel:before,.fa-bed:before{content:\"\\F236\"}.fa-viacoin:before{content:\"\\F237\"}.fa-train:before{content:\"\\F238\"}.fa-subway:before{content:\"\\F239\"}.fa-medium:before{content:\"\\F23A\"}.fa-yc:before,.fa-y-combinator:before{content:\"\\F23B\"}.fa-optin-monster:before{content:\"\\F23C\"}.fa-opencart:before{content:\"\\F23D\"}.fa-expeditedssl:before{content:\"\\F23E\"}.fa-battery-4:before,.fa-battery:before,.fa-battery-full:before{content:\"\\F240\"}.fa-battery-3:before,.fa-battery-three-quarters:before{content:\"\\F241\"}.fa-battery-2:before,.fa-battery-half:before{content:\"\\F242\"}.fa-battery-1:before,.fa-battery-quarter:before{content:\"\\F243\"}.fa-battery-0:before,.fa-battery-empty:before{content:\"\\F244\"}.fa-mouse-pointer:before{content:\"\\F245\"}.fa-i-cursor:before{content:\"\\F246\"}.fa-object-group:before{content:\"\\F247\"}.fa-object-ungroup:before{content:\"\\F248\"}.fa-sticky-note:before{content:\"\\F249\"}.fa-sticky-note-o:before{content:\"\\F24A\"}.fa-cc-jcb:before{content:\"\\F24B\"}.fa-cc-diners-club:before{content:\"\\F24C\"}.fa-clone:before{content:\"\\F24D\"}.fa-balance-scale:before{content:\"\\F24E\"}.fa-hourglass-o:before{content:\"\\F250\"}.fa-hourglass-1:before,.fa-hourglass-start:before{content:\"\\F251\"}.fa-hourglass-2:before,.fa-hourglass-half:before{content:\"\\F252\"}.fa-hourglass-3:before,.fa-hourglass-end:before{content:\"\\F253\"}.fa-hourglass:before{content:\"\\F254\"}.fa-hand-grab-o:before,.fa-hand-rock-o:before{content:\"\\F255\"}.fa-hand-stop-o:before,.fa-hand-paper-o:before{content:\"\\F256\"}.fa-hand-scissors-o:before{content:\"\\F257\"}.fa-hand-lizard-o:before{content:\"\\F258\"}.fa-hand-spock-o:before{content:\"\\F259\"}.fa-hand-pointer-o:before{content:\"\\F25A\"}.fa-hand-peace-o:before{content:\"\\F25B\"}.fa-trademark:before{content:\"\\F25C\"}.fa-registered:before{content:\"\\F25D\"}.fa-creative-commons:before{content:\"\\F25E\"}.fa-gg:before{content:\"\\F260\"}.fa-gg-circle:before{content:\"\\F261\"}.fa-tripadvisor:before{content:\"\\F262\"}.fa-odnoklassniki:before{content:\"\\F263\"}.fa-odnoklassniki-square:before{content:\"\\F264\"}.fa-get-pocket:before{content:\"\\F265\"}.fa-wikipedia-w:before{content:\"\\F266\"}.fa-safari:before{content:\"\\F267\"}.fa-chrome:before{content:\"\\F268\"}.fa-firefox:before{content:\"\\F269\"}.fa-opera:before{content:\"\\F26A\"}.fa-internet-explorer:before{content:\"\\F26B\"}.fa-tv:before,.fa-television:before{content:\"\\F26C\"}.fa-contao:before{content:\"\\F26D\"}.fa-500px:before{content:\"\\F26E\"}.fa-amazon:before{content:\"\\F270\"}.fa-calendar-plus-o:before{content:\"\\F271\"}.fa-calendar-minus-o:before{content:\"\\F272\"}.fa-calendar-times-o:before{content:\"\\F273\"}.fa-calendar-check-o:before{content:\"\\F274\"}.fa-industry:before{content:\"\\F275\"}.fa-map-pin:before{content:\"\\F276\"}.fa-map-signs:before{content:\"\\F277\"}.fa-map-o:before{content:\"\\F278\"}.fa-map:before{content:\"\\F279\"}.fa-commenting:before{content:\"\\F27A\"}.fa-commenting-o:before{content:\"\\F27B\"}.fa-houzz:before{content:\"\\F27C\"}.fa-vimeo:before{content:\"\\F27D\"}.fa-black-tie:before{content:\"\\F27E\"}.fa-fonticons:before{content:\"\\F280\"}.fa-reddit-alien:before{content:\"\\F281\"}.fa-edge:before{content:\"\\F282\"}.fa-credit-card-alt:before{content:\"\\F283\"}.fa-codiepie:before{content:\"\\F284\"}.fa-modx:before{content:\"\\F285\"}.fa-fort-awesome:before{content:\"\\F286\"}.fa-usb:before{content:\"\\F287\"}.fa-product-hunt:before{content:\"\\F288\"}.fa-mixcloud:before{content:\"\\F289\"}.fa-scribd:before{content:\"\\F28A\"}.fa-pause-circle:before{content:\"\\F28B\"}.fa-pause-circle-o:before{content:\"\\F28C\"}.fa-stop-circle:before{content:\"\\F28D\"}.fa-stop-circle-o:before{content:\"\\F28E\"}.fa-shopping-bag:before{content:\"\\F290\"}.fa-shopping-basket:before{content:\"\\F291\"}.fa-hashtag:before{content:\"\\F292\"}.fa-bluetooth:before{content:\"\\F293\"}.fa-bluetooth-b:before{content:\"\\F294\"}.fa-percent:before{content:\"\\F295\"}.fa-gitlab:before{content:\"\\F296\"}.fa-wpbeginner:before{content:\"\\F297\"}.fa-wpforms:before{content:\"\\F298\"}.fa-envira:before{content:\"\\F299\"}.fa-universal-access:before{content:\"\\F29A\"}.fa-wheelchair-alt:before{content:\"\\F29B\"}.fa-question-circle-o:before{content:\"\\F29C\"}.fa-blind:before{content:\"\\F29D\"}.fa-audio-description:before{content:\"\\F29E\"}.fa-volume-control-phone:before{content:\"\\F2A0\"}.fa-braille:before{content:\"\\F2A1\"}.fa-assistive-listening-systems:before{content:\"\\F2A2\"}.fa-asl-interpreting:before,.fa-american-sign-language-interpreting:before{content:\"\\F2A3\"}.fa-deafness:before,.fa-hard-of-hearing:before,.fa-deaf:before{content:\"\\F2A4\"}.fa-glide:before{content:\"\\F2A5\"}.fa-glide-g:before{content:\"\\F2A6\"}.fa-signing:before,.fa-sign-language:before{content:\"\\F2A7\"}.fa-low-vision:before{content:\"\\F2A8\"}.fa-viadeo:before{content:\"\\F2A9\"}.fa-viadeo-square:before{content:\"\\F2AA\"}.fa-snapchat:before{content:\"\\F2AB\"}.fa-snapchat-ghost:before{content:\"\\F2AC\"}.fa-snapchat-square:before{content:\"\\F2AD\"}.fa-pied-piper:before{content:\"\\F2AE\"}.fa-first-order:before{content:\"\\F2B0\"}.fa-yoast:before{content:\"\\F2B1\"}.fa-themeisle:before{content:\"\\F2B2\"}.fa-google-plus-circle:before,.fa-google-plus-official:before{content:\"\\F2B3\"}.fa-fa:before,.fa-font-awesome:before{content:\"\\F2B4\"}.fa-handshake-o:before{content:\"\\F2B5\"}.fa-envelope-open:before{content:\"\\F2B6\"}.fa-envelope-open-o:before{content:\"\\F2B7\"}.fa-linode:before{content:\"\\F2B8\"}.fa-address-book:before{content:\"\\F2B9\"}.fa-address-book-o:before{content:\"\\F2BA\"}.fa-vcard:before,.fa-address-card:before{content:\"\\F2BB\"}.fa-vcard-o:before,.fa-address-card-o:before{content:\"\\F2BC\"}.fa-user-circle:before{content:\"\\F2BD\"}.fa-user-circle-o:before{content:\"\\F2BE\"}.fa-user-o:before{content:\"\\F2C0\"}.fa-id-badge:before{content:\"\\F2C1\"}.fa-drivers-license:before,.fa-id-card:before{content:\"\\F2C2\"}.fa-drivers-license-o:before,.fa-id-card-o:before{content:\"\\F2C3\"}.fa-quora:before{content:\"\\F2C4\"}.fa-free-code-camp:before{content:\"\\F2C5\"}.fa-telegram:before{content:\"\\F2C6\"}.fa-thermometer-4:before,.fa-thermometer:before,.fa-thermometer-full:before{content:\"\\F2C7\"}.fa-thermometer-3:before,.fa-thermometer-three-quarters:before{content:\"\\F2C8\"}.fa-thermometer-2:before,.fa-thermometer-half:before{content:\"\\F2C9\"}.fa-thermometer-1:before,.fa-thermometer-quarter:before{content:\"\\F2CA\"}.fa-thermometer-0:before,.fa-thermometer-empty:before{content:\"\\F2CB\"}.fa-shower:before{content:\"\\F2CC\"}.fa-bathtub:before,.fa-s15:before,.fa-bath:before{content:\"\\F2CD\"}.fa-podcast:before{content:\"\\F2CE\"}.fa-window-maximize:before{content:\"\\F2D0\"}.fa-window-minimize:before{content:\"\\F2D1\"}.fa-window-restore:before{content:\"\\F2D2\"}.fa-times-rectangle:before,.fa-window-close:before{content:\"\\F2D3\"}.fa-times-rectangle-o:before,.fa-window-close-o:before{content:\"\\F2D4\"}.fa-bandcamp:before{content:\"\\F2D5\"}.fa-grav:before{content:\"\\F2D6\"}.fa-etsy:before{content:\"\\F2D7\"}.fa-imdb:before{content:\"\\F2D8\"}.fa-ravelry:before{content:\"\\F2D9\"}.fa-eercast:before{content:\"\\F2DA\"}.fa-microchip:before{content:\"\\F2DB\"}.fa-snowflake-o:before{content:\"\\F2DC\"}.fa-superpowers:before{content:\"\\F2DD\"}.fa-wpexplorer:before{content:\"\\F2DE\"}.fa-meetup:before{content:\"\\F2E0\"}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}\n", ""]);
+exports.push([module.i, "/*!\n *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */@font-face{font-family:'FontAwesome';src:url(" + __webpack_require__(391) + ");src:url(" + __webpack_require__(390) + "?#iefix&v=4.7.0) format('embedded-opentype'),url(" + __webpack_require__(465) + ") format('woff2'),url(" + __webpack_require__(466) + ") format('woff'),url(" + __webpack_require__(464) + ") format('truetype'),url(" + __webpack_require__(392) + "#fontawesomeregular) format('svg');font-weight:normal;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-fw{width:1.28571429em;text-align:center}.fa-ul{padding-left:0;margin-left:2.14285714em;list-style-type:none}.fa-ul>li{position:relative}.fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em;text-align:center}.fa-li.fa-lg{left:-1.85714286em}.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left{margin-right:.3em}.fa.fa-pull-right{margin-left:.3em}.pull-right{float:right}.pull-left{float:left}.fa.pull-left{margin-right:.3em}.fa.pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.fa-rotate-90{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";-webkit-transform:scale(-1, 1);transform:scale(-1, 1)}.fa-flip-vertical{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";-webkit-transform:scale(1, -1);transform:scale(1, -1)}:root .fa-rotate-90,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-flip-horizontal,:root .fa-flip-vertical{-webkit-filter:none;filter:none}.fa-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}.fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}.fa-inverse{color:#fff}.fa-glass:before{content:\"\\F000\"}.fa-music:before{content:\"\\F001\"}.fa-search:before{content:\"\\F002\"}.fa-envelope-o:before{content:\"\\F003\"}.fa-heart:before{content:\"\\F004\"}.fa-star:before{content:\"\\F005\"}.fa-star-o:before{content:\"\\F006\"}.fa-user:before{content:\"\\F007\"}.fa-film:before{content:\"\\F008\"}.fa-th-large:before{content:\"\\F009\"}.fa-th:before{content:\"\\F00A\"}.fa-th-list:before{content:\"\\F00B\"}.fa-check:before{content:\"\\F00C\"}.fa-remove:before,.fa-close:before,.fa-times:before{content:\"\\F00D\"}.fa-search-plus:before{content:\"\\F00E\"}.fa-search-minus:before{content:\"\\F010\"}.fa-power-off:before{content:\"\\F011\"}.fa-signal:before{content:\"\\F012\"}.fa-gear:before,.fa-cog:before{content:\"\\F013\"}.fa-trash-o:before{content:\"\\F014\"}.fa-home:before{content:\"\\F015\"}.fa-file-o:before{content:\"\\F016\"}.fa-clock-o:before{content:\"\\F017\"}.fa-road:before{content:\"\\F018\"}.fa-download:before{content:\"\\F019\"}.fa-arrow-circle-o-down:before{content:\"\\F01A\"}.fa-arrow-circle-o-up:before{content:\"\\F01B\"}.fa-inbox:before{content:\"\\F01C\"}.fa-play-circle-o:before{content:\"\\F01D\"}.fa-rotate-right:before,.fa-repeat:before{content:\"\\F01E\"}.fa-refresh:before{content:\"\\F021\"}.fa-list-alt:before{content:\"\\F022\"}.fa-lock:before{content:\"\\F023\"}.fa-flag:before{content:\"\\F024\"}.fa-headphones:before{content:\"\\F025\"}.fa-volume-off:before{content:\"\\F026\"}.fa-volume-down:before{content:\"\\F027\"}.fa-volume-up:before{content:\"\\F028\"}.fa-qrcode:before{content:\"\\F029\"}.fa-barcode:before{content:\"\\F02A\"}.fa-tag:before{content:\"\\F02B\"}.fa-tags:before{content:\"\\F02C\"}.fa-book:before{content:\"\\F02D\"}.fa-bookmark:before{content:\"\\F02E\"}.fa-print:before{content:\"\\F02F\"}.fa-camera:before{content:\"\\F030\"}.fa-font:before{content:\"\\F031\"}.fa-bold:before{content:\"\\F032\"}.fa-italic:before{content:\"\\F033\"}.fa-text-height:before{content:\"\\F034\"}.fa-text-width:before{content:\"\\F035\"}.fa-align-left:before{content:\"\\F036\"}.fa-align-center:before{content:\"\\F037\"}.fa-align-right:before{content:\"\\F038\"}.fa-align-justify:before{content:\"\\F039\"}.fa-list:before{content:\"\\F03A\"}.fa-dedent:before,.fa-outdent:before{content:\"\\F03B\"}.fa-indent:before{content:\"\\F03C\"}.fa-video-camera:before{content:\"\\F03D\"}.fa-photo:before,.fa-image:before,.fa-picture-o:before{content:\"\\F03E\"}.fa-pencil:before{content:\"\\F040\"}.fa-map-marker:before{content:\"\\F041\"}.fa-adjust:before{content:\"\\F042\"}.fa-tint:before{content:\"\\F043\"}.fa-edit:before,.fa-pencil-square-o:before{content:\"\\F044\"}.fa-share-square-o:before{content:\"\\F045\"}.fa-check-square-o:before{content:\"\\F046\"}.fa-arrows:before{content:\"\\F047\"}.fa-step-backward:before{content:\"\\F048\"}.fa-fast-backward:before{content:\"\\F049\"}.fa-backward:before{content:\"\\F04A\"}.fa-play:before{content:\"\\F04B\"}.fa-pause:before{content:\"\\F04C\"}.fa-stop:before{content:\"\\F04D\"}.fa-forward:before{content:\"\\F04E\"}.fa-fast-forward:before{content:\"\\F050\"}.fa-step-forward:before{content:\"\\F051\"}.fa-eject:before{content:\"\\F052\"}.fa-chevron-left:before{content:\"\\F053\"}.fa-chevron-right:before{content:\"\\F054\"}.fa-plus-circle:before{content:\"\\F055\"}.fa-minus-circle:before{content:\"\\F056\"}.fa-times-circle:before{content:\"\\F057\"}.fa-check-circle:before{content:\"\\F058\"}.fa-question-circle:before{content:\"\\F059\"}.fa-info-circle:before{content:\"\\F05A\"}.fa-crosshairs:before{content:\"\\F05B\"}.fa-times-circle-o:before{content:\"\\F05C\"}.fa-check-circle-o:before{content:\"\\F05D\"}.fa-ban:before{content:\"\\F05E\"}.fa-arrow-left:before{content:\"\\F060\"}.fa-arrow-right:before{content:\"\\F061\"}.fa-arrow-up:before{content:\"\\F062\"}.fa-arrow-down:before{content:\"\\F063\"}.fa-mail-forward:before,.fa-share:before{content:\"\\F064\"}.fa-expand:before{content:\"\\F065\"}.fa-compress:before{content:\"\\F066\"}.fa-plus:before{content:\"\\F067\"}.fa-minus:before{content:\"\\F068\"}.fa-asterisk:before{content:\"\\F069\"}.fa-exclamation-circle:before{content:\"\\F06A\"}.fa-gift:before{content:\"\\F06B\"}.fa-leaf:before{content:\"\\F06C\"}.fa-fire:before{content:\"\\F06D\"}.fa-eye:before{content:\"\\F06E\"}.fa-eye-slash:before{content:\"\\F070\"}.fa-warning:before,.fa-exclamation-triangle:before{content:\"\\F071\"}.fa-plane:before{content:\"\\F072\"}.fa-calendar:before{content:\"\\F073\"}.fa-random:before{content:\"\\F074\"}.fa-comment:before{content:\"\\F075\"}.fa-magnet:before{content:\"\\F076\"}.fa-chevron-up:before{content:\"\\F077\"}.fa-chevron-down:before{content:\"\\F078\"}.fa-retweet:before{content:\"\\F079\"}.fa-shopping-cart:before{content:\"\\F07A\"}.fa-folder:before{content:\"\\F07B\"}.fa-folder-open:before{content:\"\\F07C\"}.fa-arrows-v:before{content:\"\\F07D\"}.fa-arrows-h:before{content:\"\\F07E\"}.fa-bar-chart-o:before,.fa-bar-chart:before{content:\"\\F080\"}.fa-twitter-square:before{content:\"\\F081\"}.fa-facebook-square:before{content:\"\\F082\"}.fa-camera-retro:before{content:\"\\F083\"}.fa-key:before{content:\"\\F084\"}.fa-gears:before,.fa-cogs:before{content:\"\\F085\"}.fa-comments:before{content:\"\\F086\"}.fa-thumbs-o-up:before{content:\"\\F087\"}.fa-thumbs-o-down:before{content:\"\\F088\"}.fa-star-half:before{content:\"\\F089\"}.fa-heart-o:before{content:\"\\F08A\"}.fa-sign-out:before{content:\"\\F08B\"}.fa-linkedin-square:before{content:\"\\F08C\"}.fa-thumb-tack:before{content:\"\\F08D\"}.fa-external-link:before{content:\"\\F08E\"}.fa-sign-in:before{content:\"\\F090\"}.fa-trophy:before{content:\"\\F091\"}.fa-github-square:before{content:\"\\F092\"}.fa-upload:before{content:\"\\F093\"}.fa-lemon-o:before{content:\"\\F094\"}.fa-phone:before{content:\"\\F095\"}.fa-square-o:before{content:\"\\F096\"}.fa-bookmark-o:before{content:\"\\F097\"}.fa-phone-square:before{content:\"\\F098\"}.fa-twitter:before{content:\"\\F099\"}.fa-facebook-f:before,.fa-facebook:before{content:\"\\F09A\"}.fa-github:before{content:\"\\F09B\"}.fa-unlock:before{content:\"\\F09C\"}.fa-credit-card:before{content:\"\\F09D\"}.fa-feed:before,.fa-rss:before{content:\"\\F09E\"}.fa-hdd-o:before{content:\"\\F0A0\"}.fa-bullhorn:before{content:\"\\F0A1\"}.fa-bell:before{content:\"\\F0F3\"}.fa-certificate:before{content:\"\\F0A3\"}.fa-hand-o-right:before{content:\"\\F0A4\"}.fa-hand-o-left:before{content:\"\\F0A5\"}.fa-hand-o-up:before{content:\"\\F0A6\"}.fa-hand-o-down:before{content:\"\\F0A7\"}.fa-arrow-circle-left:before{content:\"\\F0A8\"}.fa-arrow-circle-right:before{content:\"\\F0A9\"}.fa-arrow-circle-up:before{content:\"\\F0AA\"}.fa-arrow-circle-down:before{content:\"\\F0AB\"}.fa-globe:before{content:\"\\F0AC\"}.fa-wrench:before{content:\"\\F0AD\"}.fa-tasks:before{content:\"\\F0AE\"}.fa-filter:before{content:\"\\F0B0\"}.fa-briefcase:before{content:\"\\F0B1\"}.fa-arrows-alt:before{content:\"\\F0B2\"}.fa-group:before,.fa-users:before{content:\"\\F0C0\"}.fa-chain:before,.fa-link:before{content:\"\\F0C1\"}.fa-cloud:before{content:\"\\F0C2\"}.fa-flask:before{content:\"\\F0C3\"}.fa-cut:before,.fa-scissors:before{content:\"\\F0C4\"}.fa-copy:before,.fa-files-o:before{content:\"\\F0C5\"}.fa-paperclip:before{content:\"\\F0C6\"}.fa-save:before,.fa-floppy-o:before{content:\"\\F0C7\"}.fa-square:before{content:\"\\F0C8\"}.fa-navicon:before,.fa-reorder:before,.fa-bars:before{content:\"\\F0C9\"}.fa-list-ul:before{content:\"\\F0CA\"}.fa-list-ol:before{content:\"\\F0CB\"}.fa-strikethrough:before{content:\"\\F0CC\"}.fa-underline:before{content:\"\\F0CD\"}.fa-table:before{content:\"\\F0CE\"}.fa-magic:before{content:\"\\F0D0\"}.fa-truck:before{content:\"\\F0D1\"}.fa-pinterest:before{content:\"\\F0D2\"}.fa-pinterest-square:before{content:\"\\F0D3\"}.fa-google-plus-square:before{content:\"\\F0D4\"}.fa-google-plus:before{content:\"\\F0D5\"}.fa-money:before{content:\"\\F0D6\"}.fa-caret-down:before{content:\"\\F0D7\"}.fa-caret-up:before{content:\"\\F0D8\"}.fa-caret-left:before{content:\"\\F0D9\"}.fa-caret-right:before{content:\"\\F0DA\"}.fa-columns:before{content:\"\\F0DB\"}.fa-unsorted:before,.fa-sort:before{content:\"\\F0DC\"}.fa-sort-down:before,.fa-sort-desc:before{content:\"\\F0DD\"}.fa-sort-up:before,.fa-sort-asc:before{content:\"\\F0DE\"}.fa-envelope:before{content:\"\\F0E0\"}.fa-linkedin:before{content:\"\\F0E1\"}.fa-rotate-left:before,.fa-undo:before{content:\"\\F0E2\"}.fa-legal:before,.fa-gavel:before{content:\"\\F0E3\"}.fa-dashboard:before,.fa-tachometer:before{content:\"\\F0E4\"}.fa-comment-o:before{content:\"\\F0E5\"}.fa-comments-o:before{content:\"\\F0E6\"}.fa-flash:before,.fa-bolt:before{content:\"\\F0E7\"}.fa-sitemap:before{content:\"\\F0E8\"}.fa-umbrella:before{content:\"\\F0E9\"}.fa-paste:before,.fa-clipboard:before{content:\"\\F0EA\"}.fa-lightbulb-o:before{content:\"\\F0EB\"}.fa-exchange:before{content:\"\\F0EC\"}.fa-cloud-download:before{content:\"\\F0ED\"}.fa-cloud-upload:before{content:\"\\F0EE\"}.fa-user-md:before{content:\"\\F0F0\"}.fa-stethoscope:before{content:\"\\F0F1\"}.fa-suitcase:before{content:\"\\F0F2\"}.fa-bell-o:before{content:\"\\F0A2\"}.fa-coffee:before{content:\"\\F0F4\"}.fa-cutlery:before{content:\"\\F0F5\"}.fa-file-text-o:before{content:\"\\F0F6\"}.fa-building-o:before{content:\"\\F0F7\"}.fa-hospital-o:before{content:\"\\F0F8\"}.fa-ambulance:before{content:\"\\F0F9\"}.fa-medkit:before{content:\"\\F0FA\"}.fa-fighter-jet:before{content:\"\\F0FB\"}.fa-beer:before{content:\"\\F0FC\"}.fa-h-square:before{content:\"\\F0FD\"}.fa-plus-square:before{content:\"\\F0FE\"}.fa-angle-double-left:before{content:\"\\F100\"}.fa-angle-double-right:before{content:\"\\F101\"}.fa-angle-double-up:before{content:\"\\F102\"}.fa-angle-double-down:before{content:\"\\F103\"}.fa-angle-left:before{content:\"\\F104\"}.fa-angle-right:before{content:\"\\F105\"}.fa-angle-up:before{content:\"\\F106\"}.fa-angle-down:before{content:\"\\F107\"}.fa-desktop:before{content:\"\\F108\"}.fa-laptop:before{content:\"\\F109\"}.fa-tablet:before{content:\"\\F10A\"}.fa-mobile-phone:before,.fa-mobile:before{content:\"\\F10B\"}.fa-circle-o:before{content:\"\\F10C\"}.fa-quote-left:before{content:\"\\F10D\"}.fa-quote-right:before{content:\"\\F10E\"}.fa-spinner:before{content:\"\\F110\"}.fa-circle:before{content:\"\\F111\"}.fa-mail-reply:before,.fa-reply:before{content:\"\\F112\"}.fa-github-alt:before{content:\"\\F113\"}.fa-folder-o:before{content:\"\\F114\"}.fa-folder-open-o:before{content:\"\\F115\"}.fa-smile-o:before{content:\"\\F118\"}.fa-frown-o:before{content:\"\\F119\"}.fa-meh-o:before{content:\"\\F11A\"}.fa-gamepad:before{content:\"\\F11B\"}.fa-keyboard-o:before{content:\"\\F11C\"}.fa-flag-o:before{content:\"\\F11D\"}.fa-flag-checkered:before{content:\"\\F11E\"}.fa-terminal:before{content:\"\\F120\"}.fa-code:before{content:\"\\F121\"}.fa-mail-reply-all:before,.fa-reply-all:before{content:\"\\F122\"}.fa-star-half-empty:before,.fa-star-half-full:before,.fa-star-half-o:before{content:\"\\F123\"}.fa-location-arrow:before{content:\"\\F124\"}.fa-crop:before{content:\"\\F125\"}.fa-code-fork:before{content:\"\\F126\"}.fa-unlink:before,.fa-chain-broken:before{content:\"\\F127\"}.fa-question:before{content:\"\\F128\"}.fa-info:before{content:\"\\F129\"}.fa-exclamation:before{content:\"\\F12A\"}.fa-superscript:before{content:\"\\F12B\"}.fa-subscript:before{content:\"\\F12C\"}.fa-eraser:before{content:\"\\F12D\"}.fa-puzzle-piece:before{content:\"\\F12E\"}.fa-microphone:before{content:\"\\F130\"}.fa-microphone-slash:before{content:\"\\F131\"}.fa-shield:before{content:\"\\F132\"}.fa-calendar-o:before{content:\"\\F133\"}.fa-fire-extinguisher:before{content:\"\\F134\"}.fa-rocket:before{content:\"\\F135\"}.fa-maxcdn:before{content:\"\\F136\"}.fa-chevron-circle-left:before{content:\"\\F137\"}.fa-chevron-circle-right:before{content:\"\\F138\"}.fa-chevron-circle-up:before{content:\"\\F139\"}.fa-chevron-circle-down:before{content:\"\\F13A\"}.fa-html5:before{content:\"\\F13B\"}.fa-css3:before{content:\"\\F13C\"}.fa-anchor:before{content:\"\\F13D\"}.fa-unlock-alt:before{content:\"\\F13E\"}.fa-bullseye:before{content:\"\\F140\"}.fa-ellipsis-h:before{content:\"\\F141\"}.fa-ellipsis-v:before{content:\"\\F142\"}.fa-rss-square:before{content:\"\\F143\"}.fa-play-circle:before{content:\"\\F144\"}.fa-ticket:before{content:\"\\F145\"}.fa-minus-square:before{content:\"\\F146\"}.fa-minus-square-o:before{content:\"\\F147\"}.fa-level-up:before{content:\"\\F148\"}.fa-level-down:before{content:\"\\F149\"}.fa-check-square:before{content:\"\\F14A\"}.fa-pencil-square:before{content:\"\\F14B\"}.fa-external-link-square:before{content:\"\\F14C\"}.fa-share-square:before{content:\"\\F14D\"}.fa-compass:before{content:\"\\F14E\"}.fa-toggle-down:before,.fa-caret-square-o-down:before{content:\"\\F150\"}.fa-toggle-up:before,.fa-caret-square-o-up:before{content:\"\\F151\"}.fa-toggle-right:before,.fa-caret-square-o-right:before{content:\"\\F152\"}.fa-euro:before,.fa-eur:before{content:\"\\F153\"}.fa-gbp:before{content:\"\\F154\"}.fa-dollar:before,.fa-usd:before{content:\"\\F155\"}.fa-rupee:before,.fa-inr:before{content:\"\\F156\"}.fa-cny:before,.fa-rmb:before,.fa-yen:before,.fa-jpy:before{content:\"\\F157\"}.fa-ruble:before,.fa-rouble:before,.fa-rub:before{content:\"\\F158\"}.fa-won:before,.fa-krw:before{content:\"\\F159\"}.fa-bitcoin:before,.fa-btc:before{content:\"\\F15A\"}.fa-file:before{content:\"\\F15B\"}.fa-file-text:before{content:\"\\F15C\"}.fa-sort-alpha-asc:before{content:\"\\F15D\"}.fa-sort-alpha-desc:before{content:\"\\F15E\"}.fa-sort-amount-asc:before{content:\"\\F160\"}.fa-sort-amount-desc:before{content:\"\\F161\"}.fa-sort-numeric-asc:before{content:\"\\F162\"}.fa-sort-numeric-desc:before{content:\"\\F163\"}.fa-thumbs-up:before{content:\"\\F164\"}.fa-thumbs-down:before{content:\"\\F165\"}.fa-youtube-square:before{content:\"\\F166\"}.fa-youtube:before{content:\"\\F167\"}.fa-xing:before{content:\"\\F168\"}.fa-xing-square:before{content:\"\\F169\"}.fa-youtube-play:before{content:\"\\F16A\"}.fa-dropbox:before{content:\"\\F16B\"}.fa-stack-overflow:before{content:\"\\F16C\"}.fa-instagram:before{content:\"\\F16D\"}.fa-flickr:before{content:\"\\F16E\"}.fa-adn:before{content:\"\\F170\"}.fa-bitbucket:before{content:\"\\F171\"}.fa-bitbucket-square:before{content:\"\\F172\"}.fa-tumblr:before{content:\"\\F173\"}.fa-tumblr-square:before{content:\"\\F174\"}.fa-long-arrow-down:before{content:\"\\F175\"}.fa-long-arrow-up:before{content:\"\\F176\"}.fa-long-arrow-left:before{content:\"\\F177\"}.fa-long-arrow-right:before{content:\"\\F178\"}.fa-apple:before{content:\"\\F179\"}.fa-windows:before{content:\"\\F17A\"}.fa-android:before{content:\"\\F17B\"}.fa-linux:before{content:\"\\F17C\"}.fa-dribbble:before{content:\"\\F17D\"}.fa-skype:before{content:\"\\F17E\"}.fa-foursquare:before{content:\"\\F180\"}.fa-trello:before{content:\"\\F181\"}.fa-female:before{content:\"\\F182\"}.fa-male:before{content:\"\\F183\"}.fa-gittip:before,.fa-gratipay:before{content:\"\\F184\"}.fa-sun-o:before{content:\"\\F185\"}.fa-moon-o:before{content:\"\\F186\"}.fa-archive:before{content:\"\\F187\"}.fa-bug:before{content:\"\\F188\"}.fa-vk:before{content:\"\\F189\"}.fa-weibo:before{content:\"\\F18A\"}.fa-renren:before{content:\"\\F18B\"}.fa-pagelines:before{content:\"\\F18C\"}.fa-stack-exchange:before{content:\"\\F18D\"}.fa-arrow-circle-o-right:before{content:\"\\F18E\"}.fa-arrow-circle-o-left:before{content:\"\\F190\"}.fa-toggle-left:before,.fa-caret-square-o-left:before{content:\"\\F191\"}.fa-dot-circle-o:before{content:\"\\F192\"}.fa-wheelchair:before{content:\"\\F193\"}.fa-vimeo-square:before{content:\"\\F194\"}.fa-turkish-lira:before,.fa-try:before{content:\"\\F195\"}.fa-plus-square-o:before{content:\"\\F196\"}.fa-space-shuttle:before{content:\"\\F197\"}.fa-slack:before{content:\"\\F198\"}.fa-envelope-square:before{content:\"\\F199\"}.fa-wordpress:before{content:\"\\F19A\"}.fa-openid:before{content:\"\\F19B\"}.fa-institution:before,.fa-bank:before,.fa-university:before{content:\"\\F19C\"}.fa-mortar-board:before,.fa-graduation-cap:before{content:\"\\F19D\"}.fa-yahoo:before{content:\"\\F19E\"}.fa-google:before{content:\"\\F1A0\"}.fa-reddit:before{content:\"\\F1A1\"}.fa-reddit-square:before{content:\"\\F1A2\"}.fa-stumbleupon-circle:before{content:\"\\F1A3\"}.fa-stumbleupon:before{content:\"\\F1A4\"}.fa-delicious:before{content:\"\\F1A5\"}.fa-digg:before{content:\"\\F1A6\"}.fa-pied-piper-pp:before{content:\"\\F1A7\"}.fa-pied-piper-alt:before{content:\"\\F1A8\"}.fa-drupal:before{content:\"\\F1A9\"}.fa-joomla:before{content:\"\\F1AA\"}.fa-language:before{content:\"\\F1AB\"}.fa-fax:before{content:\"\\F1AC\"}.fa-building:before{content:\"\\F1AD\"}.fa-child:before{content:\"\\F1AE\"}.fa-paw:before{content:\"\\F1B0\"}.fa-spoon:before{content:\"\\F1B1\"}.fa-cube:before{content:\"\\F1B2\"}.fa-cubes:before{content:\"\\F1B3\"}.fa-behance:before{content:\"\\F1B4\"}.fa-behance-square:before{content:\"\\F1B5\"}.fa-steam:before{content:\"\\F1B6\"}.fa-steam-square:before{content:\"\\F1B7\"}.fa-recycle:before{content:\"\\F1B8\"}.fa-automobile:before,.fa-car:before{content:\"\\F1B9\"}.fa-cab:before,.fa-taxi:before{content:\"\\F1BA\"}.fa-tree:before{content:\"\\F1BB\"}.fa-spotify:before{content:\"\\F1BC\"}.fa-deviantart:before{content:\"\\F1BD\"}.fa-soundcloud:before{content:\"\\F1BE\"}.fa-database:before{content:\"\\F1C0\"}.fa-file-pdf-o:before{content:\"\\F1C1\"}.fa-file-word-o:before{content:\"\\F1C2\"}.fa-file-excel-o:before{content:\"\\F1C3\"}.fa-file-powerpoint-o:before{content:\"\\F1C4\"}.fa-file-photo-o:before,.fa-file-picture-o:before,.fa-file-image-o:before{content:\"\\F1C5\"}.fa-file-zip-o:before,.fa-file-archive-o:before{content:\"\\F1C6\"}.fa-file-sound-o:before,.fa-file-audio-o:before{content:\"\\F1C7\"}.fa-file-movie-o:before,.fa-file-video-o:before{content:\"\\F1C8\"}.fa-file-code-o:before{content:\"\\F1C9\"}.fa-vine:before{content:\"\\F1CA\"}.fa-codepen:before{content:\"\\F1CB\"}.fa-jsfiddle:before{content:\"\\F1CC\"}.fa-life-bouy:before,.fa-life-buoy:before,.fa-life-saver:before,.fa-support:before,.fa-life-ring:before{content:\"\\F1CD\"}.fa-circle-o-notch:before{content:\"\\F1CE\"}.fa-ra:before,.fa-resistance:before,.fa-rebel:before{content:\"\\F1D0\"}.fa-ge:before,.fa-empire:before{content:\"\\F1D1\"}.fa-git-square:before{content:\"\\F1D2\"}.fa-git:before{content:\"\\F1D3\"}.fa-y-combinator-square:before,.fa-yc-square:before,.fa-hacker-news:before{content:\"\\F1D4\"}.fa-tencent-weibo:before{content:\"\\F1D5\"}.fa-qq:before{content:\"\\F1D6\"}.fa-wechat:before,.fa-weixin:before{content:\"\\F1D7\"}.fa-send:before,.fa-paper-plane:before{content:\"\\F1D8\"}.fa-send-o:before,.fa-paper-plane-o:before{content:\"\\F1D9\"}.fa-history:before{content:\"\\F1DA\"}.fa-circle-thin:before{content:\"\\F1DB\"}.fa-header:before{content:\"\\F1DC\"}.fa-paragraph:before{content:\"\\F1DD\"}.fa-sliders:before{content:\"\\F1DE\"}.fa-share-alt:before{content:\"\\F1E0\"}.fa-share-alt-square:before{content:\"\\F1E1\"}.fa-bomb:before{content:\"\\F1E2\"}.fa-soccer-ball-o:before,.fa-futbol-o:before{content:\"\\F1E3\"}.fa-tty:before{content:\"\\F1E4\"}.fa-binoculars:before{content:\"\\F1E5\"}.fa-plug:before{content:\"\\F1E6\"}.fa-slideshare:before{content:\"\\F1E7\"}.fa-twitch:before{content:\"\\F1E8\"}.fa-yelp:before{content:\"\\F1E9\"}.fa-newspaper-o:before{content:\"\\F1EA\"}.fa-wifi:before{content:\"\\F1EB\"}.fa-calculator:before{content:\"\\F1EC\"}.fa-paypal:before{content:\"\\F1ED\"}.fa-google-wallet:before{content:\"\\F1EE\"}.fa-cc-visa:before{content:\"\\F1F0\"}.fa-cc-mastercard:before{content:\"\\F1F1\"}.fa-cc-discover:before{content:\"\\F1F2\"}.fa-cc-amex:before{content:\"\\F1F3\"}.fa-cc-paypal:before{content:\"\\F1F4\"}.fa-cc-stripe:before{content:\"\\F1F5\"}.fa-bell-slash:before{content:\"\\F1F6\"}.fa-bell-slash-o:before{content:\"\\F1F7\"}.fa-trash:before{content:\"\\F1F8\"}.fa-copyright:before{content:\"\\F1F9\"}.fa-at:before{content:\"\\F1FA\"}.fa-eyedropper:before{content:\"\\F1FB\"}.fa-paint-brush:before{content:\"\\F1FC\"}.fa-birthday-cake:before{content:\"\\F1FD\"}.fa-area-chart:before{content:\"\\F1FE\"}.fa-pie-chart:before{content:\"\\F200\"}.fa-line-chart:before{content:\"\\F201\"}.fa-lastfm:before{content:\"\\F202\"}.fa-lastfm-square:before{content:\"\\F203\"}.fa-toggle-off:before{content:\"\\F204\"}.fa-toggle-on:before{content:\"\\F205\"}.fa-bicycle:before{content:\"\\F206\"}.fa-bus:before{content:\"\\F207\"}.fa-ioxhost:before{content:\"\\F208\"}.fa-angellist:before{content:\"\\F209\"}.fa-cc:before{content:\"\\F20A\"}.fa-shekel:before,.fa-sheqel:before,.fa-ils:before{content:\"\\F20B\"}.fa-meanpath:before{content:\"\\F20C\"}.fa-buysellads:before{content:\"\\F20D\"}.fa-connectdevelop:before{content:\"\\F20E\"}.fa-dashcube:before{content:\"\\F210\"}.fa-forumbee:before{content:\"\\F211\"}.fa-leanpub:before{content:\"\\F212\"}.fa-sellsy:before{content:\"\\F213\"}.fa-shirtsinbulk:before{content:\"\\F214\"}.fa-simplybuilt:before{content:\"\\F215\"}.fa-skyatlas:before{content:\"\\F216\"}.fa-cart-plus:before{content:\"\\F217\"}.fa-cart-arrow-down:before{content:\"\\F218\"}.fa-diamond:before{content:\"\\F219\"}.fa-ship:before{content:\"\\F21A\"}.fa-user-secret:before{content:\"\\F21B\"}.fa-motorcycle:before{content:\"\\F21C\"}.fa-street-view:before{content:\"\\F21D\"}.fa-heartbeat:before{content:\"\\F21E\"}.fa-venus:before{content:\"\\F221\"}.fa-mars:before{content:\"\\F222\"}.fa-mercury:before{content:\"\\F223\"}.fa-intersex:before,.fa-transgender:before{content:\"\\F224\"}.fa-transgender-alt:before{content:\"\\F225\"}.fa-venus-double:before{content:\"\\F226\"}.fa-mars-double:before{content:\"\\F227\"}.fa-venus-mars:before{content:\"\\F228\"}.fa-mars-stroke:before{content:\"\\F229\"}.fa-mars-stroke-v:before{content:\"\\F22A\"}.fa-mars-stroke-h:before{content:\"\\F22B\"}.fa-neuter:before{content:\"\\F22C\"}.fa-genderless:before{content:\"\\F22D\"}.fa-facebook-official:before{content:\"\\F230\"}.fa-pinterest-p:before{content:\"\\F231\"}.fa-whatsapp:before{content:\"\\F232\"}.fa-server:before{content:\"\\F233\"}.fa-user-plus:before{content:\"\\F234\"}.fa-user-times:before{content:\"\\F235\"}.fa-hotel:before,.fa-bed:before{content:\"\\F236\"}.fa-viacoin:before{content:\"\\F237\"}.fa-train:before{content:\"\\F238\"}.fa-subway:before{content:\"\\F239\"}.fa-medium:before{content:\"\\F23A\"}.fa-yc:before,.fa-y-combinator:before{content:\"\\F23B\"}.fa-optin-monster:before{content:\"\\F23C\"}.fa-opencart:before{content:\"\\F23D\"}.fa-expeditedssl:before{content:\"\\F23E\"}.fa-battery-4:before,.fa-battery:before,.fa-battery-full:before{content:\"\\F240\"}.fa-battery-3:before,.fa-battery-three-quarters:before{content:\"\\F241\"}.fa-battery-2:before,.fa-battery-half:before{content:\"\\F242\"}.fa-battery-1:before,.fa-battery-quarter:before{content:\"\\F243\"}.fa-battery-0:before,.fa-battery-empty:before{content:\"\\F244\"}.fa-mouse-pointer:before{content:\"\\F245\"}.fa-i-cursor:before{content:\"\\F246\"}.fa-object-group:before{content:\"\\F247\"}.fa-object-ungroup:before{content:\"\\F248\"}.fa-sticky-note:before{content:\"\\F249\"}.fa-sticky-note-o:before{content:\"\\F24A\"}.fa-cc-jcb:before{content:\"\\F24B\"}.fa-cc-diners-club:before{content:\"\\F24C\"}.fa-clone:before{content:\"\\F24D\"}.fa-balance-scale:before{content:\"\\F24E\"}.fa-hourglass-o:before{content:\"\\F250\"}.fa-hourglass-1:before,.fa-hourglass-start:before{content:\"\\F251\"}.fa-hourglass-2:before,.fa-hourglass-half:before{content:\"\\F252\"}.fa-hourglass-3:before,.fa-hourglass-end:before{content:\"\\F253\"}.fa-hourglass:before{content:\"\\F254\"}.fa-hand-grab-o:before,.fa-hand-rock-o:before{content:\"\\F255\"}.fa-hand-stop-o:before,.fa-hand-paper-o:before{content:\"\\F256\"}.fa-hand-scissors-o:before{content:\"\\F257\"}.fa-hand-lizard-o:before{content:\"\\F258\"}.fa-hand-spock-o:before{content:\"\\F259\"}.fa-hand-pointer-o:before{content:\"\\F25A\"}.fa-hand-peace-o:before{content:\"\\F25B\"}.fa-trademark:before{content:\"\\F25C\"}.fa-registered:before{content:\"\\F25D\"}.fa-creative-commons:before{content:\"\\F25E\"}.fa-gg:before{content:\"\\F260\"}.fa-gg-circle:before{content:\"\\F261\"}.fa-tripadvisor:before{content:\"\\F262\"}.fa-odnoklassniki:before{content:\"\\F263\"}.fa-odnoklassniki-square:before{content:\"\\F264\"}.fa-get-pocket:before{content:\"\\F265\"}.fa-wikipedia-w:before{content:\"\\F266\"}.fa-safari:before{content:\"\\F267\"}.fa-chrome:before{content:\"\\F268\"}.fa-firefox:before{content:\"\\F269\"}.fa-opera:before{content:\"\\F26A\"}.fa-internet-explorer:before{content:\"\\F26B\"}.fa-tv:before,.fa-television:before{content:\"\\F26C\"}.fa-contao:before{content:\"\\F26D\"}.fa-500px:before{content:\"\\F26E\"}.fa-amazon:before{content:\"\\F270\"}.fa-calendar-plus-o:before{content:\"\\F271\"}.fa-calendar-minus-o:before{content:\"\\F272\"}.fa-calendar-times-o:before{content:\"\\F273\"}.fa-calendar-check-o:before{content:\"\\F274\"}.fa-industry:before{content:\"\\F275\"}.fa-map-pin:before{content:\"\\F276\"}.fa-map-signs:before{content:\"\\F277\"}.fa-map-o:before{content:\"\\F278\"}.fa-map:before{content:\"\\F279\"}.fa-commenting:before{content:\"\\F27A\"}.fa-commenting-o:before{content:\"\\F27B\"}.fa-houzz:before{content:\"\\F27C\"}.fa-vimeo:before{content:\"\\F27D\"}.fa-black-tie:before{content:\"\\F27E\"}.fa-fonticons:before{content:\"\\F280\"}.fa-reddit-alien:before{content:\"\\F281\"}.fa-edge:before{content:\"\\F282\"}.fa-credit-card-alt:before{content:\"\\F283\"}.fa-codiepie:before{content:\"\\F284\"}.fa-modx:before{content:\"\\F285\"}.fa-fort-awesome:before{content:\"\\F286\"}.fa-usb:before{content:\"\\F287\"}.fa-product-hunt:before{content:\"\\F288\"}.fa-mixcloud:before{content:\"\\F289\"}.fa-scribd:before{content:\"\\F28A\"}.fa-pause-circle:before{content:\"\\F28B\"}.fa-pause-circle-o:before{content:\"\\F28C\"}.fa-stop-circle:before{content:\"\\F28D\"}.fa-stop-circle-o:before{content:\"\\F28E\"}.fa-shopping-bag:before{content:\"\\F290\"}.fa-shopping-basket:before{content:\"\\F291\"}.fa-hashtag:before{content:\"\\F292\"}.fa-bluetooth:before{content:\"\\F293\"}.fa-bluetooth-b:before{content:\"\\F294\"}.fa-percent:before{content:\"\\F295\"}.fa-gitlab:before{content:\"\\F296\"}.fa-wpbeginner:before{content:\"\\F297\"}.fa-wpforms:before{content:\"\\F298\"}.fa-envira:before{content:\"\\F299\"}.fa-universal-access:before{content:\"\\F29A\"}.fa-wheelchair-alt:before{content:\"\\F29B\"}.fa-question-circle-o:before{content:\"\\F29C\"}.fa-blind:before{content:\"\\F29D\"}.fa-audio-description:before{content:\"\\F29E\"}.fa-volume-control-phone:before{content:\"\\F2A0\"}.fa-braille:before{content:\"\\F2A1\"}.fa-assistive-listening-systems:before{content:\"\\F2A2\"}.fa-asl-interpreting:before,.fa-american-sign-language-interpreting:before{content:\"\\F2A3\"}.fa-deafness:before,.fa-hard-of-hearing:before,.fa-deaf:before{content:\"\\F2A4\"}.fa-glide:before{content:\"\\F2A5\"}.fa-glide-g:before{content:\"\\F2A6\"}.fa-signing:before,.fa-sign-language:before{content:\"\\F2A7\"}.fa-low-vision:before{content:\"\\F2A8\"}.fa-viadeo:before{content:\"\\F2A9\"}.fa-viadeo-square:before{content:\"\\F2AA\"}.fa-snapchat:before{content:\"\\F2AB\"}.fa-snapchat-ghost:before{content:\"\\F2AC\"}.fa-snapchat-square:before{content:\"\\F2AD\"}.fa-pied-piper:before{content:\"\\F2AE\"}.fa-first-order:before{content:\"\\F2B0\"}.fa-yoast:before{content:\"\\F2B1\"}.fa-themeisle:before{content:\"\\F2B2\"}.fa-google-plus-circle:before,.fa-google-plus-official:before{content:\"\\F2B3\"}.fa-fa:before,.fa-font-awesome:before{content:\"\\F2B4\"}.fa-handshake-o:before{content:\"\\F2B5\"}.fa-envelope-open:before{content:\"\\F2B6\"}.fa-envelope-open-o:before{content:\"\\F2B7\"}.fa-linode:before{content:\"\\F2B8\"}.fa-address-book:before{content:\"\\F2B9\"}.fa-address-book-o:before{content:\"\\F2BA\"}.fa-vcard:before,.fa-address-card:before{content:\"\\F2BB\"}.fa-vcard-o:before,.fa-address-card-o:before{content:\"\\F2BC\"}.fa-user-circle:before{content:\"\\F2BD\"}.fa-user-circle-o:before{content:\"\\F2BE\"}.fa-user-o:before{content:\"\\F2C0\"}.fa-id-badge:before{content:\"\\F2C1\"}.fa-drivers-license:before,.fa-id-card:before{content:\"\\F2C2\"}.fa-drivers-license-o:before,.fa-id-card-o:before{content:\"\\F2C3\"}.fa-quora:before{content:\"\\F2C4\"}.fa-free-code-camp:before{content:\"\\F2C5\"}.fa-telegram:before{content:\"\\F2C6\"}.fa-thermometer-4:before,.fa-thermometer:before,.fa-thermometer-full:before{content:\"\\F2C7\"}.fa-thermometer-3:before,.fa-thermometer-three-quarters:before{content:\"\\F2C8\"}.fa-thermometer-2:before,.fa-thermometer-half:before{content:\"\\F2C9\"}.fa-thermometer-1:before,.fa-thermometer-quarter:before{content:\"\\F2CA\"}.fa-thermometer-0:before,.fa-thermometer-empty:before{content:\"\\F2CB\"}.fa-shower:before{content:\"\\F2CC\"}.fa-bathtub:before,.fa-s15:before,.fa-bath:before{content:\"\\F2CD\"}.fa-podcast:before{content:\"\\F2CE\"}.fa-window-maximize:before{content:\"\\F2D0\"}.fa-window-minimize:before{content:\"\\F2D1\"}.fa-window-restore:before{content:\"\\F2D2\"}.fa-times-rectangle:before,.fa-window-close:before{content:\"\\F2D3\"}.fa-times-rectangle-o:before,.fa-window-close-o:before{content:\"\\F2D4\"}.fa-bandcamp:before{content:\"\\F2D5\"}.fa-grav:before{content:\"\\F2D6\"}.fa-etsy:before{content:\"\\F2D7\"}.fa-imdb:before{content:\"\\F2D8\"}.fa-ravelry:before{content:\"\\F2D9\"}.fa-eercast:before{content:\"\\F2DA\"}.fa-microchip:before{content:\"\\F2DB\"}.fa-snowflake-o:before{content:\"\\F2DC\"}.fa-superpowers:before{content:\"\\F2DD\"}.fa-wpexplorer:before{content:\"\\F2DE\"}.fa-meetup:before{content:\"\\F2E0\"}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}\n", ""]);
 
 // exports
 
@@ -1075,261 +1218,261 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 388:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fontawesome-webfont.674f50d287a8c48dc19b.eot";
-
-/***/ }),
-
-/***/ 389:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fontawesome-webfont.674f50d287a8c48dc19b.eot";
-
-/***/ }),
-
 /***/ 390:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "fontawesome-webfont.912ec66d7572ff821749.svg";
+module.exports = __webpack_require__.p + "fontawesome-webfont.674f50d287a8c48dc19b.eot";
 
 /***/ }),
 
 /***/ 391:
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "fontawesome-webfont.674f50d287a8c48dc19b.eot";
+
+/***/ }),
+
+/***/ 392:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fontawesome-webfont.912ec66d7572ff821749.svg";
+
+/***/ }),
+
+/***/ 393:
+/***/ (function(module, exports, __webpack_require__) {
+
 var map = {
-	"./af": 120,
-	"./af.js": 120,
-	"./ar": 127,
-	"./ar-dz": 121,
-	"./ar-dz.js": 121,
-	"./ar-kw": 122,
-	"./ar-kw.js": 122,
-	"./ar-ly": 123,
-	"./ar-ly.js": 123,
-	"./ar-ma": 124,
-	"./ar-ma.js": 124,
-	"./ar-sa": 125,
-	"./ar-sa.js": 125,
-	"./ar-tn": 126,
-	"./ar-tn.js": 126,
-	"./ar.js": 127,
-	"./az": 128,
-	"./az.js": 128,
-	"./be": 129,
-	"./be.js": 129,
-	"./bg": 130,
-	"./bg.js": 130,
-	"./bn": 131,
-	"./bn.js": 131,
-	"./bo": 132,
-	"./bo.js": 132,
-	"./br": 133,
-	"./br.js": 133,
-	"./bs": 134,
-	"./bs.js": 134,
-	"./ca": 135,
-	"./ca.js": 135,
-	"./cs": 136,
-	"./cs.js": 136,
-	"./cv": 137,
-	"./cv.js": 137,
-	"./cy": 138,
-	"./cy.js": 138,
-	"./da": 139,
-	"./da.js": 139,
-	"./de": 142,
-	"./de-at": 140,
-	"./de-at.js": 140,
-	"./de-ch": 141,
-	"./de-ch.js": 141,
-	"./de.js": 142,
-	"./dv": 143,
-	"./dv.js": 143,
-	"./el": 144,
-	"./el.js": 144,
-	"./en-au": 145,
-	"./en-au.js": 145,
-	"./en-ca": 146,
-	"./en-ca.js": 146,
-	"./en-gb": 147,
-	"./en-gb.js": 147,
-	"./en-ie": 148,
-	"./en-ie.js": 148,
-	"./en-nz": 149,
-	"./en-nz.js": 149,
-	"./eo": 150,
-	"./eo.js": 150,
-	"./es": 152,
-	"./es-do": 151,
-	"./es-do.js": 151,
-	"./es.js": 152,
-	"./et": 153,
-	"./et.js": 153,
-	"./eu": 154,
-	"./eu.js": 154,
-	"./fa": 155,
-	"./fa.js": 155,
-	"./fi": 156,
-	"./fi.js": 156,
-	"./fo": 157,
-	"./fo.js": 157,
-	"./fr": 160,
-	"./fr-ca": 158,
-	"./fr-ca.js": 158,
-	"./fr-ch": 159,
-	"./fr-ch.js": 159,
-	"./fr.js": 160,
-	"./fy": 161,
-	"./fy.js": 161,
-	"./gd": 162,
-	"./gd.js": 162,
-	"./gl": 163,
-	"./gl.js": 163,
-	"./gom-latn": 164,
-	"./gom-latn.js": 164,
-	"./he": 165,
-	"./he.js": 165,
-	"./hi": 166,
-	"./hi.js": 166,
-	"./hr": 167,
-	"./hr.js": 167,
-	"./hu": 168,
-	"./hu.js": 168,
-	"./hy-am": 169,
-	"./hy-am.js": 169,
-	"./id": 170,
-	"./id.js": 170,
-	"./is": 171,
-	"./is.js": 171,
-	"./it": 172,
-	"./it.js": 172,
-	"./ja": 173,
-	"./ja.js": 173,
-	"./jv": 174,
-	"./jv.js": 174,
-	"./ka": 175,
-	"./ka.js": 175,
-	"./kk": 176,
-	"./kk.js": 176,
-	"./km": 177,
-	"./km.js": 177,
-	"./kn": 178,
-	"./kn.js": 178,
-	"./ko": 179,
-	"./ko.js": 179,
-	"./ky": 180,
-	"./ky.js": 180,
-	"./lb": 181,
-	"./lb.js": 181,
-	"./lo": 182,
-	"./lo.js": 182,
-	"./lt": 183,
-	"./lt.js": 183,
-	"./lv": 184,
-	"./lv.js": 184,
-	"./me": 185,
-	"./me.js": 185,
-	"./mi": 186,
-	"./mi.js": 186,
-	"./mk": 187,
-	"./mk.js": 187,
-	"./ml": 188,
-	"./ml.js": 188,
-	"./mr": 189,
-	"./mr.js": 189,
-	"./ms": 191,
-	"./ms-my": 190,
-	"./ms-my.js": 190,
-	"./ms.js": 191,
-	"./my": 192,
-	"./my.js": 192,
-	"./nb": 193,
-	"./nb.js": 193,
-	"./ne": 194,
-	"./ne.js": 194,
-	"./nl": 196,
-	"./nl-be": 195,
-	"./nl-be.js": 195,
-	"./nl.js": 196,
-	"./nn": 197,
-	"./nn.js": 197,
-	"./pa-in": 198,
-	"./pa-in.js": 198,
-	"./pl": 199,
-	"./pl.js": 199,
-	"./pt": 201,
-	"./pt-br": 200,
-	"./pt-br.js": 200,
-	"./pt.js": 201,
-	"./ro": 202,
-	"./ro.js": 202,
-	"./ru": 203,
-	"./ru.js": 203,
-	"./sd": 204,
-	"./sd.js": 204,
-	"./se": 205,
-	"./se.js": 205,
-	"./si": 206,
-	"./si.js": 206,
-	"./sk": 207,
-	"./sk.js": 207,
-	"./sl": 208,
-	"./sl.js": 208,
-	"./sq": 209,
-	"./sq.js": 209,
-	"./sr": 211,
-	"./sr-cyrl": 210,
-	"./sr-cyrl.js": 210,
-	"./sr.js": 211,
-	"./ss": 212,
-	"./ss.js": 212,
-	"./sv": 213,
-	"./sv.js": 213,
-	"./sw": 214,
-	"./sw.js": 214,
-	"./ta": 215,
-	"./ta.js": 215,
-	"./te": 216,
-	"./te.js": 216,
-	"./tet": 217,
-	"./tet.js": 217,
-	"./th": 218,
-	"./th.js": 218,
-	"./tl-ph": 219,
-	"./tl-ph.js": 219,
-	"./tlh": 220,
-	"./tlh.js": 220,
-	"./tr": 221,
-	"./tr.js": 221,
-	"./tzl": 222,
-	"./tzl.js": 222,
-	"./tzm": 224,
-	"./tzm-latn": 223,
-	"./tzm-latn.js": 223,
-	"./tzm.js": 224,
-	"./uk": 225,
-	"./uk.js": 225,
-	"./ur": 226,
-	"./ur.js": 226,
-	"./uz": 228,
-	"./uz-latn": 227,
-	"./uz-latn.js": 227,
-	"./uz.js": 228,
-	"./vi": 229,
-	"./vi.js": 229,
-	"./x-pseudo": 230,
-	"./x-pseudo.js": 230,
-	"./yo": 231,
-	"./yo.js": 231,
-	"./zh-cn": 232,
-	"./zh-cn.js": 232,
-	"./zh-hk": 233,
-	"./zh-hk.js": 233,
-	"./zh-tw": 234,
-	"./zh-tw.js": 234
+	"./af": 121,
+	"./af.js": 121,
+	"./ar": 128,
+	"./ar-dz": 122,
+	"./ar-dz.js": 122,
+	"./ar-kw": 123,
+	"./ar-kw.js": 123,
+	"./ar-ly": 124,
+	"./ar-ly.js": 124,
+	"./ar-ma": 125,
+	"./ar-ma.js": 125,
+	"./ar-sa": 126,
+	"./ar-sa.js": 126,
+	"./ar-tn": 127,
+	"./ar-tn.js": 127,
+	"./ar.js": 128,
+	"./az": 129,
+	"./az.js": 129,
+	"./be": 130,
+	"./be.js": 130,
+	"./bg": 131,
+	"./bg.js": 131,
+	"./bn": 132,
+	"./bn.js": 132,
+	"./bo": 133,
+	"./bo.js": 133,
+	"./br": 134,
+	"./br.js": 134,
+	"./bs": 135,
+	"./bs.js": 135,
+	"./ca": 136,
+	"./ca.js": 136,
+	"./cs": 137,
+	"./cs.js": 137,
+	"./cv": 138,
+	"./cv.js": 138,
+	"./cy": 139,
+	"./cy.js": 139,
+	"./da": 140,
+	"./da.js": 140,
+	"./de": 143,
+	"./de-at": 141,
+	"./de-at.js": 141,
+	"./de-ch": 142,
+	"./de-ch.js": 142,
+	"./de.js": 143,
+	"./dv": 144,
+	"./dv.js": 144,
+	"./el": 145,
+	"./el.js": 145,
+	"./en-au": 146,
+	"./en-au.js": 146,
+	"./en-ca": 147,
+	"./en-ca.js": 147,
+	"./en-gb": 148,
+	"./en-gb.js": 148,
+	"./en-ie": 149,
+	"./en-ie.js": 149,
+	"./en-nz": 150,
+	"./en-nz.js": 150,
+	"./eo": 151,
+	"./eo.js": 151,
+	"./es": 153,
+	"./es-do": 152,
+	"./es-do.js": 152,
+	"./es.js": 153,
+	"./et": 154,
+	"./et.js": 154,
+	"./eu": 155,
+	"./eu.js": 155,
+	"./fa": 156,
+	"./fa.js": 156,
+	"./fi": 157,
+	"./fi.js": 157,
+	"./fo": 158,
+	"./fo.js": 158,
+	"./fr": 161,
+	"./fr-ca": 159,
+	"./fr-ca.js": 159,
+	"./fr-ch": 160,
+	"./fr-ch.js": 160,
+	"./fr.js": 161,
+	"./fy": 162,
+	"./fy.js": 162,
+	"./gd": 163,
+	"./gd.js": 163,
+	"./gl": 164,
+	"./gl.js": 164,
+	"./gom-latn": 165,
+	"./gom-latn.js": 165,
+	"./he": 166,
+	"./he.js": 166,
+	"./hi": 167,
+	"./hi.js": 167,
+	"./hr": 168,
+	"./hr.js": 168,
+	"./hu": 169,
+	"./hu.js": 169,
+	"./hy-am": 170,
+	"./hy-am.js": 170,
+	"./id": 171,
+	"./id.js": 171,
+	"./is": 172,
+	"./is.js": 172,
+	"./it": 173,
+	"./it.js": 173,
+	"./ja": 174,
+	"./ja.js": 174,
+	"./jv": 175,
+	"./jv.js": 175,
+	"./ka": 176,
+	"./ka.js": 176,
+	"./kk": 177,
+	"./kk.js": 177,
+	"./km": 178,
+	"./km.js": 178,
+	"./kn": 179,
+	"./kn.js": 179,
+	"./ko": 180,
+	"./ko.js": 180,
+	"./ky": 181,
+	"./ky.js": 181,
+	"./lb": 182,
+	"./lb.js": 182,
+	"./lo": 183,
+	"./lo.js": 183,
+	"./lt": 184,
+	"./lt.js": 184,
+	"./lv": 185,
+	"./lv.js": 185,
+	"./me": 186,
+	"./me.js": 186,
+	"./mi": 187,
+	"./mi.js": 187,
+	"./mk": 188,
+	"./mk.js": 188,
+	"./ml": 189,
+	"./ml.js": 189,
+	"./mr": 190,
+	"./mr.js": 190,
+	"./ms": 192,
+	"./ms-my": 191,
+	"./ms-my.js": 191,
+	"./ms.js": 192,
+	"./my": 193,
+	"./my.js": 193,
+	"./nb": 194,
+	"./nb.js": 194,
+	"./ne": 195,
+	"./ne.js": 195,
+	"./nl": 197,
+	"./nl-be": 196,
+	"./nl-be.js": 196,
+	"./nl.js": 197,
+	"./nn": 198,
+	"./nn.js": 198,
+	"./pa-in": 199,
+	"./pa-in.js": 199,
+	"./pl": 200,
+	"./pl.js": 200,
+	"./pt": 202,
+	"./pt-br": 201,
+	"./pt-br.js": 201,
+	"./pt.js": 202,
+	"./ro": 203,
+	"./ro.js": 203,
+	"./ru": 204,
+	"./ru.js": 204,
+	"./sd": 205,
+	"./sd.js": 205,
+	"./se": 206,
+	"./se.js": 206,
+	"./si": 207,
+	"./si.js": 207,
+	"./sk": 208,
+	"./sk.js": 208,
+	"./sl": 209,
+	"./sl.js": 209,
+	"./sq": 210,
+	"./sq.js": 210,
+	"./sr": 212,
+	"./sr-cyrl": 211,
+	"./sr-cyrl.js": 211,
+	"./sr.js": 212,
+	"./ss": 213,
+	"./ss.js": 213,
+	"./sv": 214,
+	"./sv.js": 214,
+	"./sw": 215,
+	"./sw.js": 215,
+	"./ta": 216,
+	"./ta.js": 216,
+	"./te": 217,
+	"./te.js": 217,
+	"./tet": 218,
+	"./tet.js": 218,
+	"./th": 219,
+	"./th.js": 219,
+	"./tl-ph": 220,
+	"./tl-ph.js": 220,
+	"./tlh": 221,
+	"./tlh.js": 221,
+	"./tr": 222,
+	"./tr.js": 222,
+	"./tzl": 223,
+	"./tzl.js": 223,
+	"./tzm": 225,
+	"./tzm-latn": 224,
+	"./tzm-latn.js": 224,
+	"./tzm.js": 225,
+	"./uk": 226,
+	"./uk.js": 226,
+	"./ur": 227,
+	"./ur.js": 227,
+	"./uz": 229,
+	"./uz-latn": 228,
+	"./uz-latn.js": 228,
+	"./uz.js": 229,
+	"./vi": 230,
+	"./vi.js": 230,
+	"./x-pseudo": 231,
+	"./x-pseudo.js": 231,
+	"./yo": 232,
+	"./yo.js": 232,
+	"./zh-cn": 233,
+	"./zh-cn.js": 233,
+	"./zh-hk": 234,
+	"./zh-hk.js": 234,
+	"./zh-tw": 235,
+	"./zh-tw.js": 235
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -1345,95 +1488,95 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 391;
+webpackContext.id = 393;
 
-
-/***/ }),
-
-/***/ 415:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container\">\n\n  <form action=\"\" id=\"cart\" name=\"cart\">\n    <div class=\"row car_product\">\n      <div class=\"col-xs-2\">\n        <div style=\"height: 18px\"></div>\n        <div class=\"checkboxFour\">\n          <input type=\"checkbox\"  value=\"1\" class=\"checkboxInput\" name=\"\" />\n        </div>\n      </div>\n      <div class=\"col-xs-10\" style=\"padding: 0px 13px 0px 0px\">\n        <div class=\"row\">\n          <div class=\"col-xs-3\" style=\"padding: 0 0 0 8px\">\n            <div style=\"height: 6px\"></div>\n            <div style=\"background-image: url(/assets/IMG_5097.JPG);background-size: cover;background-position: center;height: 60px\">\n              <img src=\"assets/admin/img/tm.png\">\n            </div>\n          </div>\n          <div class=\"col-xs-9\">\n            <div style=\"height: 40px;overflow: hidden\">\n              <p style=\"font-size: 12px\">外套男士-2017新款春季韩版潮流青年修身牛仔裤夹克衣服卫衣</p>\n            </div>\n            <div style=\"height: 3px\"></div>\n            <div class=\"row\">\n              <div class=\"col-xs-6\">\n                <span style=\"color: #e35b5a;font-size: 10px\">￥</span><span style=\"color: #e35b5a\">99</span>\n              </div>\n              <div class=\"col-xs-6\" style=\"text-align: right\">\n                <button class=\"btn btn-danger\" style=\"height: 20px;font-size: 10px;line-height: 8px\">删除</button>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row car_product\">\n      <div class=\"col-xs-2\">\n        <div style=\"height: 18px\"></div>\n        <div class=\"checkboxFour\">\n          <input type=\"checkbox\"  value=\"1\" class=\"checkboxInput\" name=\"\" />\n        </div>\n      </div>\n      <div class=\"col-xs-10\" style=\"padding: 0px 13px 0px 0px\">\n        <div class=\"row\">\n          <div class=\"col-xs-3\" style=\"padding: 0 0 0 8px\">\n            <div style=\"height: 6px\"></div>\n            <div style=\"background-image: url(/assets/IMG_5097.JPG);background-size: cover;background-position: center;height: 60px\">\n              <img src=\"assets/admin/img/tm.png\">\n            </div>\n          </div>\n          <div class=\"col-xs-9\">\n            <div style=\"height: 40px;overflow: hidden\">\n              <p style=\"font-size: 12px\">外套男士-2017新款春季韩版潮流青年修身牛仔裤夹克衣服卫衣</p>\n            </div>\n            <div style=\"height: 3px\"></div>\n            <div class=\"row\">\n              <div class=\"col-xs-6\">\n                <span style=\"color: #e35b5a;font-size: 10px\">￥</span><span style=\"color: #e35b5a\">99</span>\n              </div>\n              <div class=\"col-xs-6\" style=\"text-align: right\">\n                <button class=\"btn btn-danger\" style=\"height: 20px;font-size: 10px;line-height: 8px\">删除</button>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row car_product\">\n      <div class=\"col-xs-2\">\n        <div style=\"height: 18px\"></div>\n        <div class=\"checkboxFour\">\n          <input type=\"checkbox\"  value=\"1\" class=\"checkboxInput\" name=\"\" />\n        </div>\n      </div>\n      <div class=\"col-xs-10\" style=\"padding: 0px 13px 0px 0px\">\n        <div class=\"row\">\n          <div class=\"col-xs-3\" style=\"padding: 0 0 0 8px\">\n            <div style=\"height: 6px\"></div>\n            <div style=\"background-image: url(/assets/IMG_5097.JPG);background-size: cover;background-position: center;height: 60px\">\n              <img src=\"assets/admin/img/tm.png\">\n            </div>\n          </div>\n          <div class=\"col-xs-9\">\n            <div style=\"height: 40px;overflow: hidden\">\n              <p style=\"font-size: 12px\">外套男士-2017新款春季韩版潮流青年修身牛仔裤夹克衣服卫衣</p>\n            </div>\n            <div style=\"height: 3px\"></div>\n            <div class=\"row\">\n              <div class=\"col-xs-6\">\n                <span style=\"color: #e35b5a;font-size: 10px\">￥</span><span style=\"color: #e35b5a\">99</span>\n              </div>\n              <div class=\"col-xs-6\" style=\"text-align: right\">\n                <button class=\"btn btn-danger\" style=\"height: 20px;font-size: 10px;line-height: 8px\">删除</button>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row car_product\">\n      <div class=\"col-xs-2\">\n        <div style=\"height: 18px\"></div>\n        <div class=\"checkboxFour\">\n          <input type=\"checkbox\"  value=\"1\" class=\"checkboxInput\" name=\"\" />\n        </div>\n      </div>\n      <div class=\"col-xs-10\" style=\"padding: 0px 13px 0px 0px\">\n        <div class=\"row\">\n          <div class=\"col-xs-3\" style=\"padding: 0 0 0 8px\">\n            <div style=\"height: 6px\"></div>\n            <div style=\"background-image: url(/assets/IMG_5097.JPG);background-size: cover;background-position: center;height: 60px\">\n              <img src=\"assets/admin/img/tm.png\">\n            </div>\n          </div>\n          <div class=\"col-xs-9\">\n            <div style=\"height: 40px;overflow: hidden\">\n              <p style=\"font-size: 12px\">外套男士-2017新款春季韩版潮流青年修身牛仔裤夹克衣服卫衣</p>\n            </div>\n            <div style=\"height: 3px\"></div>\n            <div class=\"row\">\n              <div class=\"col-xs-6\">\n                <span style=\"color: #e35b5a;font-size: 10px\">￥</span><span style=\"color: #e35b5a\">99</span>\n              </div>\n              <div class=\"col-xs-6\" style=\"text-align: right\">\n                <button class=\"btn btn-danger\" style=\"height: 20px;font-size: 10px;line-height: 8px\">删除</button>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n\n  </form>\n\n\n\n\n\n\n</div>\n<div class=\"weui-tabbar\" style=\"bottom: 53px;background-color: #fff;position: fixed\">\n\n  <div  class=\"weui-tabbar__item\" style=\"background-color: #fff;color: #555\">\n    <div style=\"height: 5px\"></div>\n    <div class=\"weui-tabbar__label\">\n      总计：<span style=\"color: #e35b5a\">￥</span><span id=\"count\" style=\"color: #e35b5a\">0</span>\n\n    </div>\n  </div>\n\n  <a routerLink=\"/rent\" class=\"weui-tabbar__item\" style=\"background-color: green\">\n    <div style=\"height: 5px\"></div>\n\n    <p class=\"weui-tabbar__label\" style=\"color: #fff!important;\">立即结算</p>\n  </a>\n\n</div>\n"
-
-/***/ }),
-
-/***/ 416:
-/***/ (function(module, exports) {
-
-module.exports = "<carousel>\n  <slide *ngFor=\"let sw of swipe\">\n    <a href=\"#\" [routerLink]=\"['/detail', sw.url]\">\n      <img src=\"{{sw.img}}\" alt=\"\" style=\"height: 220px\">\n    </a>\n    <div class=\"carousel-caption\">\n      <p>{{sw.title}}</p>\n    </div>\n  </slide>\n</carousel>\n<div class=\"white-box\">\n\n  <div class=\"row\" style=\"text-align: center\">\n    <div class=\"height15\"></div>\n\n    <a *ngFor=\"let categorie of categories\" [routerLink]=\"['/product', categorie.Id]\" class=\" col-xs-3 col-md-3 category_box \">\n      <div class=\"weui-grid__icon\" style=\"color: #777\">\n        <i class=\"fa fa-bars fa-2x\"> </i>\n      </div>\n      <p class=\"weui-grid__label\">\n        {{categorie.Name}}\n      </p>\n    </a>\n\n  </div>\n  <div class=\"height15\"></div>\n</div>\n\n<div class=\"height10\"></div>\n<div class=\"textCenter\">\n  <span class=\"line\">--- </span><span><i class=\"fa fa-gift\"></i> 本周热读</span><span class=\"line\"> ---</span>\n</div>\n<div class=\"white-box\" style=\"padding: 15px\">\n  <div class=\"height15\"></div>\n  <div class=\"container\">\n    <div class=\"row\" id=\"#list\">\n      <a *ngFor=\"let product of products\" [routerLink]=\"['/detail', product.Id]\" class=\"col-xs-6 category_box\" style=\"margin-bottom: 15px\">\n        <div class=\"box\">\n          <div [ngStyle]=\"{'background-image':+'url('+ product.Image+')'}\" style=\"position: relative;background-position: center;background-size: cover;\">\n            <img src=\"assets/book.png\" width=\"100%\" height=\"auto\" alt=\"\">\n          </div>\n          <div class=\"box-text\" style=\"height: 39px;overflow: hidden\">\n            <p class=\"hot-product-name\">{{product.Name}}</p>\n          </div>\n          <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">{{product.Price}}</span>&nbsp;&nbsp;<span style=\"font-size: 1px;color: #aaa;font-size: 12px\">{{product.Buy}}人已读</span>\n\n        </div>\n      </a>\n    </div>\n\n  </div>\n</div>\n\n"
 
 /***/ }),
 
 /***/ 417:
 /***/ (function(module, exports) {
 
-module.exports = "<carousel>\n  <slide>\n      <img src=\"/assets/6.jpeg\" alt=\"\" style=\"height: 200px\">\n    <div class=\"carousel-caption\">\n      <p>任何商品免费送货</p>\n    </div>\n  </slide>\n  <slide>\n    <img src=\"/assets/5.jpeg\" alt=\"\" style=\"height: 200px\">\n    <div class=\"carousel-caption\">\n      <p>海量图书任你选</p>\n    </div>\n  </slide>\n</carousel>\n<div class=\"white-box\">\n  <div style=\"height: 20px\">\n  </div>\n  <div class=\"container\">\n    <div class=\"col-xs-12\" style=\"\">\n      <div class=\"row\" style=\"padding: 0px\">\n        <div class=\"col-md-4 col-xs-4\">\n          <div>\n            <a style=\"\" href=\"#\">\n              <div  style=\"background-image: url(/assets/5.jpeg);background-size: cover;background-position: center;width: 100%;max-height: 60px\">\n                <img src=\"/assets/admin/img/tm.png\" alt=\"\">\n              </div>\n            </a>\n          </div>\n        </div>\n        <a style=\"color: #555;text-decoration: none\" href=\"#\">\n          <div class=\"col-md-8 col-xs-8\">\n            <h4 style=\"margin-top: 0;color: #555;font-size: 14px\" >图书三折起，支持在线浏览 先看再买不后悔，任何商品免费送货</h4>\n            <p style=\"color: #aaa;font-size: 12px\">2019-09-09</p>\n          </div>\n        </a>\n      </div>\n      <hr style=\"\">\n    </div>\n    <div class=\"col-xs-12\" style=\"\">\n      <div class=\"row\" style=\"padding: 0px\">\n        <div class=\"col-md-4 col-xs-4\">\n          <div>\n            <a style=\"\" href=\"#\">\n              <div  style=\"background-image: url(/assets/5.jpeg);background-size: cover;background-position: center;width: 100%;max-height: 60px\">\n                <img src=\"/assets/admin/img/tm.png\" alt=\"\">\n              </div>\n            </a>\n          </div>\n        </div>\n        <a style=\"color: #555;text-decoration: none\" href=\"#\">\n          <div class=\"col-md-8 col-xs-8\">\n            <h4 style=\"margin-top: 0;color: #555;font-size: 14px\" >图书三折起，支持在线浏览 先看再买不后悔，任何商品免费送货</h4>\n            <p style=\"color: #aaa;font-size: 12px\">2019-09-09</p>\n          </div>\n        </a>\n      </div>\n      <hr style=\"\">\n    </div>\n    <div class=\"col-xs-12\" style=\"\">\n      <div class=\"row\" style=\"padding: 0px\">\n        <div class=\"col-md-4 col-xs-4\">\n          <div>\n            <a style=\"\" href=\"#\">\n              <div  style=\"background-image: url(/assets/5.jpeg);background-size: cover;background-position: center;width: 100%;max-height: 60px\">\n                <img src=\"/assets/admin/img/tm.png\" alt=\"\">\n              </div>\n            </a>\n          </div>\n        </div>\n        <a style=\"color: #555;text-decoration: none\" href=\"#\">\n          <div class=\"col-md-8 col-xs-8\">\n            <h4 style=\"margin-top: 0;color: #555;font-size: 14px\" >图书三折起，支持在线浏览 先看再买不后悔，任何商品免费送货</h4>\n            <p style=\"color: #aaa;font-size: 12px\">2019-09-09</p>\n          </div>\n        </a>\n      </div>\n      <hr style=\"\">\n    </div>\n    <div class=\"col-xs-12\" style=\"\">\n      <div class=\"row\" style=\"padding: 0px\">\n        <div class=\"col-md-4 col-xs-4\">\n          <div>\n            <a style=\"\" href=\"#\">\n              <div  style=\"background-image: url(/assets/5.jpeg);background-size: cover;background-position: center;width: 100%;max-height: 60px\">\n                <img src=\"/assets/admin/img/tm.png\" alt=\"\">\n              </div>\n            </a>\n          </div>\n        </div>\n        <a style=\"color: #555;text-decoration: none\" href=\"#\">\n          <div class=\"col-md-8 col-xs-8\">\n            <h4 style=\"margin-top: 0;color: #555;font-size: 14px\" >图书三折起，支持在线浏览 先看再买不后悔，任何商品免费送货</h4>\n            <p style=\"color: #aaa;font-size: 12px\">2019-09-09</p>\n          </div>\n        </a>\n      </div>\n      <hr style=\"\">\n    </div>\n    <div class=\"col-xs-12\" style=\"\">\n      <div class=\"row\" style=\"padding: 0px\">\n        <div class=\"col-md-4 col-xs-4\">\n          <div>\n            <a style=\"\" href=\"#\">\n              <div  style=\"background-image: url(/assets/5.jpeg);background-size: cover;background-position: center;width: 100%;max-height: 60px\">\n                <img src=\"/assets/admin/img/tm.png\" alt=\"\">\n              </div>\n            </a>\n          </div>\n        </div>\n        <a style=\"color: #555;text-decoration: none\" href=\"#\">\n          <div class=\"col-md-8 col-xs-8\">\n            <h4 style=\"margin-top: 0;color: #555;font-size: 14px\" >图书三折起，支持在线浏览 先看再买不后悔，任何商品免费送货</h4>\n            <p style=\"color: #aaa;font-size: 12px\">2019-09-09</p>\n          </div>\n        </a>\n      </div>\n      <hr style=\"\">\n    </div>\n    <div class=\"col-xs-12\" style=\"\">\n      <div class=\"row\" style=\"padding: 0px\">\n        <div class=\"col-md-4 col-xs-4\">\n          <div>\n            <a style=\"\" href=\"#\">\n              <div  style=\"background-image: url(/assets/5.jpeg);background-size: cover;background-position: center;width: 100%;max-height: 60px\">\n                <img src=\"/assets/admin/img/tm.png\" alt=\"\">\n              </div>\n            </a>\n          </div>\n        </div>\n        <a style=\"color: #555;text-decoration: none\" href=\"#\">\n          <div class=\"col-md-8 col-xs-8\">\n            <h4 style=\"margin-top: 0;color: #555;font-size: 14px\" >图书三折起，支持在线浏览 先看再买不后悔，任何商品免费送货</h4>\n            <p style=\"color: #aaa;font-size: 12px\">2019-09-09</p>\n          </div>\n        </a>\n      </div>\n      <hr style=\"\">\n    </div>\n  </div>\n\n</div>\n"
+module.exports = "<div class=\"container\">\n\n  <form action=\"\" id=\"cart\" name=\"cart\">\n    <div class=\"row car_product\">\n      <div class=\"col-xs-2\">\n        <div style=\"height: 18px\"></div>\n        <div class=\"checkboxFour\">\n          <input type=\"checkbox\"  value=\"1\" class=\"checkboxInput\" name=\"\" />\n        </div>\n      </div>\n      <div class=\"col-xs-10\" style=\"padding: 0px 13px 0px 0px\">\n        <div class=\"row\">\n          <div class=\"col-xs-3\" style=\"padding: 0 0 0 8px\">\n            <div style=\"height: 6px\"></div>\n            <div style=\"background-image: url(/assets/IMG_5097.JPG);background-size: cover;background-position: center;height: 60px\">\n              <img src=\"assets/admin/img/tm.png\">\n            </div>\n          </div>\n          <div class=\"col-xs-9\">\n            <div style=\"height: 40px;overflow: hidden\">\n              <p style=\"font-size: 12px\">外套男士-2017新款春季韩版潮流青年修身牛仔裤夹克衣服卫衣</p>\n            </div>\n            <div style=\"height: 3px\"></div>\n            <div class=\"row\">\n              <div class=\"col-xs-6\">\n                <span style=\"color: #e35b5a;font-size: 10px\">￥</span><span style=\"color: #e35b5a\">99</span>\n              </div>\n              <div class=\"col-xs-6\" style=\"text-align: right\">\n                <button class=\"btn btn-danger\" style=\"height: 20px;font-size: 10px;line-height: 8px\">删除</button>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row car_product\">\n      <div class=\"col-xs-2\">\n        <div style=\"height: 18px\"></div>\n        <div class=\"checkboxFour\">\n          <input type=\"checkbox\"  value=\"1\" class=\"checkboxInput\" name=\"\" />\n        </div>\n      </div>\n      <div class=\"col-xs-10\" style=\"padding: 0px 13px 0px 0px\">\n        <div class=\"row\">\n          <div class=\"col-xs-3\" style=\"padding: 0 0 0 8px\">\n            <div style=\"height: 6px\"></div>\n            <div style=\"background-image: url(/assets/IMG_5097.JPG);background-size: cover;background-position: center;height: 60px\">\n              <img src=\"assets/admin/img/tm.png\">\n            </div>\n          </div>\n          <div class=\"col-xs-9\">\n            <div style=\"height: 40px;overflow: hidden\">\n              <p style=\"font-size: 12px\">外套男士-2017新款春季韩版潮流青年修身牛仔裤夹克衣服卫衣</p>\n            </div>\n            <div style=\"height: 3px\"></div>\n            <div class=\"row\">\n              <div class=\"col-xs-6\">\n                <span style=\"color: #e35b5a;font-size: 10px\">￥</span><span style=\"color: #e35b5a\">99</span>\n              </div>\n              <div class=\"col-xs-6\" style=\"text-align: right\">\n                <button class=\"btn btn-danger\" style=\"height: 20px;font-size: 10px;line-height: 8px\">删除</button>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row car_product\">\n      <div class=\"col-xs-2\">\n        <div style=\"height: 18px\"></div>\n        <div class=\"checkboxFour\">\n          <input type=\"checkbox\"  value=\"1\" class=\"checkboxInput\" name=\"\" />\n        </div>\n      </div>\n      <div class=\"col-xs-10\" style=\"padding: 0px 13px 0px 0px\">\n        <div class=\"row\">\n          <div class=\"col-xs-3\" style=\"padding: 0 0 0 8px\">\n            <div style=\"height: 6px\"></div>\n            <div style=\"background-image: url(/assets/IMG_5097.JPG);background-size: cover;background-position: center;height: 60px\">\n              <img src=\"assets/admin/img/tm.png\">\n            </div>\n          </div>\n          <div class=\"col-xs-9\">\n            <div style=\"height: 40px;overflow: hidden\">\n              <p style=\"font-size: 12px\">外套男士-2017新款春季韩版潮流青年修身牛仔裤夹克衣服卫衣</p>\n            </div>\n            <div style=\"height: 3px\"></div>\n            <div class=\"row\">\n              <div class=\"col-xs-6\">\n                <span style=\"color: #e35b5a;font-size: 10px\">￥</span><span style=\"color: #e35b5a\">99</span>\n              </div>\n              <div class=\"col-xs-6\" style=\"text-align: right\">\n                <button class=\"btn btn-danger\" style=\"height: 20px;font-size: 10px;line-height: 8px\">删除</button>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row car_product\">\n      <div class=\"col-xs-2\">\n        <div style=\"height: 18px\"></div>\n        <div class=\"checkboxFour\">\n          <input type=\"checkbox\"  value=\"1\" class=\"checkboxInput\" name=\"\" />\n        </div>\n      </div>\n      <div class=\"col-xs-10\" style=\"padding: 0px 13px 0px 0px\">\n        <div class=\"row\">\n          <div class=\"col-xs-3\" style=\"padding: 0 0 0 8px\">\n            <div style=\"height: 6px\"></div>\n            <div style=\"background-image: url(/assets/IMG_5097.JPG);background-size: cover;background-position: center;height: 60px\">\n              <img src=\"assets/admin/img/tm.png\">\n            </div>\n          </div>\n          <div class=\"col-xs-9\">\n            <div style=\"height: 40px;overflow: hidden\">\n              <p style=\"font-size: 12px\">外套男士-2017新款春季韩版潮流青年修身牛仔裤夹克衣服卫衣</p>\n            </div>\n            <div style=\"height: 3px\"></div>\n            <div class=\"row\">\n              <div class=\"col-xs-6\">\n                <span style=\"color: #e35b5a;font-size: 10px\">￥</span><span style=\"color: #e35b5a\">99</span>\n              </div>\n              <div class=\"col-xs-6\" style=\"text-align: right\">\n                <button class=\"btn btn-danger\" style=\"height: 20px;font-size: 10px;line-height: 8px\">删除</button>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n\n  </form>\n\n\n\n\n\n\n</div>\n<div class=\"weui-tabbar\" style=\"bottom: 53px;background-color: #fff;position: fixed\">\n\n  <div  class=\"weui-tabbar__item\" style=\"background-color: #fff;color: #555\">\n    <div style=\"height: 5px\"></div>\n    <div class=\"weui-tabbar__label\">\n      总计：<span style=\"color: #e35b5a\">￥</span><span id=\"count\" style=\"color: #e35b5a\">0</span>\n\n    </div>\n  </div>\n\n  <a routerLink=\"/rent\" class=\"weui-tabbar__item\" style=\"background-color: green\">\n    <div style=\"height: 5px\"></div>\n\n    <p class=\"weui-tabbar__label\" style=\"color: #fff!important;\">立即结算</p>\n  </a>\n\n</div>\n"
 
 /***/ }),
 
 /***/ 418:
 /***/ (function(module, exports) {
 
-module.exports = "<a href=\"#\">\n\n  <div class=\"white-box address\">\n\n    <span class=\"fontSize12\">收货人：杨一帆</span>\n    <span class=\"fontSize12\">18373121139</span>\n    <span class=\"floatRight fontSize20\"> ></span>\n    <div class=\"clear\"></div>\n    <div>\n      <span class=\"fontSize12\">收货地址：湖南省长沙市开福区长沙大学洪山2栋</span>\n    </div>\n  </div>\n</a>\n<div class=\"height10\"></div>\n<div class=\"white-box address\">\n  <img src=\"assets/klt.png\" width=\"20px\" height=\"20px\" alt=\"\"><span class=\"fontSize12\">酷乐堂生活馆</span>\n</div>\n<div class=\"address\">\n  <div class=\"height5\"></div>\n  <div class=\"row\">\n    <div class=\"col-xs-4\">\n      <!--[ngStyle]=\"{'background-image':+'url('+ products.Image+')'}\"-->\n      <div  style=\"background-image:url(assets/IMG_5097.JPG);position: relative;background-position: center;background-size: cover;height: 85px\">\n        <img src=\"assets/admin/img/tm.png\" width=\"100%\" height=\"auto\" alt=\"\">\n      </div>\n    </div>\n    <div class=\"col-xs-8\" style=\"max-height: 90px\">\n      <div style=\"height: 48px;overflow: hidden\">\n        <span class=\"fontSize12 lineHeight\">\n          全新正版-测试测试测试常擦擦发放AASasdasd按时是sadafafa sas sad as sa sad\n        </span>\n      </div>\n      <div class=\"height10\"></div>\n      <div>\n        <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">180</span>\n        <span class=\"floatRight fontSize12\" style=\"margin-right: 10px\">×1</span>\n      </div>\n    </div>\n  </div>\n  <div class=\"height5\"></div>\n\n</div>\n<div class=\"address white-box\">\n  <span class=\"fontSize12\">配送方式</span>\n  <span class=\"floatRight fontSize12\">快递 免邮</span>\n  <div class=\"clear\"></div>\n  <hr class=\"sepLine\">\n  <span class=\"fontSize12\">购买数量</span>\n  <span class=\"floatRight fontSize12\">\n    <button class=\"btn btn-default numBtn\">-</button>\n    <input class=\"numInput\" type=\"number\" value=\"1\" style=\"width: 20px;\" readonly=\"readonly\">\n     <button class=\"btn btn-default numBtn\">+</button>\n  </span>\n  <div class=\"clear\"></div>\n  <hr class=\"sepLine\">\n  <span class=\"floatRight fontSize12\">共计： <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">180</span></span>\n  <div class=\"clear\"></div>\n</div>\n\n<div class=\"height10\"></div>\n<div class=\"address white-box\">\n  <div class=\"height10\"></div>\n  <div class=\"row\">\n    <div class=\"col-xs-6\" style=\"text-align: center\">\n      <button class=\"btn btn-default cancelBtn\" (click)=\"locationBack()\">取消订单</button>\n    </div>\n    <div class=\"col-xs-6\" style=\"text-align: center\">\n      <a class=\"btn btn-default uploadOrderBtn\">提交订单</a>\n    </div>\n  </div>\n  <div class=\"height10\"></div>\n\n</div>\n"
+module.exports = "<carousel>\n  <slide *ngFor=\"let sw of swipe\">\n    <a href=\"#\" [routerLink]=\"['/detail', sw.url]\">\n      <img src=\"{{sw.img}}\" alt=\"\" style=\"height: 220px\">\n    </a>\n    <div class=\"carousel-caption\">\n      <p>{{sw.title}}</p>\n    </div>\n  </slide>\n</carousel>\n<div class=\"white-box\">\n\n  <div class=\"row\" style=\"text-align: center\">\n    <div class=\"height15\"></div>\n\n    <a *ngFor=\"let categorie of categories\" [routerLink]=\"['/product', categorie.Id]\" class=\" col-xs-3 col-md-3 category_box \">\n      <div class=\"weui-grid__icon\" style=\"color: #777\">\n        <i class=\"fa fa-bars fa-2x\"> </i>\n      </div>\n      <p class=\"weui-grid__label\">\n        {{categorie.Name}}\n      </p>\n    </a>\n\n  </div>\n  <div class=\"height15\"></div>\n</div>\n\n<div class=\"height10\"></div>\n<div class=\"textCenter\">\n  <span class=\"line\">--- </span><span><i class=\"fa fa-gift\"></i> 本周热读</span><span class=\"line\"> ---</span>\n</div>\n<div class=\"white-box\" style=\"padding: 15px\">\n  <div class=\"height15\"></div>\n  <div class=\"container\">\n    <div class=\"row\" id=\"#list\">\n      <a *ngFor=\"let product of products\" [routerLink]=\"['/detail', product.Id]\" class=\"col-xs-6 category_box\" style=\"margin-bottom: 15px\">\n        <div class=\"box\">\n          <div [ngStyle]=\"{'background-image':+'url('+ product.Image+')'}\" style=\"position: relative;background-position: center;background-size: cover;\">\n            <img src=\"assets/book.png\" width=\"100%\" height=\"auto\" alt=\"\">\n          </div>\n          <div class=\"box-text\" style=\"height: 39px;overflow: hidden\">\n            <p class=\"hot-product-name\">{{product.Name}}</p>\n          </div>\n          <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">{{product.Price}}</span>&nbsp;&nbsp;<span style=\"font-size: 1px;color: #aaa;font-size: 12px\">{{product.Buy}}人已读</span>\n\n        </div>\n      </a>\n    </div>\n\n  </div>\n</div>\n\n"
 
 /***/ }),
 
 /***/ 419:
 /***/ (function(module, exports) {
 
-module.exports = "<carousel>\n  <slide *ngFor=\"let pic of products.Pic\" style=\"text-aligin:center\">\n    <img src=\"{{pic.Image}}\" alt=\"First slide\" style=\"height: 400px;width: auto;margin: 0 auto\">\n  </slide>\n</carousel>\n<div class=\"white-box\">\n  <div class=\"container\">\n    <div style=\"height: 7px\"></div>\n    <p style=\"color: #555;font-size: 14px;font-weight: 700\">{{this.products.Name}} - {{products.Content}}</p>\n    <div style=\"height: 10px\"></div>\n    <div class=\"row\">\n      <div class=\"col-xs-7\">\n        <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">{{this.products.Price}}</span>&nbsp;&nbsp;<span style=\"color: #aaa;font-size: 12px\">{{this.products.Buy}}人已读</span>\n      </div>\n      <div class=\"col-xs-5\" style=\"text-align: right\">\n        <span style=\"color: #aaa;font-size: 12px\"><s>原价￥499</s></span>\n      </div>\n    </div>\n    <div style=\"height: 5px\"></div>\n    <a href=\"#\" class=\"text\"><span class=\"fa fa-heart-o\"></span> 收藏</a>\n\n  </div>\n  <div class=\"height15\"></div>\n</div>\n<div class=\"height10\"></div>\n<div class=\"address white-box container\">\n  <div class=\"height10\"></div>\n  <div class=\"row\">\n    <div class=\"col-xs-4\" style=\"text-align: center\">\n      <button class=\"btn btn-default\" style=\"background-color: #ddd\">加入购物车</button>\n    </div>\n    <div class=\"col-xs-4\" style=\"text-align: center\">\n      <a [routerLink]=\"['/rent', products.Id]\" class=\"btn btn-default uploadOrderBtn\" style=\"background-color: orangered;color: #fff\">租赁</a>\n    </div>\n    <div class=\"col-xs-4\" style=\"text-align: center\">\n      <a [routerLink]=\"['/buy', products.Id]\" class=\"btn btn-default uploadOrderBtn\" style=\"background-color: orange;color: #fff\">立即购买</a>\n    </div>\n  </div>\n  <div class=\"height10\"></div>\n\n</div>\n\n<div class=\"textCenter\">\n  <div class=\"height10\"></div>\n  <span class=\"line\">--- </span><span><i class=\"fa fa-comments-o\"></i> 产品评价</span><span class=\"line\"> ---</span>\n  <div class=\"height10\"></div>\n</div>\n\n<div class=\"comments\">\n  <div class=\"white-box container padding10 margin-bottom10\">\n    <img src=\"assets/admin/images/avatar.jpg\" alt=\"\" class=\"img-circle\" width=\"30px\" height=\"30px\">\n    <span style=\"color: #333;font-size: 14px;margin-left: 5px\">yifan</span>\n    <div style=\"margin-top: 5px\">\n      <span style=\"color: #aaa;font-size: 8px;\">2017-03-08</span>\n    </div>\n    <div class=\"content\">\n      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>\n    </div>\n  </div>\n\n  <div class=\"white-box container padding10 margin-bottom10\">\n    <img src=\"assets/admin/images/avatar.jpg\" alt=\"\" class=\"img-circle\" width=\"30px\" height=\"30px\">\n    <span style=\"color: #333;font-size: 14px;margin-left: 5px\">yifan</span>\n    <div style=\"margin-top: 5px\">\n      <span style=\"color: #aaa;font-size: 8px;\">2017-03-08</span>\n    </div>\n    <div class=\"content\">\n      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>\n    </div>\n  </div>\n\n  <div class=\"white-box container padding10 margin-bottom10\">\n    <img src=\"assets/admin/images/avatar.jpg\" alt=\"\" class=\"img-circle\" width=\"30px\" height=\"30px\">\n    <span style=\"color: #333;font-size: 14px;margin-left: 5px\">yifan</span>\n    <div style=\"margin-top: 5px\">\n      <span style=\"color: #aaa;font-size: 8px;\">2017-03-08</span>\n    </div>\n    <div class=\"content\">\n      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>\n    </div>\n  </div>\n\n  <div class=\"white-box container padding10 margin-bottom10\">\n    <img src=\"assets/admin/images/avatar.jpg\" alt=\"\" class=\"img-circle\" width=\"30px\" height=\"30px\">\n    <span style=\"color: #333;font-size: 14px;margin-left: 5px\">yifan</span>\n    <div style=\"margin-top: 5px\">\n      <span style=\"color: #aaa;font-size: 8px;\">2017-03-08</span>\n    </div>\n    <div class=\"content\">\n      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>\n    </div>\n  </div>\n\n  <div class=\"white-box container padding10 margin-bottom10\">\n    <img src=\"assets/admin/images/avatar.jpg\" alt=\"\" class=\"img-circle\" width=\"30px\" height=\"30px\">\n    <span style=\"color: #333;font-size: 14px;margin-left: 5px\">yifan</span>\n    <div style=\"margin-top: 5px\">\n      <span style=\"color: #aaa;font-size: 8px;\">2017-03-08</span>\n    </div>\n    <div class=\"content\">\n      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>\n    </div>\n  </div>\n\n  <div style=\"height:30px\"></div>\n</div>\n\n\n\n"
+module.exports = "<carousel>\n  <slide>\n      <img src=\"/assets/6.jpeg\" alt=\"\" style=\"height: 200px\">\n    <div class=\"carousel-caption\">\n      <p>任何商品免费送货</p>\n    </div>\n  </slide>\n  <slide>\n    <img src=\"/assets/5.jpeg\" alt=\"\" style=\"height: 200px\">\n    <div class=\"carousel-caption\">\n      <p>海量图书任你选</p>\n    </div>\n  </slide>\n</carousel>\n<div class=\"white-box\">\n  <div style=\"height: 20px\">\n  </div>\n  <div class=\"container\">\n    <div class=\"col-xs-12\" style=\"\">\n      <div class=\"row\" style=\"padding: 0px\">\n        <div class=\"col-md-4 col-xs-4\">\n          <div>\n            <a style=\"\" href=\"#\">\n              <div  style=\"background-image: url(/assets/5.jpeg);background-size: cover;background-position: center;width: 100%;max-height: 60px\">\n                <img src=\"/assets/admin/img/tm.png\" alt=\"\">\n              </div>\n            </a>\n          </div>\n        </div>\n        <a style=\"color: #555;text-decoration: none\" href=\"#\">\n          <div class=\"col-md-8 col-xs-8\">\n            <h4 style=\"margin-top: 0;color: #555;font-size: 14px\" >图书三折起，支持在线浏览 先看再买不后悔，任何商品免费送货</h4>\n            <p style=\"color: #aaa;font-size: 12px\">2019-09-09</p>\n          </div>\n        </a>\n      </div>\n      <hr style=\"\">\n    </div>\n    <div class=\"col-xs-12\" style=\"\">\n      <div class=\"row\" style=\"padding: 0px\">\n        <div class=\"col-md-4 col-xs-4\">\n          <div>\n            <a style=\"\" href=\"#\">\n              <div  style=\"background-image: url(/assets/5.jpeg);background-size: cover;background-position: center;width: 100%;max-height: 60px\">\n                <img src=\"/assets/admin/img/tm.png\" alt=\"\">\n              </div>\n            </a>\n          </div>\n        </div>\n        <a style=\"color: #555;text-decoration: none\" href=\"#\">\n          <div class=\"col-md-8 col-xs-8\">\n            <h4 style=\"margin-top: 0;color: #555;font-size: 14px\" >图书三折起，支持在线浏览 先看再买不后悔，任何商品免费送货</h4>\n            <p style=\"color: #aaa;font-size: 12px\">2019-09-09</p>\n          </div>\n        </a>\n      </div>\n      <hr style=\"\">\n    </div>\n    <div class=\"col-xs-12\" style=\"\">\n      <div class=\"row\" style=\"padding: 0px\">\n        <div class=\"col-md-4 col-xs-4\">\n          <div>\n            <a style=\"\" href=\"#\">\n              <div  style=\"background-image: url(/assets/5.jpeg);background-size: cover;background-position: center;width: 100%;max-height: 60px\">\n                <img src=\"/assets/admin/img/tm.png\" alt=\"\">\n              </div>\n            </a>\n          </div>\n        </div>\n        <a style=\"color: #555;text-decoration: none\" href=\"#\">\n          <div class=\"col-md-8 col-xs-8\">\n            <h4 style=\"margin-top: 0;color: #555;font-size: 14px\" >图书三折起，支持在线浏览 先看再买不后悔，任何商品免费送货</h4>\n            <p style=\"color: #aaa;font-size: 12px\">2019-09-09</p>\n          </div>\n        </a>\n      </div>\n      <hr style=\"\">\n    </div>\n    <div class=\"col-xs-12\" style=\"\">\n      <div class=\"row\" style=\"padding: 0px\">\n        <div class=\"col-md-4 col-xs-4\">\n          <div>\n            <a style=\"\" href=\"#\">\n              <div  style=\"background-image: url(/assets/5.jpeg);background-size: cover;background-position: center;width: 100%;max-height: 60px\">\n                <img src=\"/assets/admin/img/tm.png\" alt=\"\">\n              </div>\n            </a>\n          </div>\n        </div>\n        <a style=\"color: #555;text-decoration: none\" href=\"#\">\n          <div class=\"col-md-8 col-xs-8\">\n            <h4 style=\"margin-top: 0;color: #555;font-size: 14px\" >图书三折起，支持在线浏览 先看再买不后悔，任何商品免费送货</h4>\n            <p style=\"color: #aaa;font-size: 12px\">2019-09-09</p>\n          </div>\n        </a>\n      </div>\n      <hr style=\"\">\n    </div>\n    <div class=\"col-xs-12\" style=\"\">\n      <div class=\"row\" style=\"padding: 0px\">\n        <div class=\"col-md-4 col-xs-4\">\n          <div>\n            <a style=\"\" href=\"#\">\n              <div  style=\"background-image: url(/assets/5.jpeg);background-size: cover;background-position: center;width: 100%;max-height: 60px\">\n                <img src=\"/assets/admin/img/tm.png\" alt=\"\">\n              </div>\n            </a>\n          </div>\n        </div>\n        <a style=\"color: #555;text-decoration: none\" href=\"#\">\n          <div class=\"col-md-8 col-xs-8\">\n            <h4 style=\"margin-top: 0;color: #555;font-size: 14px\" >图书三折起，支持在线浏览 先看再买不后悔，任何商品免费送货</h4>\n            <p style=\"color: #aaa;font-size: 12px\">2019-09-09</p>\n          </div>\n        </a>\n      </div>\n      <hr style=\"\">\n    </div>\n    <div class=\"col-xs-12\" style=\"\">\n      <div class=\"row\" style=\"padding: 0px\">\n        <div class=\"col-md-4 col-xs-4\">\n          <div>\n            <a style=\"\" href=\"#\">\n              <div  style=\"background-image: url(/assets/5.jpeg);background-size: cover;background-position: center;width: 100%;max-height: 60px\">\n                <img src=\"/assets/admin/img/tm.png\" alt=\"\">\n              </div>\n            </a>\n          </div>\n        </div>\n        <a style=\"color: #555;text-decoration: none\" href=\"#\">\n          <div class=\"col-md-8 col-xs-8\">\n            <h4 style=\"margin-top: 0;color: #555;font-size: 14px\" >图书三折起，支持在线浏览 先看再买不后悔，任何商品免费送货</h4>\n            <p style=\"color: #aaa;font-size: 12px\">2019-09-09</p>\n          </div>\n        </a>\n      </div>\n      <hr style=\"\">\n    </div>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
 /***/ 420:
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"white-box\">\n\n\n  <div class=\"height15\"></div>\n  <div class=\"container\">\n\n    <div class=\"seachButton\" style=\"margin: 0\">\n      <input  type=\"text\" class=\"form-control seachInput\" placeholder=\"搜索您想要的书籍名称\">\n    </div>\n    <div class=\"height15\"></div>\n\n    <div class=\"row\" id=\"#list\">\n\n      <a *ngFor=\"let product of products\" [routerLink]=\"['/detail', product.Id]\" class=\"col-xs-6 category_box\" style=\"margin-bottom: 15px\">\n        <div class=\"box\">\n          <div [ngStyle]=\"{'background-image':+'url('+ product.Image+')'}\" style=\"position: relative;background-position: center;background-size: cover;\">\n            <img src=\"assets/book.png\" width=\"100%\" height=\"auto\" alt=\"\">\n          </div>\n          <div class=\"box-text\" style=\"height: 39px;overflow: hidden\">\n            <p class=\"hot-product-name\">{{product.Name}}-{{product.Content}}</p>\n          </div>\n          <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">{{product.Price}}</span>&nbsp;&nbsp;<span style=\"font-size: 1px;color: #aaa;font-size: 12px\">{{product.Buy}}人已读</span>\n\n\n        </div>\n      </a>\n\n    </div>\n    <br>\n\n  </div>\n</div>\n\n"
+module.exports = "<a href=\"#\">\n\n  <div class=\"white-box address\">\n\n    <span class=\"fontSize12\">收货人：杨一帆</span>\n    <span class=\"fontSize12\">18373121139</span>\n    <span class=\"floatRight fontSize20\"> ></span>\n    <div class=\"clear\"></div>\n    <div>\n      <span class=\"fontSize12\">收货地址：湖南省长沙市开福区长沙大学洪山2栋</span>\n    </div>\n  </div>\n</a>\n<div class=\"height10\"></div>\n<div class=\"white-box address\">\n  <img src=\"assets/klt.png\" width=\"20px\" height=\"20px\" alt=\"\"><span class=\"fontSize12\">酷乐堂生活馆</span>\n</div>\n<div class=\"address\">\n  <div class=\"height5\"></div>\n  <div class=\"row\">\n    <div class=\"col-xs-4\">\n      <!--[ngStyle]=\"{'background-image':+'url('+ products.Image+')'}\"-->\n      <div  style=\"background-image:url(assets/IMG_5097.JPG);position: relative;background-position: center;background-size: cover;height: 85px\">\n        <img src=\"assets/admin/img/tm.png\" width=\"100%\" height=\"auto\" alt=\"\">\n      </div>\n    </div>\n    <div class=\"col-xs-8\" style=\"max-height: 90px\">\n      <div style=\"height: 48px;overflow: hidden\">\n        <span class=\"fontSize12 lineHeight\">\n          全新正版-测试测试测试常擦擦发放AASasdasd按时是sadafafa sas sad as sa sad\n        </span>\n      </div>\n      <div class=\"height10\"></div>\n      <div>\n        <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">180</span>\n        <span class=\"floatRight fontSize12\" style=\"margin-right: 10px\">×1</span>\n      </div>\n    </div>\n  </div>\n  <div class=\"height5\"></div>\n\n</div>\n<div class=\"address white-box\">\n  <span class=\"fontSize12\">配送方式</span>\n  <span class=\"floatRight fontSize12\">快递 免邮</span>\n  <div class=\"clear\"></div>\n  <hr class=\"sepLine\">\n  <span class=\"fontSize12\">购买数量</span>\n  <span class=\"floatRight fontSize12\">\n    <button class=\"btn btn-default numBtn\">-</button>\n    <input class=\"numInput\" type=\"number\" value=\"1\" style=\"width: 20px;\" readonly=\"readonly\">\n     <button class=\"btn btn-default numBtn\">+</button>\n  </span>\n  <div class=\"clear\"></div>\n  <hr class=\"sepLine\">\n  <span class=\"floatRight fontSize12\">共计： <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">180</span></span>\n  <div class=\"clear\"></div>\n</div>\n\n<div class=\"height10\"></div>\n<div class=\"address white-box\">\n  <div class=\"height10\"></div>\n  <div class=\"row\">\n    <div class=\"col-xs-6\" style=\"text-align: center\">\n      <button class=\"btn btn-default cancelBtn\" (click)=\"locationBack()\">取消订单</button>\n    </div>\n    <div class=\"col-xs-6\" style=\"text-align: center\">\n      <a class=\"btn btn-default uploadOrderBtn\">提交订单</a>\n    </div>\n  </div>\n  <div class=\"height10\"></div>\n\n</div>\n"
 
 /***/ }),
 
 /***/ 421:
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"background-image: url(assets/admin/img/user_bg.jpg);position: relative;background-position: center;background-size: cover;height: 150px\">\n\n  <div class=\"user_header\">\n\n    <div class=\"height30\"></div>\n    <div class=\"height30\"></div>\n    <img src=\"assets/admin/images/avatar.jpg\" alt=\"\" class=\"img-circle\" width=\"70px\" height=\"70px\" ><br>\n    <div class=\"height30\"></div>\n    会员名:yifan\n  </div>\n\n</div>\n\n\n<div class=\"white-box\">\n  <div class=\"weui-grids\" style=\"height: 70px\">\n\n    <a href=\"#\" class=\"weui-grid js_grid\" style=\"height: 70px\">\n      <div class=\"weui-grid__icon\" style=\"height: 16px;font-size: 16px;color:#666;\">\n        0.00\n      </div>\n      <p class=\"weui-grid__label\">\n        我的余额\n      </p>\n    </a>\n    <a href=\"#\" class=\"weui-grid js_grid\" style=\"height: 70px\">\n      <div class=\"weui-grid__icon\" style=\"height: 16px;font-size: 16px;color:#666;\">\n        5张\n      </div>\n      <p class=\"weui-grid__label\">\n        我的卡券\n      </p>\n    </a>\n    <a href=\"#\" class=\"weui-grid js_grid\" style=\"height: 70px\">\n      <div class=\"weui-grid__icon\" style=\"height: 16px;font-size: 16px;color:#666;\">\n        100\n      </div>\n      <p class=\"weui-grid__label\">\n        商城积分\n      </p>\n    </a>\n    <!--<a href=\"\" class=\"weui-grid js_grid\">-->\n    <!--<div class=\"weui-grid__icon\">-->\n    <!--<img src=\"assets/dist/demos/images/icon_nav_Button.png\" alt=\"\">-->\n    <!--</div>-->\n    <!--<p class=\"weui-grid__label\">-->\n    <!--送父母-->\n    <!--</p>-->\n    <!--</a>-->\n  </div>\n</div>\n<div class=\"height30\"></div>\n<div class=\"white-box\">\n  <div class=\"container\" style=\"padding: 10px\">\n    <div class=\"row\">\n      <div class=\"col-xs-6\" style=\"color: #666;font-size: 14px\">我的订单</div>\n      <div class=\"col-xs-6\" style=\"color: #aaa;text-align: right\"><a href=\"#\" style=\"color: #aaa;\">全部订单 ></a></div>\n    </div>\n  </div>\n  <hr style=\"margin: 0\">\n  <div class=\"container\">\n    <div class=\"height10\"></div>\n    <div class=\"weui-flex\">\n\n      <div class=\"weui-flex__item orderCss\" style=\"padding: 5px\">\n        <a href=\"#\" >\n          <div class=\"weui-grid__icon\" style=\"height: 22px;font-size: 16px;color:#666;text-align: center\">\n            <i class=\"fa fa-credit-card\"></i>\n          </div>\n          <p class=\"weui-grid__label\">\n            待支付\n          </p>\n        </a>\n      </div>\n      <div class=\"weui-flex__item orderCss\" style=\"padding: 5px\">\n        <a href=\"#\">\n          <div class=\"weui-grid__icon\" style=\"height: 22px;font-size: 16px;color:#666;text-align: center\">\n            <i class=\"fa  fa-circle-o-notch\"></i>\n          </div>\n          <p class=\"weui-grid__label\">\n            待发货\n          </p>\n        </a>\n      </div>\n      <div class=\"weui-flex__item orderCss\" style=\"padding: 5px\">\n        <a href=\"#\">\n          <div class=\"weui-grid__icon\" style=\"height: 22px;font-size: 16px;color:#666;text-align: center\">\n            <i class=\"fa fa-rocket\"></i>\n          </div>\n          <p class=\"weui-grid__label\">\n            待收货\n          </p>\n        </a>\n      </div>\n      <div class=\"weui-flex__item orderCss\" style=\"padding: 5px\">\n        <a href=\"#\">\n          <div class=\"weui-grid__icon\" style=\"height: 22px;font-size: 16px;color:#666;text-align: center\">\n            <i class=\"fa fa-pencil\"></i>\n          </div>\n          <p class=\"weui-grid__label\">\n            待评价\n          </p>\n        </a>\n      </div>\n      <div class=\"weui-flex__item orderCss\" style=\"padding: 5px\">\n        <a href=\"#\">\n          <div class=\"weui-grid__icon\" style=\"height: 22px;font-size: 16px;color:#666;text-align: center\">\n            <i class=\"fa fa-truck\"></i>\n          </div>\n          <p class=\"weui-grid__label\">\n            物流信息\n          </p>\n        </a>\n      </div>\n\n    </div>\n  </div>\n  <div class=\"height10\"></div>\n</div>\n<div class=\"weui-cells weui-cells_form\">\n  <div class=\"weui-cell orderCss\">\n    <div class=\"weui-cell__hd\">\n      <div style=\"height: 5px\"></div>\n      <label class=\"weui-label\" style=\"font-size: 14px;line-height: 36px;color: #666\">\n        <i class=\"fa fa-money\"></i> 余额充值\n      </label>\n    </div>\n    <div class=\"weui-cell__bd\" style=\"text-align: right;color:#999;line-height: 36px\">\n      <i class=\"fa fa-chevron-right\"></i>\n    </div>\n  </div>\n  <div class=\"weui-cell orderCss\">\n    <div class=\"weui-cell__hd\">\n      <div style=\"height: 5px\"></div>\n      <label class=\"weui-label\" style=\"font-size: 14px;line-height: 36px;color: #666\">\n        <i class=\"fa fa-tasks\"></i> 收货地址\n      </label>\n    </div>\n    <div class=\"weui-cell__bd\" style=\"text-align: right;color:#999;line-height: 36px\">\n      <i class=\"fa fa-chevron-right\"></i>\n    </div>\n  </div>\n  <div class=\"weui-cell orderCss\">\n    <div class=\"weui-cell__hd\">\n      <div style=\"height: 5px\"></div>\n      <label class=\"weui-label\" style=\"font-size: 14px;line-height: 36px;color: #666\">\n        <i class=\"fa fa-heart-o\"></i> 我的收藏\n      </label>\n    </div>\n    <div class=\"weui-cell__bd\" style=\"text-align: right;color:#999;line-height: 36px\">\n      <i class=\"fa fa-chevron-right\"></i>\n    </div>\n  </div>\n  <div class=\"weui-cell orderCss\">\n    <div class=\"weui-cell__hd\">\n      <div style=\"height: 5px\"></div>\n      <label class=\"weui-label\" style=\"font-size: 14px;line-height: 36px;color: #666\">\n        <i class=\"fa fa-user\"></i> 个人资料\n      </label>\n    </div>\n    <div class=\"weui-cell__bd\" style=\"text-align: right;color:#999;line-height: 36px\">\n      <i class=\"fa fa-chevron-right\"></i>\n    </div>\n  </div>\n  <div class=\"weui-cell orderCss\">\n    <div class=\"weui-cell__hd\">\n      <div style=\"height: 5px\"></div>\n      <label class=\"weui-label\" style=\"font-size: 14px;line-height: 36px;color: #666\">\n        <i class=\"fa fa-phone\"></i> 联系我们\n      </label>\n    </div>\n    <div class=\"weui-cell__bd\" style=\"text-align: right;color:#999;line-height: 36px\">\n      <i class=\"fa fa-chevron-right\"></i>\n    </div>\n  </div>\n  <div class=\"weui-cell orderCss\">\n    <div class=\"weui-cell__hd\">\n      <div style=\"height: 5px\"></div>\n      <label class=\"weui-label\" style=\"font-size: 14px;line-height: 36px;color: #666\">\n        <i class=\"fa fa-users\"></i> 技术支持\n      </label>\n    </div>\n    <div class=\"weui-cell__bd\" style=\"text-align: right;color:#999;line-height: 36px\">\n      <i class=\"fa fa-chevron-right\"></i>\n    </div>\n  </div>\n\n</div>\n"
+module.exports = "<carousel>\n  <slide *ngFor=\"let pic of products.Pic\">\n    <img src=\"{{pic.Image}}\" alt=\"First slide\" style=\"height: 400px;\">\n  </slide>\n</carousel>\n<div class=\"white-box\">\n  <div class=\"container\">\n    <div style=\"height: 7px\"></div>\n    <p style=\"color: #555;font-size: 14px;font-weight: 700\">{{this.products.Name}} - {{products.Content}}</p>\n    <div style=\"height: 10px\"></div>\n    <div class=\"row\">\n      <div class=\"col-xs-7\">\n        <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">{{this.products.Price}}</span>&nbsp;&nbsp;<span style=\"color: #aaa;font-size: 12px\">{{this.products.Buy}}人已读</span>\n      </div>\n      <div class=\"col-xs-5\" style=\"text-align: right\">\n        <span style=\"color: #aaa;font-size: 12px\"><s>原价￥499</s></span>\n      </div>\n    </div>\n    <div style=\"height: 5px\"></div>\n    <a href=\"#\" class=\"text\"><span class=\"fa fa-heart-o\"></span> 收藏</a>\n\n  </div>\n  <div class=\"height15\"></div>\n</div>\n<div class=\"height10\"></div>\n<div class=\"address white-box container\">\n  <div class=\"height10\"></div>\n  <div class=\"row\">\n    <div class=\"col-xs-4\" style=\"text-align: center\">\n      <button class=\"btn btn-default\" style=\"background-color: #ddd;width: 100px\">加入购物车</button>\n    </div>\n    <div class=\"col-xs-4\" style=\"text-align: center\">\n      <a [routerLink]=\"['/rent', products.Id]\" class=\"btn btn-default uploadOrderBtn\" style=\"background-color: orangered;color: #fff;width: 100px\">租赁</a>\n    </div>\n    <div class=\"col-xs-4\" style=\"text-align: center\">\n      <a [routerLink]=\"['/buy', products.Id]\" class=\"btn btn-default uploadOrderBtn\" style=\"background-color: orange;color: #fff;width: 100px\">立即购买</a>\n    </div>\n  </div>\n  <div class=\"height10\"></div>\n\n</div>\n\n<div class=\"textCenter\">\n  <div class=\"height10\"></div>\n  <span class=\"line\">--- </span><span><i class=\"fa fa-comments-o\"></i> 书籍评价</span><span class=\"line\"> ---</span>\n  <div class=\"height10\"></div>\n</div>\n\n<div class=\"comments\">\n  <div class=\"white-box container padding10 margin-bottom10\">\n    <img src=\"assets/admin/images/avatar.jpg\" alt=\"\" class=\"img-circle\" width=\"30px\" height=\"30px\">\n    <span style=\"color: #333;font-size: 14px;margin-left: 5px\">yifan</span>\n    <div style=\"margin-top: 5px\">\n      <span style=\"color: #aaa;font-size: 8px;\">2017-03-08</span>\n    </div>\n    <div class=\"content\">\n      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>\n    </div>\n  </div>\n\n  <div class=\"white-box container padding10 margin-bottom10\">\n    <img src=\"assets/admin/images/avatar.jpg\" alt=\"\" class=\"img-circle\" width=\"30px\" height=\"30px\">\n    <span style=\"color: #333;font-size: 14px;margin-left: 5px\">yifan</span>\n    <div style=\"margin-top: 5px\">\n      <span style=\"color: #aaa;font-size: 8px;\">2017-03-08</span>\n    </div>\n    <div class=\"content\">\n      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>\n    </div>\n  </div>\n\n  <div class=\"white-box container padding10 margin-bottom10\">\n    <img src=\"assets/admin/images/avatar.jpg\" alt=\"\" class=\"img-circle\" width=\"30px\" height=\"30px\">\n    <span style=\"color: #333;font-size: 14px;margin-left: 5px\">yifan</span>\n    <div style=\"margin-top: 5px\">\n      <span style=\"color: #aaa;font-size: 8px;\">2017-03-08</span>\n    </div>\n    <div class=\"content\">\n      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>\n    </div>\n  </div>\n\n  <div class=\"white-box container padding10 margin-bottom10\">\n    <img src=\"assets/admin/images/avatar.jpg\" alt=\"\" class=\"img-circle\" width=\"30px\" height=\"30px\">\n    <span style=\"color: #333;font-size: 14px;margin-left: 5px\">yifan</span>\n    <div style=\"margin-top: 5px\">\n      <span style=\"color: #aaa;font-size: 8px;\">2017-03-08</span>\n    </div>\n    <div class=\"content\">\n      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>\n    </div>\n  </div>\n\n  <div class=\"white-box container padding10 margin-bottom10\">\n    <img src=\"assets/admin/images/avatar.jpg\" alt=\"\" class=\"img-circle\" width=\"30px\" height=\"30px\">\n    <span style=\"color: #333;font-size: 14px;margin-left: 5px\">yifan</span>\n    <div style=\"margin-top: 5px\">\n      <span style=\"color: #aaa;font-size: 8px;\">2017-03-08</span>\n    </div>\n    <div class=\"content\">\n      <p>图片中的产品如此高逼格，没想到我收到货之后更高逼格，简直赚翻，爽歪歪，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>\n    </div>\n  </div>\n\n  <div style=\"height:30px\"></div>\n</div>\n\n\n\n"
 
 /***/ }),
 
 /***/ 422:
 /***/ (function(module, exports) {
 
+module.exports = "\n<div class=\"white-box\">\n\n\n  <div class=\"height15\"></div>\n  <div class=\"container\">\n\n    <div class=\"seachButton\" style=\"margin: 0\">\n      <input  type=\"text\" class=\"form-control seachInput\" placeholder=\"搜索您想要的书籍名称\">\n    </div>\n    <div class=\"height15\"></div>\n\n    <div class=\"row\" id=\"#list\">\n\n      <a *ngFor=\"let product of products\" [routerLink]=\"['/detail', product.Id]\" class=\"col-xs-6 category_box\" style=\"margin-bottom: 15px\">\n        <div class=\"box\">\n          <div [ngStyle]=\"{'background-image':+'url('+ product.Image+')'}\" style=\"position: relative;background-position: center;background-size: cover;\">\n            <img src=\"assets/book.png\" width=\"100%\" height=\"auto\" alt=\"\">\n          </div>\n          <div class=\"box-text\" style=\"height: 39px;overflow: hidden\">\n            <p class=\"hot-product-name\">{{product.Name}}-{{product.Content}}</p>\n          </div>\n          <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">{{product.Price}}</span>&nbsp;&nbsp;<span style=\"font-size: 1px;color: #aaa;font-size: 12px\">{{product.Buy}}人已读</span>\n\n\n        </div>\n      </a>\n\n    </div>\n    <br>\n\n  </div>\n</div>\n\n"
+
+/***/ }),
+
+/***/ 423:
+/***/ (function(module, exports) {
+
+module.exports = "<div style=\"background-image: url(assets/admin/img/user_bg.jpg);position: relative;background-position: center;background-size: cover;height: 150px\">\n\n  <div class=\"user_header\">\n\n    <div class=\"height30\"></div>\n    <div class=\"height30\"></div>\n    <img src=\"{{user.HeadImage}}\" alt=\"\" class=\"img-circle\" width=\"70px\" height=\"70px\" ><br>\n    <div class=\"height30\"></div>\n    会员名:{{user.Name}}\n  </div>\n\n</div>\n\n\n<div class=\"white-box\">\n  <div class=\"weui-grids\" style=\"height: 70px\">\n\n    <a href=\"#\" class=\"weui-grid js_grid\" style=\"height: 70px\">\n      <div class=\"weui-grid__icon\" style=\"height: 16px;font-size: 16px;color:#666;\">\n        {{user.Account}}\n      </div>\n      <p class=\"weui-grid__label\">\n        我的余额\n      </p>\n    </a>\n    <a href=\"#\" class=\"weui-grid js_grid\" style=\"height: 70px\">\n      <div class=\"weui-grid__icon\" style=\"height: 16px;font-size: 16px;color:#666;\">\n        5张\n      </div>\n      <p class=\"weui-grid__label\">\n        我的卡券\n      </p>\n    </a>\n    <a href=\"#\" class=\"weui-grid js_grid\" style=\"height: 70px\">\n      <div class=\"weui-grid__icon\" style=\"height: 16px;font-size: 16px;color:#666;\">\n        {{user.Mark}}\n      </div>\n      <p class=\"weui-grid__label\">\n        商城积分\n      </p>\n    </a>\n    <!--<a href=\"\" class=\"weui-grid js_grid\">-->\n    <!--<div class=\"weui-grid__icon\">-->\n    <!--<img src=\"assets/dist/demos/images/icon_nav_Button.png\" alt=\"\">-->\n    <!--</div>-->\n    <!--<p class=\"weui-grid__label\">-->\n    <!--送父母-->\n    <!--</p>-->\n    <!--</a>-->\n  </div>\n</div>\n<div class=\"height30\"></div>\n<div class=\"white-box\">\n  <div class=\"container\" style=\"padding: 10px\">\n    <div class=\"row\">\n      <div class=\"col-xs-6\" style=\"color: #666;font-size: 14px\">我的订单</div>\n      <div class=\"col-xs-6\" style=\"color: #aaa;text-align: right\"><a href=\"#\" style=\"color: #aaa;\">全部订单 ></a></div>\n    </div>\n  </div>\n  <hr style=\"margin: 0\">\n  <div class=\"container\">\n    <div class=\"height10\"></div>\n    <div class=\"weui-flex\">\n\n      <div class=\"weui-flex__item orderCss\" style=\"padding: 5px\">\n        <a href=\"#\" >\n          <div class=\"weui-grid__icon\" style=\"height: 22px;font-size: 16px;color:#666;text-align: center\">\n            <i class=\"fa fa-credit-card\"></i>\n          </div>\n          <p class=\"weui-grid__label\">\n            待支付\n          </p>\n        </a>\n      </div>\n      <div class=\"weui-flex__item orderCss\" style=\"padding: 5px\">\n        <a href=\"#\">\n          <div class=\"weui-grid__icon\" style=\"height: 22px;font-size: 16px;color:#666;text-align: center\">\n            <i class=\"fa  fa-circle-o-notch\"></i>\n          </div>\n          <p class=\"weui-grid__label\">\n            待发货\n          </p>\n        </a>\n      </div>\n      <div class=\"weui-flex__item orderCss\" style=\"padding: 5px\">\n        <a href=\"#\">\n          <div class=\"weui-grid__icon\" style=\"height: 22px;font-size: 16px;color:#666;text-align: center\">\n            <i class=\"fa fa-rocket\"></i>\n          </div>\n          <p class=\"weui-grid__label\">\n            待收货\n          </p>\n        </a>\n      </div>\n      <div class=\"weui-flex__item orderCss\" style=\"padding: 5px\">\n        <a href=\"#\">\n          <div class=\"weui-grid__icon\" style=\"height: 22px;font-size: 16px;color:#666;text-align: center\">\n            <i class=\"fa fa-pencil\"></i>\n          </div>\n          <p class=\"weui-grid__label\">\n            待评价\n          </p>\n        </a>\n      </div>\n      <div class=\"weui-flex__item orderCss\" style=\"padding: 5px\">\n        <a href=\"#\">\n          <div class=\"weui-grid__icon\" style=\"height: 22px;font-size: 16px;color:#666;text-align: center\">\n            <i class=\"fa fa-truck\"></i>\n          </div>\n          <p class=\"weui-grid__label\">\n            物流信息\n          </p>\n        </a>\n      </div>\n\n    </div>\n  </div>\n  <div class=\"height10\"></div>\n</div>\n<div class=\"weui-cells weui-cells_form\">\n  <div class=\"weui-cell orderCss\">\n    <div class=\"weui-cell__hd\">\n      <div style=\"height: 5px\"></div>\n      <label class=\"weui-label\" style=\"font-size: 14px;line-height: 36px;color: #666\">\n        <i class=\"fa fa-money\"></i> 余额充值\n      </label>\n    </div>\n    <div class=\"weui-cell__bd\" style=\"text-align: right;color:#999;line-height: 36px\">\n      <i class=\"fa fa-chevron-right\"></i>\n    </div>\n  </div>\n  <div class=\"weui-cell orderCss\">\n    <div class=\"weui-cell__hd\">\n      <div style=\"height: 5px\"></div>\n      <label class=\"weui-label\" style=\"font-size: 14px;line-height: 36px;color: #666\">\n        <i class=\"fa fa-tasks\"></i> 收货地址\n      </label>\n    </div>\n    <div class=\"weui-cell__bd\" style=\"text-align: right;color:#999;line-height: 36px\">\n      <i class=\"fa fa-chevron-right\"></i>\n    </div>\n  </div>\n  <div class=\"weui-cell orderCss\">\n    <div class=\"weui-cell__hd\">\n      <div style=\"height: 5px\"></div>\n      <label class=\"weui-label\" style=\"font-size: 14px;line-height: 36px;color: #666\">\n        <i class=\"fa fa-heart-o\"></i> 我的收藏\n      </label>\n    </div>\n    <div class=\"weui-cell__bd\" style=\"text-align: right;color:#999;line-height: 36px\">\n      <i class=\"fa fa-chevron-right\"></i>\n    </div>\n  </div>\n  <div class=\"weui-cell orderCss\">\n    <div class=\"weui-cell__hd\">\n      <div style=\"height: 5px\"></div>\n      <label class=\"weui-label\" style=\"font-size: 14px;line-height: 36px;color: #666\">\n        <i class=\"fa fa-user\"></i> 个人资料\n      </label>\n    </div>\n    <div class=\"weui-cell__bd\" style=\"text-align: right;color:#999;line-height: 36px\">\n      <i class=\"fa fa-chevron-right\"></i>\n    </div>\n  </div>\n  <div class=\"weui-cell orderCss\">\n    <div class=\"weui-cell__hd\">\n      <div style=\"height: 5px\"></div>\n      <label class=\"weui-label\" style=\"font-size: 14px;line-height: 36px;color: #666\">\n        <i class=\"fa fa-phone\"></i> 联系我们\n      </label>\n    </div>\n    <div class=\"weui-cell__bd\" style=\"text-align: right;color:#999;line-height: 36px\">\n      <i class=\"fa fa-chevron-right\"></i>\n    </div>\n  </div>\n  <div class=\"weui-cell orderCss\">\n    <div class=\"weui-cell__hd\">\n      <div style=\"height: 5px\"></div>\n      <label class=\"weui-label\" style=\"font-size: 14px;line-height: 36px;color: #666\">\n        <i class=\"fa fa-users\"></i> 技术支持\n      </label>\n    </div>\n    <div class=\"weui-cell__bd\" style=\"text-align: right;color:#999;line-height: 36px\">\n      <i class=\"fa fa-chevron-right\"></i>\n    </div>\n  </div>\n\n</div>\n"
+
+/***/ }),
+
+/***/ 424:
+/***/ (function(module, exports) {
+
 module.exports = "<div class=\"weui-tab\">\n  <div class=\"weui-tab__bd\">\n    <div id=\"tab1\" class=\"weui-tab__bd-item weui-tab__bd-item--active\" style=\"background-color: #efeff4\">\n      <!--页面组件内容-->\n      <router-outlet>\n      </router-outlet>\n      <div style=\"height: 60px\"></div>\n    </div>\n  </div>\n  <div class=\"weui-tabbar\">\n\n    <a routerLink=\"/\" id=\"toHome\" class=\"weui-tabbar__item weui-bar__item--on\">\n      <!--<span class=\"weui-badge\" style=\"position: absolute;top: -.4em;right: 1em;\">8</span>-->\n      <div class=\"weui-tabbar__icon\" id=\"home\">\n        <i class=\"fa fa-home fa-stack-2x\"></i>\n      </div>\n      <p class=\"weui-tabbar__label\">首页</p>\n    </a>\n\n    <a routerLink=\"/message\" class=\"weui-tabbar__item\">\n      <div class=\"weui-tabbar__icon\">\n        <i class=\"fa fa-commenting fa-stack-2x\"></i>\n      </div>\n      <p class=\"weui-tabbar__label\">新闻</p>\n    </a>\n    <a routerLink=\"/cart\" class=\"weui-tabbar__item\">\n      <div class=\"weui-tabbar__icon\">\n        <i class=\"fa fa-shopping-cart fa-stack-2x\"></i>\n      </div>\n      <p class=\"weui-tabbar__label\">购物车</p>\n    </a>\n\n    <a routerLink=\"/user\" class=\"weui-tabbar__item\">\n      <div class=\"weui-tabbar__icon\">\n        <i class=\"fa fa-user fa-stack-2x\"></i>\n      </div>\n      <p class=\"weui-tabbar__label\">个人</p>\n    </a>\n\n  </div>\n</div>\n\n"
-
-/***/ }),
-
-/***/ 462:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fontawesome-webfont.b06871f281fee6b241d6.ttf";
-
-/***/ }),
-
-/***/ 463:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fontawesome-webfont.af7ae505a9eed503f8b8.woff2";
 
 /***/ }),
 
 /***/ 464:
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "fontawesome-webfont.b06871f281fee6b241d6.ttf";
+
+/***/ }),
+
+/***/ 465:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fontawesome-webfont.af7ae505a9eed503f8b8.woff2";
+
+/***/ }),
+
+/***/ 466:
+/***/ (function(module, exports, __webpack_require__) {
+
 module.exports = __webpack_require__.p + "fontawesome-webfont.fee66e712a8a08eef580.woff";
 
 /***/ }),
 
-/***/ 467:
+/***/ 469:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(306);
+module.exports = __webpack_require__(307);
 
 
 /***/ })
 
-},[467]);
+},[469]);
 //# sourceMappingURL=main.bundle.js.map
