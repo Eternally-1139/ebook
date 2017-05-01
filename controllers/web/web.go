@@ -8,6 +8,7 @@ import (
 	"crypto/sha1"
 	"io"
 	"strings"
+	"ebook/service"
 )
 
 type WebController struct {
@@ -85,6 +86,14 @@ func (this *WebController) IsLogin(){
 		this.ReturnSuccess()
 	}
 
+
+}
+
+//@router /createwxmenu [*]
+func (this *WebController) CMenu(){
+	ac:=service.GetAccessToken("wxfcb057b3c57cee69","218f0ea06e24651010db6a1f0eb8f40c");
+	service.CreateWxMenu(ac)
+	this.ReturnSuccess()
 
 }
 

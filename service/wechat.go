@@ -178,27 +178,17 @@ func PushWxMenuCreate(accessToken string, menuJsonBytes []byte) error {
 	return nil
 }
 
-func  createWxMenu(accessToken string) {
+func CreateWxMenu(accessToken string) {
 
 
 	menuStr := `{
             "button": [
             {
-                "name": "合取官网",
+                "name": "电子书城",
                 "type": "view",
-                "url": "http://www.hnhqjk.com"
-            },
-            {
-
-                "name":"公司名医",
-                "type": "view",
-                "url": "http://www.hnhqjk.com/small"
-            },
-            {
-                "name": "合取动态",
-                "type": "view",
-                "url": "http://www.hnhqjk.com/dynamic"
+                "url": "http://ebook.hnhqjk.com"
             }
+
             ]
         }`
 
