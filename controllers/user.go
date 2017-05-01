@@ -82,7 +82,7 @@ func (this *ApiController) LoginDo(){
 	} else {
 
 	}
-	return
+	this.ReturnSuccess()
 
 }
 //@router /api/user/autoLogin [*]
@@ -90,7 +90,7 @@ func (this *ApiController) UserAutoLogin(){
 
 	requestLine:="https://open.weixin.qq.com/connect/qrconnect?appid="+"wxfcb057b3c57cee69"+"&redirect_uri="+"http://ebook.hnhqjk.com/api/user/loginAuto"+"&response_type=code&scope="+"snsapi_base"+"&state=STATE#wechat_redirect"
 	http.Get(requestLine)
-
+	this.ReturnSuccess()
 
 }
 
