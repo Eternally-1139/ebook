@@ -22,6 +22,8 @@ func (this *AngularController) AngularRender(){
 		if err:=user.Read();err!=nil{
 			this.SetSession("users",user)
 			this.IsLogin = true
+			this.TplName="angular/index.html"
+			return
 		}
 
 	}

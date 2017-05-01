@@ -21,10 +21,8 @@ func (this *ApiController) LoginDo(){
 
 
 	code:=this.GetString("code")
-	fmt.Println("code:"+code)
 	requestLine:="https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxfcb057b3c57cee69&secret=218f0ea06e24651010db6a1f0eb8f40c&code="+code+"&grant_type=authorization_code"
 	resp, err := http.Get(requestLine)
-
 	if err != nil || resp.StatusCode != http.StatusOK {
 		fmt.Println("发送get请求获取 openid 错误", err)
 	}
@@ -34,7 +32,6 @@ func (this *ApiController) LoginDo(){
 	if err != nil {
 		fmt.Println("发送get请求获取 atoken 读取返回body错误", err)
 	}
-
 	if bytes.Contains(body, []byte("access_token")) {
 		ctk := CodeToken{}
 		err = json.Unmarshal(body, &ctk)
@@ -47,7 +44,6 @@ func (this *ApiController) LoginDo(){
 		Openid:=ctk.Openid
 		user:=models.User{OpenId:Openid}
 		userinfo:=service.GetUserInfo(ctk.AccessToken,Openid)
-		fmt.Println(userinfo)
 		if(userinfo.Nickname==""){
 			fmt.Println("用户信息为空")
 			this.ReturnJson(10002,"自动注册失败！请重试")
@@ -55,12 +51,11 @@ func (this *ApiController) LoginDo(){
 		}
 		if err:=user.FindByOpenId();err==nil{
 			user.Read()
+			fmt.Println("断点："+user.Name)
 			this.SetSession("users",user)
-
 			this.Ctx.Redirect(302,"/")
 			return
 		}else{
-
 			user.Name=userinfo.Nickname
 			user.Sex=userinfo.Sex
 			user.HeadImage=userinfo.Headimgurl
