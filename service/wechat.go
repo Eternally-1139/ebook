@@ -100,7 +100,7 @@ func  GetUserInfo(ac string,openid string) (WechatUser){
 	err = json.Unmarshal(body, &atr)
 
 	defer resp.Body.Close()
-	fmt.Println(atr)
+	fmt.Println("headimgurl:"+atr.Headimgurl)
 	return atr
 
 }
