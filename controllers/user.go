@@ -51,7 +51,7 @@ func (this *ApiController) LoginDo(){
 		}
 		if err:=user.FindByOpenId();err==nil{
 			user.Read()
-			fmt.Println("断点："+user.Name)
+			fmt.Println("数据库读取成功！："+user.Name)
 			this.SetSession("users",user)
 			this.Ctx.Redirect(302,"/")
 			return
