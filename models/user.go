@@ -14,7 +14,7 @@ type User struct {
 	Account       float32          `orm:"default(0)"`
 	Mark	      int64            `orm:"default(0)"`
 	HeadImage     string	       `orm:"null"`
-	Sex 	      string	       `orm:"null"`
+	Sex 	      int	       `orm:"default(0)"`
 	OpenId        string           `orm:"null"`
 	LastLoginTime time.Time        `orm:"type(datetime)"`
 	LastLoginIp   string
