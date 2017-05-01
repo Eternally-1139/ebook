@@ -95,6 +95,7 @@ func (this *ApiController) UserAutoLogin(){
 		fmt.Println("发送get请求获取 openid 错误", err)
 	}else{
 		fmt.Println("发送请求成功！")
+		this.Ctx.Redirect(302,"/api/user/loginAuto")
 	}
 	this.ReturnSuccess()
 
