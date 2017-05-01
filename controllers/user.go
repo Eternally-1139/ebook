@@ -89,9 +89,13 @@ func (this *ApiController) LoginDo(){
 func (this *ApiController) UserAutoLogin(){
 
 	requestLine:="https://open.weixin.qq.com/connect/qrconnect?appid="+"wxfcb057b3c57cee69"+"&redirect_uri="+"http://ebook.hnhqjk.com/api/user/loginAuto"+"&response_type=code&scope="+"snsapi_userinfo"+"&state=STATE#wechat_redirect"
-	http.Get(requestLine)
-	code:=this.GetString("code")
-	fmt.Println("autologinCode"+code)
+	resp, err := http.Get(requestLine)
+
+	if err != nil || resp.StatusCode != http.StatusOK {
+		fmt.Println("发送get请求获取 openid 错误", err)
+	}else{
+		fmt.Println("发送请求成功！")
+	}
 	this.ReturnSuccess()
 
 }
