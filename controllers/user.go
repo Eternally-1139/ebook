@@ -43,6 +43,7 @@ func (this *ApiController) LoginDo(){
 		}
 
 		fmt.Println("access_token",ctk.AccessToken)
+		fmt.Println("openid",ctk.Openid)
 		Openid:=ctk.Openid
 		user:=models.User{OpenId:Openid}
 		Subscribe,Openid,Nickname,Sex,Language,City,Province,Country,Headimgurl:=service.GetUserInfo(ctk.AccessToken,Openid)

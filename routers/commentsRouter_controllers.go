@@ -8,29 +8,8 @@ func init() {
 
 	beego.GlobalControllerRouter["ebook/controllers:AngularController"] = append(beego.GlobalControllerRouter["ebook/controllers:AngularController"],
 		beego.ControllerComments{
-			Method: "VueRender",
+			Method: "AngularRender",
 			Router: `/*`,
-			AllowHTTPMethods: []string{"*"},
-			Params: nil})
-
-	beego.GlobalControllerRouter["ebook/controllers:ApiController"] = append(beego.GlobalControllerRouter["ebook/controllers:ApiController"],
-		beego.ControllerComments{
-			Method: "GetUser",
-			Router: `/test/getUser`,
-			AllowHTTPMethods: []string{"*"},
-			Params: nil})
-
-	beego.GlobalControllerRouter["ebook/controllers:ApiController"] = append(beego.GlobalControllerRouter["ebook/controllers:ApiController"],
-		beego.ControllerComments{
-			Method: "GetProduct",
-			Router: `/api/getProduct`,
-			AllowHTTPMethods: []string{"*"},
-			Params: nil})
-
-	beego.GlobalControllerRouter["ebook/controllers:ApiController"] = append(beego.GlobalControllerRouter["ebook/controllers:ApiController"],
-		beego.ControllerComments{
-			Method: "GetNumbers",
-			Router: `/api/getProductAndCategory`,
 			AllowHTTPMethods: []string{"*"},
 			Params: nil})
 
@@ -59,6 +38,27 @@ func init() {
 		beego.ControllerComments{
 			Method: "GetUserInfo",
 			Router: `/api/getUserInfo`,
+			AllowHTTPMethods: []string{"*"},
+			Params: nil})
+
+	beego.GlobalControllerRouter["ebook/controllers:ApiController"] = append(beego.GlobalControllerRouter["ebook/controllers:ApiController"],
+		beego.ControllerComments{
+			Method: "GetUser",
+			Router: `/test/getUser`,
+			AllowHTTPMethods: []string{"*"},
+			Params: nil})
+
+	beego.GlobalControllerRouter["ebook/controllers:ApiController"] = append(beego.GlobalControllerRouter["ebook/controllers:ApiController"],
+		beego.ControllerComments{
+			Method: "GetProduct",
+			Router: `/api/getProduct`,
+			AllowHTTPMethods: []string{"*"},
+			Params: nil})
+
+	beego.GlobalControllerRouter["ebook/controllers:ApiController"] = append(beego.GlobalControllerRouter["ebook/controllers:ApiController"],
+		beego.ControllerComments{
+			Method: "GetNumbers",
+			Router: `/api/getProductAndCategory`,
 			AllowHTTPMethods: []string{"*"},
 			Params: nil})
 
