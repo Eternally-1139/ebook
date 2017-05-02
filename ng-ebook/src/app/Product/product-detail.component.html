@@ -109,7 +109,7 @@
 </div>
 
 
-<div *ngIf="isModalShown" id="toast">
+<div [ngStyle]="{'display':+isDisplay}" id="toast">
   <div class="weui_mask_transparent"></div>
   <div class="weui_toast">
     <i class="weui_icon_toast"></i>

@@ -14,7 +14,7 @@ import { ModalDirective } from 'ngx-bootstrap/modal';
   styleUrls: [ './product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  isDisplay:"none";
+  isDisplay:string="none";
   modelText = "";
   @ViewChild('autoShownModal') public autoShownModal:ModalDirective;
   public isModalShown:boolean = false;
@@ -48,11 +48,17 @@ export class ProductDetailComponent implements OnInit {
     this.cartService.addCar(this.products.Id,this.products.Name,this.products.Price,this.products.Image,1,this.products.Content)
       .subscribe(status =>{
           if (status==10000){
-            this.modelText="添加成功！";
-            this.showModal();
+            this.modelText="添加成功!";
+            this.isDisplay="block";
+            setTimeout(() => {
+              this.isDisplay = "none"
+            }, 1500);
           }else{
-            this.modelText="操作失败，请检查您的网络！";
-            this.showModal();
+            this.modelText="网络异常!";
+            this.isDisplay="block";
+            setTimeout(() => {
+              this.isDisplay = "none"
+            }, 1500);
           }
         });
   }
