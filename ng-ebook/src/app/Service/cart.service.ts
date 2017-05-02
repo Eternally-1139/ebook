@@ -29,7 +29,7 @@ export class CartService {
 
   constructor(private http: Http) { }
   addCar(id,name,price,img,num=1,content){
-    return this.http.get(`${this.url}`)
+    return this.http.get(`${this.url}?id=${id}&name=${name}&price=${price}&img=${img}&num=${num}&content=${content}`)
       .map(this.extractData)
       .catch(this.handleError);
   }

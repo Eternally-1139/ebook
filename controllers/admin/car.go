@@ -35,11 +35,10 @@ func (this *AjaxController) AddCar(){
 	price,_:=this.GetFloat("price")
 	img:=this.GetString("img")
 	content:=this.GetString("content")
-	fmt.Println("username"+user.Name)
+	fmt.Println("img"+img)
 
 	productInfo:=models.ProductInfo{ProductId:id}
 	productInfo.Read()
-	fmt.Println(productInfo)
 
 	if err:=productInfo.FindById();err==nil{
 		productInfo.Read()
