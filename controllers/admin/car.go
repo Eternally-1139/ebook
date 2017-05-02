@@ -41,7 +41,7 @@ func (this *AjaxController) AddCar(){
 		productInfo.Read()
 		productInfo.Num+=1
 		productInfo.Update()
-		this.ReturnSuccess()
+		this.ReturnSuccess("info:database add 1")
 		return
 	}else{
 		productInfo.Name=name
