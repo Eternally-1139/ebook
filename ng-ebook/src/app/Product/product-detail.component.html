@@ -30,7 +30,7 @@
   <div class="height10"></div>
   <div class="row">
     <div class="col-xs-4" style="text-align: center">
-      <a class="btn btn-default" style="background-color: #ddd;width: 100px" href="javascript:void(0)" (click)="addCart('{{this.products.Id}}','{{this.products.Name}','{{this.products.Price}}','{{this.products.Image}}','1','{{this.products.Content}}')">加入购物车</a>
+      <a class="btn btn-default" style="background-color: #ddd;width: 100px" href="javascript:void(0)" (click)="{'addCart(':+this.products.Id+','+this.products.Name+','+this.products.Price+','+this.products.Image+','+this.products.Content+')'}">加入购物车</a>
     </div>
     <div class="col-xs-4" style="text-align: center">
       <a [routerLink]="['/rent', products.Id]" class="btn btn-default uploadOrderBtn" style="background-color: orangered;color: #fff;width: 100px">租赁</a>
