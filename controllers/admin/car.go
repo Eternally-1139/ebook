@@ -35,7 +35,7 @@ func (this *AjaxController) AddCar(){
 	price,_:=this.GetFloat("price")
 	img:=this.GetString("img")
 	content:=this.GetString("content")
-	fmt.Println("name"+name)
+	fmt.Println("username"+user.Name)
 	productInfo:=models.ProductInfo{ProductId:id}
 	if err:=productInfo.FindById();err==nil{
 		productInfo.Read()
@@ -50,9 +50,7 @@ func (this *AjaxController) AddCar(){
 		proinfo.Image=img
 		proinfo.Num=1
 		proinfo.Content=content
-		if err:=user.Read();err==nil{
-			proinfo.User=&user
-		}
+		proinfo.User=&user
 		proinfo.Insert()
 		this.ReturnSuccess("info:create cart add 1","success")
 		return
