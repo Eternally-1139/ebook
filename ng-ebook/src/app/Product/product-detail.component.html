@@ -109,12 +109,9 @@
 </div>
 
 
-
-<ngb-alert *ngIf="!staticAlertClosed" (close)="staticAlertClosed = true">Check out our awesome new features!</ngb-alert>
-
-
-<ngb-alert *ngIf="successMessage" type="success" (close)="successMessage = null">{{ successMessage }}</ngb-alert>
-
-<p>
-  <button class="btn btn-primary" (click)="changeSuccessMessage()">Change message</button>
-</p>
+<alert type="success" dismissOnTimeout="1500">
+  <strong>Well done!</strong> You successfully read this important alert message.
+</alert>
+<div *ngFor="let alert of alerts">
+  <alert [type]="alert.type" [dismissOnTimeout]="alert.timeout">{{ alert.msg }}</alert>
+</div>
