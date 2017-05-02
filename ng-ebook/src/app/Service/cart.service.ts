@@ -28,7 +28,7 @@ export class CartService {
   // private url = '/api/categories';  //test
 
   constructor(private http: Http) { }
-  addCar(){
+  addCar(id,name,price,img,num=1,content){
     return this.http.get(`${this.url}`)
       .map(this.extractData)
       .catch(this.handleError);
