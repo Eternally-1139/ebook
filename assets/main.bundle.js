@@ -744,7 +744,7 @@ let ProductDetailComponent = class ProductDetailComponent {
     }
     showModal() {
         this.isModalShown = true;
-        setInterval(() => {
+        setTimeout(() => {
             this.isModalShown = false;
         }, 2000);
     }

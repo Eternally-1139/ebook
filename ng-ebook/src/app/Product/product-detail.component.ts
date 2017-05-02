@@ -21,7 +21,7 @@ export class ProductDetailComponent implements OnInit {
 
   public showModal():void {
     this.isModalShown = true;
-    setInterval(() => {
+    setTimeout(() => {
       this.isModalShown = false
     }, 2000);
   }
