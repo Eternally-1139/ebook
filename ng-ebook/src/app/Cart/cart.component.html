@@ -1,7 +1,7 @@
 <div class="container">
 
   <form action="" id="cart" name="cart">
-    <div class="row car_product">
+    <div class="row car_product" *ngFor="let cart of carts">
       <div class="col-xs-2">
         <div style="height: 18px"></div>
         <div class="checkboxFour">
@@ -12,18 +12,18 @@
         <div class="row">
           <div class="col-xs-3" style="padding: 0 0 0 8px">
             <div style="height: 6px"></div>
-            <div style="background-image: url(/assets/IMG_5097.JPG);background-size: cover;background-position: center;height: 60px">
-              <img src="assets/admin/img/tm.png">
+            <div [ngStyle]="{'background-image':+'url('+ cart.Image+')'}" style=";background-size: cover;background-position: center;height: 60px">
+              <img src="/web-static/admin/img/tm.png">
             </div>
           </div>
           <div class="col-xs-9">
             <div style="height: 40px;overflow: hidden">
-              <p style="font-size: 12px">外套男士-2017新款春季韩版潮流青年修身牛仔裤夹克衣服卫衣</p>
+              <p style="font-size: 12px">{{cart.Name}}-{{cart.Content}}</p>
             </div>
             <div style="height: 3px"></div>
             <div class="row">
               <div class="col-xs-6">
-                <span style="color: #e35b5a;font-size: 10px">￥</span><span style="color: #e35b5a">99</span>
+                <span style="color: #e35b5a;font-size: 10px">￥</span><span style="color: #e35b5a">{{cart.Price * cart.Num}}</span>
               </div>
               <div class="col-xs-6" style="text-align: right">
                 <button class="btn btn-danger" style="height: 20px;font-size: 10px;line-height: 8px">删除</button>
@@ -35,107 +35,6 @@
       </div>
     </div>
 
-    <div class="row car_product">
-      <div class="col-xs-2">
-        <div style="height: 18px"></div>
-        <div class="checkboxFour">
-          <input type="checkbox"  value="1" class="checkboxInput" name="" />
-        </div>
-      </div>
-      <div class="col-xs-10" style="padding: 0px 13px 0px 0px">
-        <div class="row">
-          <div class="col-xs-3" style="padding: 0 0 0 8px">
-            <div style="height: 6px"></div>
-            <div style="background-image: url(/assets/IMG_5097.JPG);background-size: cover;background-position: center;height: 60px">
-              <img src="assets/admin/img/tm.png">
-            </div>
-          </div>
-          <div class="col-xs-9">
-            <div style="height: 40px;overflow: hidden">
-              <p style="font-size: 12px">外套男士-2017新款春季韩版潮流青年修身牛仔裤夹克衣服卫衣</p>
-            </div>
-            <div style="height: 3px"></div>
-            <div class="row">
-              <div class="col-xs-6">
-                <span style="color: #e35b5a;font-size: 10px">￥</span><span style="color: #e35b5a">99</span>
-              </div>
-              <div class="col-xs-6" style="text-align: right">
-                <button class="btn btn-danger" style="height: 20px;font-size: 10px;line-height: 8px">删除</button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row car_product">
-      <div class="col-xs-2">
-        <div style="height: 18px"></div>
-        <div class="checkboxFour">
-          <input type="checkbox"  value="1" class="checkboxInput" name="" />
-        </div>
-      </div>
-      <div class="col-xs-10" style="padding: 0px 13px 0px 0px">
-        <div class="row">
-          <div class="col-xs-3" style="padding: 0 0 0 8px">
-            <div style="height: 6px"></div>
-            <div style="background-image: url(/assets/IMG_5097.JPG);background-size: cover;background-position: center;height: 60px">
-              <img src="assets/admin/img/tm.png">
-            </div>
-          </div>
-          <div class="col-xs-9">
-            <div style="height: 40px;overflow: hidden">
-              <p style="font-size: 12px">外套男士-2017新款春季韩版潮流青年修身牛仔裤夹克衣服卫衣</p>
-            </div>
-            <div style="height: 3px"></div>
-            <div class="row">
-              <div class="col-xs-6">
-                <span style="color: #e35b5a;font-size: 10px">￥</span><span style="color: #e35b5a">99</span>
-              </div>
-              <div class="col-xs-6" style="text-align: right">
-                <button class="btn btn-danger" style="height: 20px;font-size: 10px;line-height: 8px">删除</button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row car_product">
-      <div class="col-xs-2">
-        <div style="height: 18px"></div>
-        <div class="checkboxFour">
-          <input type="checkbox"  value="1" class="checkboxInput" name="" />
-        </div>
-      </div>
-      <div class="col-xs-10" style="padding: 0px 13px 0px 0px">
-        <div class="row">
-          <div class="col-xs-3" style="padding: 0 0 0 8px">
-            <div style="height: 6px"></div>
-            <div style="background-image: url(/assets/IMG_5097.JPG);background-size: cover;background-position: center;height: 60px">
-              <img src="assets/admin/img/tm.png">
-            </div>
-          </div>
-          <div class="col-xs-9">
-            <div style="height: 40px;overflow: hidden">
-              <p style="font-size: 12px">外套男士-2017新款春季韩版潮流青年修身牛仔裤夹克衣服卫衣</p>
-            </div>
-            <div style="height: 3px"></div>
-            <div class="row">
-              <div class="col-xs-6">
-                <span style="color: #e35b5a;font-size: 10px">￥</span><span style="color: #e35b5a">99</span>
-              </div>
-              <div class="col-xs-6" style="text-align: right">
-                <button class="btn btn-danger" style="height: 20px;font-size: 10px;line-height: 8px">删除</button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
   </form>
 

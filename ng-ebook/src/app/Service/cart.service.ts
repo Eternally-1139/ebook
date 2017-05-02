@@ -25,6 +25,7 @@ export class CartService {
 
 
   private url = '/api/addCar';  //Beego
+  private urlGetCar = '/api/getCar';  //Beego
   // private url = '/api/categories';  //test
 
   constructor(private http: Http) { }
@@ -33,11 +34,21 @@ export class CartService {
       .map(this.extractData)
       .catch(this.handleError);
   }
+  getCar(){
+    return this.http.get(this.urlGetCar)
+      .map(this.extractData2)
+      .catch(this.handleError)
+  }
 
   private extractData(res: Response) {
     let body = res.json();//解析为json
     // return body.categories || { };//解析body中自己包装的categories；Beego
     return body.status || { };//test
+  }
+  private extractData2(res: Response) {
+    let body = res.json();//解析为json
+    // return body.categories || { };//解析body中自己包装的categories；Beego
+    return body.carts || { };//test
   }
 
   private handleError (error: Response | any) {
