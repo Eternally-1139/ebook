@@ -41,7 +41,7 @@ func (this *AjaxController) AddCar(){
 		productInfo.Read()
 		productInfo.Num+=1
 		productInfo.Update()
-		this.ReturnSuccess("info:database add 1")
+		this.ReturnSuccess("info:database add 1","success")
 		return
 	}else{
 		var proinfo models.ProductInfo
@@ -50,8 +50,11 @@ func (this *AjaxController) AddCar(){
 		proinfo.Image=img
 		proinfo.Num=1
 		proinfo.Content=content
+		if err:=user.Read();err==nil{
+			proinfo.User=&user
+		}
 		proinfo.Insert()
-		this.ReturnSuccess("info:insert cart 1")
+		this.ReturnSuccess("info:create cart add 1","success")
 		return
 	}
 }
