@@ -33,9 +33,25 @@ func (this *AjaxController) AddCar(){
 	name:=this.GetString("name")
 	price,_:=this.GetFloat("price")
 	img:=this.GetString("img")
-	num,_:=this.GetFloat("num")
 	content:=this.GetString("content")
 
+	productInfo:=models.ProductInfo{ProductId:id}
+	if(productInfo.FindById()){
+		productInfo.Read()
+		productInfo.Num+=1
+		productInfo.Update()
+		this.ReturnSuccess()
+		return
+	}else{
+		productInfo.Name=name
+		productInfo.Price=price
+		productInfo.Image=img
+		productInfo.Num=1
+		productInfo.Content=content
+		productInfo.Insert()
+		this.ReturnSuccess()
+		return 
+	}
 }
 
 //@router /api/deleteCar [*]

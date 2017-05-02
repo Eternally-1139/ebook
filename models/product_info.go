@@ -12,6 +12,7 @@ type ProductInfo struct {
 	Content string
 	Num  float64   `orm:"default(1)"`
 	Price float64
+	ProductId int64 `orm:"default(0)"`
 }
 
 func (this *ProductInfo) Insert()(int64,error){
@@ -28,4 +29,7 @@ func (this *ProductInfo) Delete()(int64,error){
 
 func (this *ProductInfo)Read()error{
 	return orm.NewOrm().QueryTable("product_info").Filter("id",this.Id).RelatedSel().One(this)
+}
+func (this *ProductInfo) FindById() error {
+	return orm.NewOrm().QueryTable("product_info").Filter("product_id", this.ProductId).RelatedSel().One(this)
 }
