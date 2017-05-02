@@ -45,10 +45,10 @@ export class ProductDetailComponent implements OnInit {
     this.cartService.addCar(this.products.Id,this.products.Name,this.products.Price,this.products.Image,1,this.products.Content)
       .subscribe(status =>{
           if (status==10000){
-            this.modelText="添加成功！"
+            this.modelText="添加成功！";
             this.showModal();
           }else{
-            this.modelText="操作失败，请检查您的网络！"
+            this.modelText="操作失败，请检查您的网络！";
             this.showModal();
           }
         });
