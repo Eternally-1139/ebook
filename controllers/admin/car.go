@@ -52,6 +52,7 @@ func (this *AjaxController) AddCar(){
 
 	}else{
 		var proinfo models.ProductInfo
+		proinfo.ProductId=id
 		proinfo.Name=name
 		proinfo.Price=price
 		proinfo.Image=img
