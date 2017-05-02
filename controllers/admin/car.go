@@ -48,17 +48,6 @@ func (this *AjaxController) AddCar(){
 			fmt.Println("查询到该商品")
 			this.ReturnSuccess("info:database add 1","success")
 			return
-		}else{
-			var proinfo models.ProductInfo
-			proinfo.Name=name
-			proinfo.Price=price
-			proinfo.Image=img
-			proinfo.Num=1
-			proinfo.Content=content
-			proinfo.User=&user
-			proinfo.Insert()
-			this.ReturnSuccess("info:create cart add 1","success")
-			return
 		}
 
 	}else{

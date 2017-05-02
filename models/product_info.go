@@ -10,7 +10,7 @@ type ProductInfo struct {
 	Image string
 	Name string
 	Content string
-	Num  float64   `orm:"default(1)"`
+	Num  int   `orm:"default(1)"`
 	Price float64
 	ProductId int64 `orm:"default(0)"`
 }
