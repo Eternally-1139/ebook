@@ -41,6 +41,7 @@ func (this *AjaxController) AddCar(){
 		productInfo.Read()
 		productInfo.Num+=1
 		productInfo.Update()
+		fmt.Println("查询到该商品")
 		this.ReturnSuccess("info:database add 1","success")
 		return
 	}else{
