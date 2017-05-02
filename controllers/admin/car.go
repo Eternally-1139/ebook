@@ -38,9 +38,11 @@ func (this *AjaxController) AddCar(){
 	fmt.Println("username"+user.Name)
 
 	productInfo:=models.ProductInfo{ProductId:id}
+	productInfo.Read()
+	fmt.Println(&productInfo.User.Id)
 	if err:=productInfo.FindById();err==nil{
 		productInfo.Read()
-		if productInfo.User.Id ==user.Id{
+		if &productInfo.User.Id ==user.Id{
 			productInfo.Num+=1
 			productInfo.Update()
 			fmt.Println("查询到该商品")
