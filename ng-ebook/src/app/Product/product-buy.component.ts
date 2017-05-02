@@ -11,6 +11,7 @@ import { ModalDirective } from 'ngx-bootstrap/modal';
   styleUrls: [ './product-buy.component.css' ]
 })
 export class ProductBuyComponent implements OnInit {
+  isDisplay:"none";
   modelText = "";
   products = new Product();
   errorMessage: string;

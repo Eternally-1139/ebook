@@ -6,9 +6,36 @@ import (
 	"github.com/astaxie/beego/orm"
 )
 
+//@router /api/getCar [*]
+func (this *AjaxController) GetCar(){
+	userinfo:=this.GetSession("userinfo")
+	if userinfo==nil{
+		this.ReturnJson(10403,"请先登录")
+		return
+	}
+	user:=userinfo.(models.User)
+	user.Read()
+	var cart *[]models.ProductInfo
+	orm.NewOrm().QueryTable("product_info").Filter("user_id",user.Id).One(&cart)
+	this.ReturnSuccess("cart",cart)
+}
+
 //@router /api/addCar [*]
 func (this *AjaxController) AddCar(){
-	
+	userinfo:=this.GetSession("userinfo")
+	if userinfo==nil{
+		this.ReturnJson(10403,"请先登录")
+		return
+	}
+	user:=userinfo.(models.User)
+	user.Read()
+	id,_:=this.GetInt64("id")
+	name:=this.GetString("name")
+	price,_:=this.GetFloat("price")
+	img:=this.GetString("img")
+	num,_:=this.GetFloat("num")
+	content:=this.GetString("content")
+
 }
 
 //@router /api/deleteCar [*]

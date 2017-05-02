@@ -1,8 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 import { Product }                from '../Models/Product';
 import { ProductService }         from '../Service/product.service';
+import { CartService} from '../Service/cart.service'
+import { Cart} from '../Models/Cart'
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location }               from '@angular/common';
+import { ModalDirective } from 'ngx-bootstrap/modal';
 
 @Component({
   moduleId: module.id,
@@ -11,14 +14,45 @@ import { Location }               from '@angular/common';
   styleUrls: [ './product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
+  isDisplay:"none";
+  modelText = "";
+  @ViewChild('autoShownModal') public autoShownModal:ModalDirective;
+  public isModalShown:boolean = false;
+
+  public showModal():void {
+    this.isModalShown = true;
+  }
+
+  public hideModal():void {
+    this.autoShownModal.hide();
+  }
+
+  public onHidden():void {
+    this.isModalShown = false;
+  }
+
+
   products = new Product();
   errorMessage: string;
   constructor(
     private productService: ProductService,
+    private cartService: CartService,
     private route: ActivatedRoute,
     private location: Location
   ) { }
 
+  public addCart(id:number,name:string,price:number,img:string,num:number,content:string):void{
+    this.cartService.addCar(id,name,price,img,num,content)
+      .subscribe(status =>{
+          if (status==10000){
+            this.modelText="添加成功！"
+            this.showModal();
+          }else{
+            this.modelText="操作失败，请检查您的网络！"
+            this.showModal();
+          }
+        });
+  }
   ngOnInit(): void {
     this.route.params
       .switchMap((params: Params) => this.productService.getProduct(+params['id']))
@@ -31,6 +65,7 @@ export class ProductDetailComponent implements OnInit {
         this.products.Image = product.Image;
         this.products.Pic = product.Pic;
       });
+
   }
 
 }

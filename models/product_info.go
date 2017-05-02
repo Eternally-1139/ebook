@@ -9,6 +9,7 @@ type ProductInfo struct {
 	User *User `orm:"rel(fk);null"`
 	Image string
 	Name string
+	Content string
 	Num  float64   `orm:"default(1)"`
 	Price float64
 }

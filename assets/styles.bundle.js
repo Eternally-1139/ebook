@@ -1,6 +1,6 @@
 webpackJsonp([2,4],{
 
-/***/ 304:
+/***/ 306:
 /***/ (function(module, exports) {
 
 /*
@@ -253,23 +253,23 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 305:
+/***/ 307:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAA8CAMAAAC3gaEgAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA5UExURQAAAP///////////////////////////////////////////////////////////////////////wo6NW8AAAASdFJOUwAM2HsY+ZDVFUhLflPQ/d7t0vrXV0AAAABjSURBVDjL3dI5AoAgEAPA5b4F9v+Ptd5II1SacsokRCKKIFYXgMBaAQR7CHEP4kuYCB2AGg8JVC/20Ely/6OMZNZ/KNrCYzQMs5j3kOIOxQOaT+pIg5sUz1cFcOmjkBGIjIQbRpcJM41/oE8AAAAASUVORK5CYII="
 
 /***/ }),
 
-/***/ 309:
+/***/ 311:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(377);
+var content = __webpack_require__(380);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(304)(content, {});
+var update = __webpack_require__(306)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -287,16 +287,16 @@ if(false) {
 
 /***/ }),
 
-/***/ 310:
+/***/ 312:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(378);
+var content = __webpack_require__(381);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(304)(content, {});
+var update = __webpack_require__(306)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -314,7 +314,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 377:
+/***/ 380:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)();
@@ -329,7 +329,7 @@ exports.push([module.i, "/*!\n * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.c
 
 /***/ }),
 
-/***/ 378:
+/***/ 381:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(8)();
@@ -337,18 +337,18 @@ exports = module.exports = __webpack_require__(8)();
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n.seachButton{\n  margin-top: 7px;\n  margin-bottom: 5px;\n}\n.device {\n  width: 100%;\n  height: 200px;\n  padding: 0;\n  border-radius: 0;\n  background: #111;\n  border: 0;\n  margin: 0 auto;\n  position: relative;\n  box-shadow: 0;\n}\n.device .arrow-left {\n  background: url(" + __webpack_require__(305) + ") no-repeat left top;\n  position: absolute;\n  left: 10px;\n  top: 50%;\n  margin-top: -15px;\n  width: 17px;\n  z-index: 10000;\n\n  height: 30px;\n}\n.device .arrow-right {\n  background: url(" + __webpack_require__(305) + ") no-repeat left bottom;\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  margin-top: -15px;\n  z-index: 10000;\n\n  width: 17px;\n  height: 30px;\n}\n.swiper-container {\n  height: auto;\n  width: 100%;\n}\n\n#swiper-container {\n  height: auto;\n  width: 100%;\n}\n.content-slide {\n  padding: 30px 40px 30px 40px;\n  color: #fff;\n}\n.title {\n  font-size: 25px;\n  margin-bottom: 10px;\n}\n.pagination {\n  position: absolute;\n  left: 0;\n  text-align: center;\n  bottom:-8px;\n  z-index: 10000;\n  width: 100%;\n}\n.swiper-pagination-switch {\n  display: inline-block;\n  width: 10px;\n  height: 10px;\n  border-radius: 10px;\n  background: #999;\n  box-shadow: 0px 1px 2px #555 inset;\n  margin: 0 3px;\n  cursor: pointer;\n}\n.swiper-active-switch {\n  background: #fff;\n}\n\n.height15{\n  height: 15px;\n}\n.height10{\n  height: 10px;\n}\n.weui-grid__label{\n  color: #777;\n  font-size: 12px;\n}\n.white-box{\n  background-color: white;\n}\n.hot-product-name{\n  font-size: 12px;\n  margin-top: 5px;\n}\n.text{\n  color: #999;\n  font-size: 12px;\n  margin-right: 15px;\n}\n.textCenter{\n  text-align: center;\n  color: #999;\n  font-size: 12px;\n}\na.category_box{\n  margin:0;\n  color: #555;\n  padding: 8px;\n  text-decoration: none;\n}\n\na.category_box:active{\n  margin:0;\n  padding: 8px;\n  background-color: #eee;\n  text-decoration: none;\n}\n\n.weui-grid__label{\n  margin-bottom: 0;\n}\n\ndiv.orderCss{\n  color: #555;\n  text-decoration: none;\n}\ndiv.orderCss:active{\n  background-color: #eee;\n  text-decoration: none;\n}\n\n.text{\n  color: #999;\n  font-size: 12px;\n  margin-right: 15px;\n}\n.textCenter{\n  text-align: center;\n  color: #999;\n  font-size: 12px;\n}\n.padding10{\n  padding: 10px;\n}\n.margin-bottom10{\n  margin-bottom: 10px;\n}\n\n\n.device2 {\n  width: 100%;\n  height: 200px;\n  padding: 0;\n  border-radius: 0;\n  background: #111;\n  border: 0;\n  margin: 0 auto;\n  position: relative;\n  box-shadow: 0;\n}\n\n.swiper-container2 {\n  height: auto;\n  width: 100%;\n}\n\n#swiper-container2 {\n  height: auto;\n  width: 100%;\n}\n.content-slide2 {\n  padding: 30px 40px 30px 40px;\n  color: #fff;\n}\n.title2 {\n  font-size: 25px;\n  margin-bottom: 10px;\n}\n.pagination2 {\n  position: absolute;\n  left: 0;\n  text-align: center;\n  bottom:-8px;\n  z-index: 10000;\n  width: 100%;\n}\n.swiper-pagination-switch2 {\n  display: inline-block;\n  width: 10px;\n  height: 10px;\n  border-radius: 10px;\n  background: #999;\n  box-shadow: 0px 1px 2px #555 inset;\n  margin: 0 3px;\n  cursor: pointer;\n}\n.swiper-active-switch2 {\n  background: #fff;\n}\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n.seachButton{\n  margin-top: 7px;\n  margin-bottom: 5px;\n}\n.device {\n  width: 100%;\n  height: 200px;\n  padding: 0;\n  border-radius: 0;\n  background: #111;\n  border: 0;\n  margin: 0 auto;\n  position: relative;\n  box-shadow: 0;\n}\n.device .arrow-left {\n  background: url(" + __webpack_require__(307) + ") no-repeat left top;\n  position: absolute;\n  left: 10px;\n  top: 50%;\n  margin-top: -15px;\n  width: 17px;\n  z-index: 10000;\n\n  height: 30px;\n}\n.device .arrow-right {\n  background: url(" + __webpack_require__(307) + ") no-repeat left bottom;\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  margin-top: -15px;\n  z-index: 10000;\n\n  width: 17px;\n  height: 30px;\n}\n.swiper-container {\n  height: auto;\n  width: 100%;\n}\n\n#swiper-container {\n  height: auto;\n  width: 100%;\n}\n.content-slide {\n  padding: 30px 40px 30px 40px;\n  color: #fff;\n}\n.title {\n  font-size: 25px;\n  margin-bottom: 10px;\n}\n.pagination {\n  position: absolute;\n  left: 0;\n  text-align: center;\n  bottom:-8px;\n  z-index: 10000;\n  width: 100%;\n}\n.swiper-pagination-switch {\n  display: inline-block;\n  width: 10px;\n  height: 10px;\n  border-radius: 10px;\n  background: #999;\n  box-shadow: 0px 1px 2px #555 inset;\n  margin: 0 3px;\n  cursor: pointer;\n}\n.swiper-active-switch {\n  background: #fff;\n}\n\n.height15{\n  height: 15px;\n}\n.height10{\n  height: 10px;\n}\n.weui-grid__label{\n  color: #777;\n  font-size: 12px;\n}\n.white-box{\n  background-color: white;\n}\n.hot-product-name{\n  font-size: 12px;\n  margin-top: 5px;\n}\n.text{\n  color: #999;\n  font-size: 12px;\n  margin-right: 15px;\n}\n.textCenter{\n  text-align: center;\n  color: #999;\n  font-size: 12px;\n}\na.category_box{\n  margin:0;\n  color: #555;\n  padding: 8px;\n  text-decoration: none;\n}\n\na.category_box:active{\n  margin:0;\n  padding: 8px;\n  background-color: #eee;\n  text-decoration: none;\n}\n\n.weui-grid__label{\n  margin-bottom: 0;\n}\n\ndiv.orderCss{\n  color: #555;\n  text-decoration: none;\n}\ndiv.orderCss:active{\n  background-color: #eee;\n  text-decoration: none;\n}\n\n.text{\n  color: #999;\n  font-size: 12px;\n  margin-right: 15px;\n}\n.textCenter{\n  text-align: center;\n  color: #999;\n  font-size: 12px;\n}\n.padding10{\n  padding: 10px;\n}\n.margin-bottom10{\n  margin-bottom: 10px;\n}\n\n\n.device2 {\n  width: 100%;\n  height: 200px;\n  padding: 0;\n  border-radius: 0;\n  background: #111;\n  border: 0;\n  margin: 0 auto;\n  position: relative;\n  box-shadow: 0;\n}\n\n.swiper-container2 {\n  height: auto;\n  width: 100%;\n}\n\n#swiper-container2 {\n  height: auto;\n  width: 100%;\n}\n.content-slide2 {\n  padding: 30px 40px 30px 40px;\n  color: #fff;\n}\n.title2 {\n  font-size: 25px;\n  margin-bottom: 10px;\n}\n.pagination2 {\n  position: absolute;\n  left: 0;\n  text-align: center;\n  bottom:-8px;\n  z-index: 10000;\n  width: 100%;\n}\n.swiper-pagination-switch2 {\n  display: inline-block;\n  width: 10px;\n  height: 10px;\n  border-radius: 10px;\n  background: #999;\n  box-shadow: 0px 1px 2px #555 inset;\n  margin: 0 3px;\n  cursor: pointer;\n}\n.swiper-active-switch2 {\n  background: #fff;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 471:
+/***/ 472:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(310);
-module.exports = __webpack_require__(309);
+__webpack_require__(312);
+module.exports = __webpack_require__(311);
 
 
 /***/ }),
@@ -410,5 +410,5 @@ module.exports = function() {
 
 /***/ })
 
-},[471]);
+},[472]);
 //# sourceMappingURL=styles.bundle.js.map
