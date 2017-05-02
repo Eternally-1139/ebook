@@ -36,14 +36,29 @@ func (this *AjaxController) AddCar(){
 	img:=this.GetString("img")
 	content:=this.GetString("content")
 	fmt.Println("username"+user.Name)
+
 	productInfo:=models.ProductInfo{ProductId:id}
 	if err:=productInfo.FindById();err==nil{
-		productInfo.Read()
-		productInfo.Num+=1
-		productInfo.Update()
-		fmt.Println("查询到该商品")
-		this.ReturnSuccess("info:database add 1","success")
-		return
+		if productInfo.User ==user.Id{
+			productInfo.Read()
+			productInfo.Num+=1
+			productInfo.Update()
+			fmt.Println("查询到该商品")
+			this.ReturnSuccess("info:database add 1","success")
+			return
+		}else{
+			var proinfo models.ProductInfo
+			proinfo.Name=name
+			proinfo.Price=price
+			proinfo.Image=img
+			proinfo.Num=1
+			proinfo.Content=content
+			proinfo.User=&user
+			proinfo.Insert()
+			this.ReturnSuccess("info:create cart add 1","success")
+			return
+		}
+
 	}else{
 		var proinfo models.ProductInfo
 		proinfo.Name=name
