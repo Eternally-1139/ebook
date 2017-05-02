@@ -75,8 +75,8 @@ let CartService = class CartService {
         this.http = http;
         this.url = '/api/addCar'; //Beego
     }
-    addCar(id, name, price, img, num = 1, content) {
-        return this.http.get(`${this.url}?id=${id}&name=${name}&price=${price}&img=${img}&num=${num}&content=${content}`)
+    addCar() {
+        return this.http.get(`${this.url}`)
             .map(this.extractData)
             .catch(this.handleError);
     }
@@ -827,7 +827,7 @@ let ProductDetailComponent = class ProductDetailComponent {
         this.isModalShown = false;
     }
     addCart() {
-        this.cartService.addCar(this.products.Id, this.products.Name, this.products.Price, this.products.Image, 1, this.products.Content)
+        this.cartService.addCar()
             .subscribe(status => {
             if (status == 10000) {
                 this.modelText = "添加成功！";

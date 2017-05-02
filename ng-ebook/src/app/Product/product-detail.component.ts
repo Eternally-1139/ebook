@@ -42,7 +42,7 @@ export class ProductDetailComponent implements OnInit {
   ) { }
 
   public addCart():void{
-    this.cartService.addCar(this.products.Id,this.products.Name,this.products.Price,this.products.Image,1,this.products.Content)
+    this.cartService.addCar()
       .subscribe(status =>{
           if (status==10000){
             this.modelText="添加成功！";
