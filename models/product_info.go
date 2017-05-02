@@ -28,7 +28,3 @@ func (this *ProductInfo) Delete()(int64,error){
 func (this *ProductInfo)Read()error{
 	return orm.NewOrm().QueryTable("product_info").Filter("id",this.Id).RelatedSel().One(this)
 }
-
-func (this *ProductInfo) FindByNo() error {
-	return orm.NewOrm().QueryTable("product_info").Filter("no", this.No).RelatedSel().One(this)
-}
