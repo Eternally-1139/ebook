@@ -8,7 +8,7 @@ import (
 
 //@router /api/getCar [*]
 func (this *AjaxController) GetCar(){
-	userinfo:=this.GetSession("userinfo")
+	userinfo:=this.GetSession("users")
 	if userinfo==nil{
 		this.ReturnJson(10403,"请先登录")
 		return
@@ -22,7 +22,7 @@ func (this *AjaxController) GetCar(){
 
 //@router /api/addCar [*]
 func (this *AjaxController) AddCar(){
-	userinfo:=this.GetSession("userinfo")
+	userinfo:=this.GetSession("users")
 	if userinfo==nil{
 		this.ReturnJson(10403,"请先登录")
 		return
@@ -57,7 +57,7 @@ func (this *AjaxController) AddCar(){
 //@router /api/deleteCar [*]
 func (this *AjaxController) DeleteCar(){
 
-	userinfo:=this.GetSession("userinfo")
+	userinfo:=this.GetSession("users")
 	if userinfo==nil{
 		this.ReturnJson(10403,"请先登录")
 		return
