@@ -4,6 +4,7 @@ import (
 	"ebook/models"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
+	"fmt"
 )
 
 //@router /api/getCar [*]
@@ -34,7 +35,7 @@ func (this *AjaxController) AddCar(){
 	price,_:=this.GetFloat("price")
 	img:=this.GetString("img")
 	content:=this.GetString("content")
-
+	fmt.Println("name"+name)
 	productInfo:=models.ProductInfo{ProductId:id}
 	if err:=productInfo.FindById();err==nil{
 		productInfo.Read()
