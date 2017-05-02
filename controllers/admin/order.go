@@ -34,7 +34,7 @@ func (this *AjaxController) CreateOrder(){
 
 
 		for j:=0;j<len(product_info);j++{
-			price+=(product_info[j].Price)*(product_info[j].Num)
+			//price+=(product_info[j].Price)*(product_info[j].Num)
 
 			if price==0{
 				this.ReturnJson(10004,"购物车空空如也")
