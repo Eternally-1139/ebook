@@ -36,7 +36,7 @@ func (this *AjaxController) AddCar(){
 	content:=this.GetString("content")
 
 	productInfo:=models.ProductInfo{ProductId:id}
-	if(productInfo.FindById()){
+	if err:=productInfo.FindById();err==nil{
 		productInfo.Read()
 		productInfo.Num+=1
 		productInfo.Update()
@@ -50,7 +50,7 @@ func (this *AjaxController) AddCar(){
 		productInfo.Content=content
 		productInfo.Insert()
 		this.ReturnSuccess()
-		return 
+		return
 	}
 }
 
