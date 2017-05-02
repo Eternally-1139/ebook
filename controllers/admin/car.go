@@ -39,7 +39,7 @@ func (this *AjaxController) AddCar(){
 
 	productInfo:=models.ProductInfo{ProductId:id}
 	if err:=productInfo.FindById();err==nil{
-		if productInfo.User ==user.Id{
+		if productInfo.User.Id ==user.Id{
 			productInfo.Read()
 			productInfo.Num+=1
 			productInfo.Update()
