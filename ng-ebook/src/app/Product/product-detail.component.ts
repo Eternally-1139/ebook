@@ -6,6 +6,7 @@ import { Cart} from '../Models/Cart'
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location }               from '@angular/common';
 import { ModalDirective } from 'ngx-bootstrap/modal';
+import {Subject} from 'rxjs/Subject';
 
 @Component({
   moduleId: module.id,
@@ -14,6 +15,10 @@ import { ModalDirective } from 'ngx-bootstrap/modal';
   styleUrls: [ './product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
+
+  private _success = new Subject<string>();
+  staticAlertClosed = false;
+  successMessage: string;
   isDisplay:string="none";
   modelText = "";
   @ViewChild('autoShownModal') public autoShownModal:ModalDirective;
@@ -43,22 +48,17 @@ export class ProductDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private location: Location
   ) { }
+  public changeSuccessMessage() {
+    this._success.next(`添加购物车成功`);
+  }
 
   public addCart():void{
     this.cartService.addCar(this.products.Id,this.products.Name,this.products.Price,this.products.Image,1,this.products.Content)
       .subscribe(status =>{
           if (status==10000){
-            this.modelText="添加成功!";
-            this.isDisplay="block";
-            setTimeout(() => {
-              this.isDisplay = "none"
-            }, 1500);
+            this.changeSuccessMessage()
           }else{
-            this.modelText="网络异常!";
-            this.isDisplay="block";
-            setTimeout(() => {
-              this.isDisplay = "none"
-            }, 1500);
+            this.changeSuccessMessage()
           }
         });
   }
@@ -75,7 +75,13 @@ export class ProductDetailComponent implements OnInit {
         this.products.Pic = product.Pic;
       });
 
+    setTimeout(() => this.staticAlertClosed = true, 20000);
+
+    this._success.subscribe((message) => this.successMessage = message);
+    this._success.debounceTime(5000).subscribe(() => this.successMessage = null);
+
   }
+
 
 }
 

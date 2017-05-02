@@ -109,11 +109,12 @@
 </div>
 
 
-<div id="toast">
-  <div class="weui_mask_transparent"></div>
-  <div class="weui_toast">
-    <i class="weui_icon_toast"></i>
-    <p class="weui_toast_content">{{modelText}}</p>
-  </div>
-</div>
 
+<ngb-alert *ngIf="!staticAlertClosed" (close)="staticAlertClosed = true">Check out our awesome new features!</ngb-alert>
+
+
+<ngb-alert *ngIf="successMessage" type="success" (close)="successMessage = null">{{ successMessage }}</ngb-alert>
+
+<p>
+  <button class="btn btn-primary" (click)="changeSuccessMessage()">Change message</button>
+</p>
