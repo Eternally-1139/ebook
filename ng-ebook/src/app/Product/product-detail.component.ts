@@ -41,8 +41,8 @@ export class ProductDetailComponent implements OnInit {
     private location: Location
   ) { }
 
-  public addCart(id:number,name:string,price:number,img:string,num:number,content:string):void{
-    this.cartService.addCar(id,name,price,img,num,content)
+  public addCart():void{
+    this.cartService.addCar(this.products.Id,this.products.Name,this.products.Price,this.products.Image,1,this.products.Content)
       .subscribe(status =>{
           if (status==10000){
             this.modelText="添加成功！"
