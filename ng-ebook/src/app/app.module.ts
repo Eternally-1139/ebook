@@ -6,6 +6,7 @@ import {RouterModule, Routes} from "@angular/router";
 import { CarouselModule } from 'ngx-bootstrap';
 import { AppComponent } from './app.component';
 import { requestOptionsProvider }   from './default-request-options.service';
+import { ModalModule } from 'ngx-bootstrap';
 //导入各页面组件
 import { HomeComponent} from './Home/home.component'
 import { UserComponent} from './User/user.component'
@@ -61,6 +62,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes),
     CarouselModule.forRoot(),
+    ModalModule.forRoot(),
     // InMemoryWebApiModule.forRoot(InMemoryDataService),//test
     // InMemoryWebApiModule.forRoot(InMemoryDataServiceProduct),//test
     // InMemoryWebApiModule.forRoot(InMemoryDataService),

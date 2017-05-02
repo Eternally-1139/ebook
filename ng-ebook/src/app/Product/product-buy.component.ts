@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 import { Product }                from '../Models/Product';
 import { ProductService }         from '../Service/product.service';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location }               from '@angular/common';
-
+import { ModalDirective } from 'ngx-bootstrap/modal';
 @Component({
   moduleId: module.id,
   selector: 'my-app',
@@ -11,6 +11,7 @@ import { Location }               from '@angular/common';
   styleUrls: [ './product-buy.component.css' ]
 })
 export class ProductBuyComponent implements OnInit {
+  modelText = "";
   products = new Product();
   errorMessage: string;
   constructor(
@@ -19,6 +20,20 @@ export class ProductBuyComponent implements OnInit {
     private location: Location
   ) { }
 
+  @ViewChild('autoShownModal') public autoShownModal:ModalDirective;
+  public isModalShown:boolean = false;
+
+  public showModal():void {
+    this.isModalShown = true;
+  }
+
+  public hideModal():void {
+    this.autoShownModal.hide();
+  }
+
+  public onHidden():void {
+    this.isModalShown = false;
+  }
   locationBack(): void {
     this.location.back();
   }
