@@ -44,13 +44,14 @@ func (this *AjaxController) AddCar(){
 		this.ReturnSuccess("info:database add 1")
 		return
 	}else{
-		productInfo.Name=name
-		productInfo.Price=price
-		productInfo.Image=img
-		productInfo.Num=1
-		productInfo.Content=content
-		productInfo.Insert()
-		this.ReturnSuccess()
+		var proinfo models.ProductInfo
+		proinfo.Name=name
+		proinfo.Price=price
+		proinfo.Image=img
+		proinfo.Num=1
+		proinfo.Content=content
+		proinfo.Insert()
+		this.ReturnSuccess("info:insert cart 1")
 		return
 	}
 }
