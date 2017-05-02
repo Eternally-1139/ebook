@@ -16,7 +16,7 @@ func (this *AjaxController) GetCar(){
 	}
 	user:=userinfo.(models.User)
 	user.Read()
-	var cart *[]models.ProductInfo
+	var cart []*models.ProductInfo
 	orm.NewOrm().QueryTable("product_info").Filter("user_id",user.Id).RelatedSel().All(&cart)
 	this.ReturnSuccess("carts",cart)
 	return
