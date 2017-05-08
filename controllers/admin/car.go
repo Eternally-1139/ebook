@@ -36,22 +36,23 @@ func (this *AjaxController) AddCar(){
 	price,_:=this.GetFloat("price")
 	img:=this.GetString("img")
 	content:=this.GetString("content")
+	fmt.Println(user.Name)
 	fmt.Println("img"+img)
 
-	productInfo:=models.ProductInfo{ProductId:id}
-	productInfo.Read()
+	var productInfo models.ProductInfo
 
-	if err:=productInfo.FindById();err==nil{
-		productInfo.Read()
-		if productInfo.User.Id ==user.Id{
-			productInfo.Num+=1
-			productInfo.Update()
-			fmt.Println("查询到该商品")
-			this.ReturnSuccess("info:database add 1","success")
-			return
-		}
+	orm.NewOrm().QueryTable("product_info").Filter("product_id",id).Filter("user_id",user.Id).One(&productInfo)
+	fmt.Println(productInfo)
 
+	if productInfo.ProductId!=0{
+		fmt.Println("查询到该用户下该购物车")
+		productInfo.Num+=1
+		productInfo.Update()
+		fmt.Println("商品自增")
+		this.ReturnSuccess("info:database add 1","success")
+		return
 	}else{
+		fmt.Println("未查询到该商品")
 		var proinfo models.ProductInfo
 		proinfo.ProductId=id
 		proinfo.Name=name
@@ -64,6 +65,7 @@ func (this *AjaxController) AddCar(){
 		this.ReturnSuccess("info:create cart add 1","success")
 		return
 	}
+	fmt.Println("error!")
 }
 
 //@router /api/deleteCar [*]
