@@ -50,7 +50,7 @@ func (this *WebController) HotProducts(){
 
 // @router /api/product/listProduct/:id [*]
 func (this *WebController) ListMarket(){
-	pers := 10
+	pers := 6
 	category, _ := strconv.ParseInt(this.Ctx.Input.Param(":id"),10,64)
 	qs := orm.NewOrm().QueryTable("product")
 	if category != 0 {
