@@ -15,6 +15,9 @@ import { ModalDirective } from 'ngx-bootstrap/modal';
 export class CartComponent implements OnInit {
 
   carts: Cart[];
+  count:number=0;
+  public isShownMessage:boolean = false;
+  public showMessage:string = "删除成功!";
   errorMessage: string;
   constructor(
     private productService: ProductService,
@@ -22,10 +25,48 @@ export class CartComponent implements OnInit {
     private route: ActivatedRoute,
     private location: Location
   ) { }
+
+  deleteCar(id){
+    this.route.params
+      .switchMap((params: Params) => this.cartService.deleteCar(id))
+      .subscribe(status => {
+        if (status==10000){
+          this.isShownMessage=true;
+          setTimeout(() => {
+            this.route.params
+              .switchMap((params: Params) => this.cartService.getCar())
+              .subscribe(
+                carts => {
+                  this.carts = carts;
+                  this.count=0;
+                  for(let cart of carts){
+                    this.count+=(cart.Price*cart.Num);
+                  }
+                }
+              );
+            this.isShownMessage=false;
+          }, 1500);
+        }else{
+          this.isShownMessage=true;
+          this.showMessage="好像出错了，请检查您的网络";
+          setTimeout(() => {
+            this.isShownMessage=false;
+          }, 1500);
+        }
+      });
+  }
   ngOnInit(): void {
     this.route.params
       .switchMap((params: Params) => this.cartService.getCar())
-      .subscribe(carts => this.carts = carts);
+      .subscribe(
+        carts => {
+          this.carts = carts;
+          this.count=0;
+          for(let cart of carts){
+            this.count+=(cart.Price*cart.Num);
+          }
+        }
+      );
   }
 
 

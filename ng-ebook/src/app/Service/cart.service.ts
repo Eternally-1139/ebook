@@ -26,11 +26,18 @@ export class CartService {
 
   private url = '/api/addCar';  //Beego
   private urlGetCar = '/api/getCar';  //Beego
+  private urlDeleteCar = '/api/deleteCar';  //Beego
   // private url = '/api/categories';  //test
 
   constructor(private http: Http) { }
   addCar(id,name,price,img,num=1,content){
     return this.http.get(`${this.url}?id=${id}&name=${name}&price=${price}&img=${img}&num=${num}&content=${content}`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  }
+
+  deleteCar(id){
+    return this.http.get(`${this.urlDeleteCar}?id=${id}`)
       .map(this.extractData)
       .catch(this.handleError);
   }

@@ -15,24 +15,10 @@ import { ModalDirective } from 'ngx-bootstrap/modal';
 })
 export class ProductDetailComponent implements OnInit {
   isDisplay:string="none";
+  public isShownMessage:boolean = false;
+  public showMessage:string = "亲，我在购物车等你哦！"
   modelText = "";
   @ViewChild('autoShownModal') public autoShownModal:ModalDirective;
-  public isModalShown:boolean = false;
-
-  public showModal():void {
-    this.isModalShown = true;
-    setTimeout(() => {
-      this.isModalShown = false
-    }, 2000);
-  }
-
-  public hideModal():void {
-    this.autoShownModal.hide();
-  }
-
-  public onHidden():void {
-    this.isModalShown = false;
-  }
 
 
   products = new Product();
@@ -47,12 +33,19 @@ export class ProductDetailComponent implements OnInit {
   public addCart():void{
     this.cartService.addCar(this.products.Id,this.products.Name,this.products.Price,this.products.Image,1,this.products.Content)
       .subscribe(status =>{
-          if (status==10000){
-            this.add()
-          }else{
-            this.add()
-          }
-        });
+        if (status==10000){
+          this.isShownMessage=true;
+          setTimeout(() => {
+            this.isShownMessage=false;
+          }, 1500);
+        }else{
+          this.isShownMessage=true;
+          this.showMessage="好像出错了，请检查您的网络";
+          setTimeout(() => {
+            this.isShownMessage=false;
+          }, 1500);
+        }
+      });
   }
 
   public alerts: any = [];
