@@ -12,6 +12,7 @@ import { Location }               from '@angular/common';
 export class ProductComponent implements OnInit {
   products: Product[];
   page:number = 1;
+  hasPrev:boolean=false;
   hasNext:boolean=true;
   errorMessage: string;
   constructor(
@@ -28,6 +29,21 @@ export class ProductComponent implements OnInit {
     this.route.params
       .switchMap((params: Params) => this.productService.pageHasNext(+params['id'],this.page))
       .subscribe(hasNext => this.hasNext = hasNext);
+  }
+
+  minus(){
+    if(this.page>1){
+      this.hasPrev=true;
+      this.page--;
+      this.route.params
+        .switchMap((params: Params) => this.productService.pageProduct(+params['id'],this.page))
+        .subscribe(products => this.products = products);
+      this.route.params
+        .switchMap((params: Params) => this.productService.pageHasNext(+params['id'],this.page))
+        .subscribe(hasNext => this.hasNext = hasNext);
+    }else{
+      this.hasPrev=false;
+    }
   }
 
 
