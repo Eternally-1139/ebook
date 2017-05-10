@@ -375,6 +375,7 @@ let ProductService = class ProductService {
         this.url = '/api/listProduct';
         this.detailUrl = '/api/product';
         this.hotUrl = '/api/hotProducts';
+        this.purl = '/api/product/listProduct';
     }
     getProducts(id) {
         const listUrl = `${this.url}?cid=${id}`;
@@ -398,6 +399,14 @@ let ProductService = class ProductService {
         return this.http.get(this.hotUrl)
             .map(this.extractData)
             .catch(this.handleError);
+    }
+    pageProduct(id, page) {
+        const pageUrl = `${this.purl}/${id}`;
+        return this.http.post(pageUrl, { p: page })
+            .toPromise()
+            .then(response => {
+            return response.json().products;
+        }).catch(this.handleError);
     }
     extractData(res) {
         let body = res.json(); //解析为json
@@ -866,10 +875,11 @@ let ProductComponent = class ProductComponent {
         this.productService = productService;
         this.route = route;
         this.location = location;
+        this.page = 1;
     }
     ngOnInit() {
         this.route.params
-            .switchMap((params) => this.productService.getProducts(+params['id']))
+            .switchMap((params) => this.productService.pageProduct(+params['id'], this.page))
             .subscribe(products => this.products = products);
     }
 };

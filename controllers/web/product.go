@@ -65,16 +65,16 @@ func (this *WebController) ListMarket(){
 	outputs := make([]map[string]interface{},0)
 	for _, product := range products {
 		output:=make(map[string]interface{})
-		output["id"]=product.Id
-		output["price"]=product.Price
-		output["create_time"]=product.CreateTime
-		output["name"]=product.Name
-		output["image"]=product.Image
-		output["buy"]=product.Buy
-		output["content"]=product.Content
+		output["Id"]=product.Id
+		output["Price"]=product.Price
+		output["CreateTime"]=product.CreateTime
+		output["Name"]=product.Name
+		output["Image"]=product.Image
+		output["Buy"]=product.Buy
+		output["Content"]=product.Content
 
 		outputs=append(outputs,output)
 	}
 
-	this.ReturnSuccess("markets",outputs,"page",pager.Page(),"hasNext",pager.HasNext(),"cnt",cnt,"pers",pers)
+	this.ReturnSuccess("products",outputs,"page",pager.Page(),"hasNext",pager.HasNext(),"cnt",cnt,"pers",pers)
 }

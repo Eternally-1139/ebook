@@ -11,6 +11,7 @@ import { Location }               from '@angular/common';
 })
 export class ProductComponent implements OnInit {
   products: Product[];
+  page:number = 1;
   errorMessage: string;
   constructor(
     private productService: ProductService,
@@ -20,7 +21,7 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params
-      .switchMap((params: Params) => this.productService.getProducts(+params['id']))
+      .switchMap((params: Params) => this.productService.pageProduct(+params['id'],this.page))
       .subscribe(products => this.products = products);
   }
 

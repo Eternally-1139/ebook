@@ -26,7 +26,7 @@ export class ProductService {
   private url = '/api/listProduct';
   private detailUrl = '/api/product';
   private hotUrl = '/api/hotProducts';
-
+  private purl = '/api/product/listProduct';
   constructor(private http: Http,@Inject(ActivatedRoute) private router: ActivatedRoute) { }
   getProducts(id: number): Promise<Product[]> {
     const listUrl=`${this.url}?cid=${id}`;
@@ -50,6 +50,15 @@ export class ProductService {
     return this.http.get(this.hotUrl)
       .map(this.extractData)
       .catch(this.handleError);
+  }
+
+  pageProduct(id:number,page:number):Promise<Product[]>{
+    const pageUrl=`${this.purl}/${id}`;
+    return this.http.post(pageUrl, {p:page})
+      .toPromise()
+      .then(response =>{
+        return response.json().products as Product[]
+      }).catch(this.handleError);
   }
 
   private extractData(res: Response) {
