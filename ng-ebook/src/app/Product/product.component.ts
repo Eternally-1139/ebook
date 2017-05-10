@@ -29,6 +29,9 @@ export class ProductComponent implements OnInit {
     this.route.params
       .switchMap((params: Params) => this.productService.pageHasNext(+params['id'],this.page))
       .subscribe(hasNext => this.hasNext = hasNext);
+    if(this.hasNext){
+      this.hasPrev = true
+    }
   }
 
   minus(){
