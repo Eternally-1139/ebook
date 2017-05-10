@@ -43,7 +43,7 @@ func (this *WebController) ThisPruoduct(){
 func (this *WebController) HotProducts(){
 
 	var products []*models.Product
-	orm.NewOrm().QueryTable("product").OrderBy("-Buy").Limit(10).RelatedSel().All(&products)
+	orm.NewOrm().QueryTable("product").OrderBy("-Buy").Limit(6).RelatedSel().All(&products)
 	this.ReturnSuccess("products",products)
 
 }
