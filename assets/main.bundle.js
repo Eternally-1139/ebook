@@ -895,8 +895,11 @@ let ProductComponent = class ProductComponent {
         this.route.params
             .switchMap((params) => this.productService.pageHasNext(+params['id'], this.page))
             .subscribe(hasNext => this.hasNext = hasNext);
-        if (this.hasNext) {
+        if (this.page != 1) {
             this.hasPrev = true;
+        }
+        else {
+            this.hasPrev = false;
         }
     }
     minus() {
@@ -1217,7 +1220,7 @@ exports = module.exports = __webpack_require__(8)();
 
 
 // module
-exports.push([module.i, ".banner-text{\n  font-size: 8px;\n  margin-top: -10px;\n}\n.height10{\n  height: 5px;\n}\n.seachInput{\n  background-color: #fff;\n  height: 30px;\n  font-size: 12px;\n}\n\n", ""]);
+exports.push([module.i, ".banner-text{\n  font-size: 8px;\n  margin-top: -10px;\n}\n.height10{\n  height: 5px;\n}\n.seachInput{\n  background-color: #fff;\n  height: 30px;\n  font-size: 12px;\n}\n.weui-grid__icon i{\n  font-size:22px;\n}\n", ""]);
 
 // exports
 
@@ -1674,7 +1677,7 @@ module.exports = "\n<div class=\"Toast\" style=\"position: fixed;z-index: 100000
 /***/ 419:
 /***/ (function(module, exports) {
 
-module.exports = "<carousel>\n  <slide *ngFor=\"let sw of swipe\">\n    <a href=\"#\" [routerLink]=\"['/detail', sw.url]\">\n      <img src=\"{{sw.img}}\" alt=\"\" style=\"height: 220px;width: 100%\" class=\"img-responsive\">\n    </a>\n    <div class=\"carousel-caption\">\n      <p>{{sw.title}}</p>\n    </div>\n  </slide>\n</carousel>\n<div class=\"white-box\">\n\n  <div class=\"row\" style=\"text-align: center\">\n    <div class=\"height15\"></div>\n\n    <a *ngFor=\"let categorie of categories\" [routerLink]=\"['/product', categorie.Id]\" class=\" col-xs-3 col-md-3 category_box \" style=\"min-height: 77px\">\n      <div class=\"weui-grid__icon\" style=\"color: #777;\">\n        <i class=\"fa fa-bars \" style=\"margin-bottom: 10px;font-size: 20px\"> </i>\n      </div>\n      <p class=\"weui-grid__label\">\n        {{categorie.Name}}\n      </p>\n    </a>\n\n  </div>\n  <div class=\"height15\"></div>\n</div>\n\n<div class=\"height10\"></div>\n<div class=\"textCenter\">\n  <span class=\"line\">--- </span><span><i class=\"fa fa-gift\"></i> 本周热读</span><span class=\"line\"> ---</span>\n</div>\n<div class=\"white-box\" style=\"padding: 15px\">\n  <div class=\"height15\"></div>\n  <div class=\"container\">\n    <div class=\"row\" id=\"#list\">\n      <a *ngFor=\"let product of products\" [routerLink]=\"['/detail', product.Id]\" class=\"col-xs-6 category_box\" style=\"margin-bottom: 15px\">\n        <div class=\"box\">\n          <div [ngStyle]=\"{'background-image':+'url('+ product.Image+')'}\" style=\"position: relative;background-position: center;background-size: cover;\">\n            <img src=\"assets/book.png\" width=\"100%\" height=\"auto\" alt=\"\">\n          </div>\n          <div class=\"box-text\" style=\"height: 39px;overflow: hidden\">\n            <p class=\"hot-product-name\">{{product.Name}}</p>\n          </div>\n          <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">{{product.Price}}</span>&nbsp;&nbsp;<span style=\"font-size: 1px;color: #aaa;font-size: 12px\">{{product.Buy}}人已读</span>\n\n        </div>\n      </a>\n    </div>\n\n  </div>\n</div>\n\n"
+module.exports = "<carousel>\n  <slide *ngFor=\"let sw of swipe\">\n    <a href=\"#\" [routerLink]=\"['/detail', sw.url]\">\n      <img src=\"{{sw.img}}\" alt=\"\" style=\"height: 220px;width: 100%\" class=\"img-responsive\">\n    </a>\n    <div class=\"carousel-caption\">\n      <p>{{sw.title}}</p>\n    </div>\n  </slide>\n</carousel>\n<div class=\"white-box\">\n\n  <div class=\"row\" style=\"text-align: center\">\n    <div class=\"height15\"></div>\n\n    <a *ngFor=\"let categorie of categories\" [routerLink]=\"['/product', categorie.Id]\" class=\" col-xs-3 col-md-3 category_box \" style=\"min-height: 77px\">\n      <div class=\"weui-grid__icon\" style=\"color: #777;\">\n        <i class=\"fa fa-bars \" style=\"margin-bottom: 10px;\"> </i>\n      </div>\n      <p class=\"weui-grid__label\">\n        {{categorie.Name}}\n      </p>\n    </a>\n\n  </div>\n  <div class=\"height15\"></div>\n</div>\n\n<div class=\"height10\"></div>\n<div class=\"textCenter\">\n  <span class=\"line\">--- </span><span><i class=\"fa fa-gift\"></i> 本周热读</span><span class=\"line\"> ---</span>\n</div>\n<div class=\"white-box\" style=\"padding: 15px\">\n  <div class=\"height15\"></div>\n  <div class=\"container\">\n    <div class=\"row\" id=\"#list\">\n      <a *ngFor=\"let product of products\" [routerLink]=\"['/detail', product.Id]\" class=\"col-xs-6 category_box\" style=\"margin-bottom: 15px\">\n        <div class=\"box\">\n          <div [ngStyle]=\"{'background-image':+'url('+ product.Image+')'}\" style=\"position: relative;background-position: center;background-size: cover;\">\n            <img src=\"assets/book.png\" width=\"100%\" height=\"auto\" alt=\"\">\n          </div>\n          <div class=\"box-text\" style=\"height: 39px;overflow: hidden\">\n            <p class=\"hot-product-name\">{{product.Name}}</p>\n          </div>\n          <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">{{product.Price}}</span>&nbsp;&nbsp;<span style=\"font-size: 1px;color: #aaa;font-size: 12px\">{{product.Buy}}人已读</span>\n\n        </div>\n      </a>\n    </div>\n\n  </div>\n</div>\n\n"
 
 /***/ }),
 
