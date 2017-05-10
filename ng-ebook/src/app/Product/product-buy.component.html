@@ -20,7 +20,7 @@
   <div class="row">
     <div class="col-xs-4">
       <!--[ngStyle]="{'background-image':+'url('+ products.Image+')'}"-->
-      <div  style="background-image:url(assets/IMG_5097.JPG);position: relative;background-position: center;background-size: cover;height: 85px">
+      <div [ngStyle]="{'background-image':+'url('+ products.Image+')'}"  style="position: relative;background-position: center;background-size: cover;height: 85px">
         <img src="assets/admin/img/tm.png" width="100%" height="auto" alt="">
       </div>
     </div>
