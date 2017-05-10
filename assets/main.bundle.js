@@ -401,8 +401,8 @@ let ProductService = class ProductService {
             .catch(this.handleError);
     }
     pageProduct(id, page) {
-        const pageUrl = `${this.purl}/${id}`;
-        return this.http.post(pageUrl, { p: page })
+        const pageUrl = `${this.purl}/${id}?p=${page}`;
+        return this.http.get(pageUrl)
             .toPromise()
             .then(response => {
             return response.json().products;
