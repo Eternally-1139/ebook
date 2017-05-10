@@ -10,7 +10,7 @@
     </div>
     <div class="height15"></div>
 
-    <div class="row" id="#list">
+    <div class="row" id="#list" style="padding: 15px">
       <div>
         <a *ngFor="let product of products" [routerLink]="['/detail', product.Id]" class="col-xs-6 category_box" style="margin-bottom: 15px">
           <div class="box">
@@ -29,7 +29,7 @@
 
       <nav aria-label="..." style="text-align: center">
         <ul class="pager">
-          <li><a (click)="plus()" href="#">下一页</a></li>
+          <li><a (click)="plus()" href="javascript:void(0)">下一页</a></li>
         </ul>
       </nav>
 
