@@ -11,20 +11,27 @@
     <div class="height15"></div>
 
     <div class="row" id="#list">
+      <div>
+        <a *ngFor="let product of products" [routerLink]="['/detail', product.Id]" class="col-xs-6 category_box" style="margin-bottom: 15px">
+          <div class="box">
+            <div [ngStyle]="{'background-image':+'url('+ product.Image+')'}" style="position: relative;background-position: center;background-size: cover;">
+              <img src="assets/book.png" width="100%" height="auto" alt="">
+            </div>
+            <div class="box-text" style="height: 39px;overflow: hidden">
+              <p class="hot-product-name">{{product.Name}}-{{product.Content}}</p>
+            </div>
+            <span style="font-size: 10px;color: #e35b5a">￥</span><span style="color: #e35b5a;font-size: 16px">{{product.Price}}</span>&nbsp;&nbsp;<span style="font-size: 1px;color: #aaa;font-size: 12px">{{product.Buy}}人已读</span>
 
-      <a *ngFor="let product of products" [routerLink]="['/detail', product.Id]" class="col-xs-6 category_box" style="margin-bottom: 15px">
-        <div class="box">
-          <div [ngStyle]="{'background-image':+'url('+ product.Image+')'}" style="position: relative;background-position: center;background-size: cover;">
-            <img src="assets/book.png" width="100%" height="auto" alt="">
+
           </div>
-          <div class="box-text" style="height: 39px;overflow: hidden">
-            <p class="hot-product-name">{{product.Name}}-{{product.Content}}</p>
-          </div>
-          <span style="font-size: 10px;color: #e35b5a">￥</span><span style="color: #e35b5a;font-size: 16px">{{product.Price}}</span>&nbsp;&nbsp;<span style="font-size: 1px;color: #aaa;font-size: 12px">{{product.Buy}}人已读</span>
+        </a>
+      </div>
 
-
-        </div>
-      </a>
+      <nav aria-label="..." style="text-align: center">
+        <ul class="pager">
+          <li><a (click)="plus()" href="#">下一页</a></li>
+        </ul>
+      </nav>
 
     </div>
     <br>

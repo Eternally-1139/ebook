@@ -12,12 +12,21 @@ import { Location }               from '@angular/common';
 export class ProductComponent implements OnInit {
   products: Product[];
   page:number = 1;
+  nextDisabled:boolean=false;
   errorMessage: string;
   constructor(
     private productService: ProductService,
     private route: ActivatedRoute,
     private location: Location
   ) { }
+
+  plus(){
+    this.page++;
+    this.route.params
+      .switchMap((params: Params) => this.productService.pageProduct(+params['id'],this.page))
+      .subscribe(products => this.products = products);
+  }
+
 
   ngOnInit(): void {
     this.route.params

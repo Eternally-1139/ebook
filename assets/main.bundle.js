@@ -876,6 +876,13 @@ let ProductComponent = class ProductComponent {
         this.route = route;
         this.location = location;
         this.page = 1;
+        this.nextDisabled = false;
+    }
+    plus() {
+        this.page++;
+        this.route.params
+            .switchMap((params) => this.productService.pageProduct(+params['id'], this.page))
+            .subscribe(products => this.products = products);
     }
     ngOnInit() {
         this.route.params
@@ -1662,7 +1669,7 @@ module.exports = "\n\n\n<div class=\"Toast\" style=\"position: fixed;z-index: 10
 /***/ 423:
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"white-box\">\n\n\n  <div class=\"height15\"></div>\n  <div class=\"container\">\n\n    <div class=\"seachButton\" style=\"margin: 0\">\n      <input  type=\"text\" class=\"form-control seachInput\" placeholder=\"搜索您想要的书籍名称\">\n    </div>\n    <div class=\"height15\"></div>\n\n    <div class=\"row\" id=\"#list\">\n\n      <a *ngFor=\"let product of products\" [routerLink]=\"['/detail', product.Id]\" class=\"col-xs-6 category_box\" style=\"margin-bottom: 15px\">\n        <div class=\"box\">\n          <div [ngStyle]=\"{'background-image':+'url('+ product.Image+')'}\" style=\"position: relative;background-position: center;background-size: cover;\">\n            <img src=\"assets/book.png\" width=\"100%\" height=\"auto\" alt=\"\">\n          </div>\n          <div class=\"box-text\" style=\"height: 39px;overflow: hidden\">\n            <p class=\"hot-product-name\">{{product.Name}}-{{product.Content}}</p>\n          </div>\n          <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">{{product.Price}}</span>&nbsp;&nbsp;<span style=\"font-size: 1px;color: #aaa;font-size: 12px\">{{product.Buy}}人已读</span>\n\n\n        </div>\n      </a>\n\n    </div>\n    <br>\n\n  </div>\n</div>\n\n"
+module.exports = "\n<div class=\"white-box\">\n\n\n  <div class=\"height15\"></div>\n  <div class=\"container\">\n\n    <div class=\"seachButton\" style=\"margin: 0\">\n      <input  type=\"text\" class=\"form-control seachInput\" placeholder=\"搜索您想要的书籍名称\">\n    </div>\n    <div class=\"height15\"></div>\n\n    <div class=\"row\" id=\"#list\">\n      <div>\n        <a *ngFor=\"let product of products\" [routerLink]=\"['/detail', product.Id]\" class=\"col-xs-6 category_box\" style=\"margin-bottom: 15px\">\n          <div class=\"box\">\n            <div [ngStyle]=\"{'background-image':+'url('+ product.Image+')'}\" style=\"position: relative;background-position: center;background-size: cover;\">\n              <img src=\"assets/book.png\" width=\"100%\" height=\"auto\" alt=\"\">\n            </div>\n            <div class=\"box-text\" style=\"height: 39px;overflow: hidden\">\n              <p class=\"hot-product-name\">{{product.Name}}-{{product.Content}}</p>\n            </div>\n            <span style=\"font-size: 10px;color: #e35b5a\">￥</span><span style=\"color: #e35b5a;font-size: 16px\">{{product.Price}}</span>&nbsp;&nbsp;<span style=\"font-size: 1px;color: #aaa;font-size: 12px\">{{product.Buy}}人已读</span>\n\n\n          </div>\n        </a>\n      </div>\n\n      <nav aria-label=\"...\" style=\"text-align: center\">\n        <ul class=\"pager\">\n          <li><a (click)=\"plus()\" href=\"#\">下一页</a></li>\n        </ul>\n      </nav>\n\n    </div>\n    <br>\n\n  </div>\n</div>\n\n"
 
 /***/ }),
 
