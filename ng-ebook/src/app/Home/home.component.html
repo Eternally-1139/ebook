@@ -1,7 +1,7 @@
 <carousel>
   <slide *ngFor="let sw of swipe">
     <a href="#" [routerLink]="['/detail', sw.url]">
-      <img src="{{sw.img}}" alt="" style="height: 220px">
+      <img src="{{sw.img}}" alt="" style="height: 220px;width: 100%" class="img-responsive">
     </a>
     <div class="carousel-caption">
       <p>{{sw.title}}</p>
