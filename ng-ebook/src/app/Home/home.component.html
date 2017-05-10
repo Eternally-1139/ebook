@@ -15,7 +15,7 @@
 
     <a *ngFor="let categorie of categories" [routerLink]="['/product', categorie.Id]" class=" col-xs-3 col-md-3 category_box " style="min-height: 77px">
       <div class="weui-grid__icon" style="color: #777;margin-bottom: 10px">
-        <i class="fa fa-bars" style="width: auto"> </i>
+        <i class="fa fa-bars" style="margin-bottom: 10px"> </i>
       </div>
       <p class="weui-grid__label">
         {{categorie.Name}}
