@@ -26,15 +26,13 @@
           </div>
         </a>
       </div>
-      <br>
-      <nav aria-label="..." style="text-align: center">
-        <ul class="pager">
-          <li><a (click)="minus()" href="javascript:void(0)">上一页</a></li>
-          <li  *ngIf="hasNext"><a (click)="plus()" href="javascript:void(0)">下一页</a></li>
-        </ul>
-      </nav>
-
     </div>
+    <nav aria-label="..." style="text-align: center">
+      <ul class="pager">
+        <li *ngIf="hasPrev"><a (click)="minus()" href="javascript:void(0)">上一页</a></li>
+        <li  *ngIf="hasNext"><a (click)="plus()" href="javascript:void(0)">下一页</a></li>
+      </ul>
+    </nav>
     <br>
 
 
