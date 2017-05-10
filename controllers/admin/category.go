@@ -5,8 +5,6 @@ import (
 	"github.com/astaxie/beego"
 )
 
-
-
 // @router /admin/addCategory
 func (this *AjaxController) AddCategory(){
 
