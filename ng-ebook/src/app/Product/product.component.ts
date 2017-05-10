@@ -31,7 +31,8 @@ export class ProductComponent implements OnInit {
       .subscribe(hasNext => this.hasNext = hasNext);
     if(this.page!=1){
       this.hasPrev = true
-    }else{
+    }
+    if(this.page==1){
       this.hasPrev = false
     }
   }
@@ -46,6 +47,12 @@ export class ProductComponent implements OnInit {
       this.route.params
         .switchMap((params: Params) => this.productService.pageHasNext(+params['id'],this.page))
         .subscribe(hasNext => this.hasNext = hasNext);
+      if(this.page!=1){
+        this.hasPrev = true
+      }
+      if(this.page==1){
+        this.hasPrev = false
+      }
     }else{
       this.hasPrev=false;
     }

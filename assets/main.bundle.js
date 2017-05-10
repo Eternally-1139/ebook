@@ -898,7 +898,7 @@ let ProductComponent = class ProductComponent {
         if (this.page != 1) {
             this.hasPrev = true;
         }
-        else {
+        if (this.page == 1) {
             this.hasPrev = false;
         }
     }
@@ -912,6 +912,12 @@ let ProductComponent = class ProductComponent {
             this.route.params
                 .switchMap((params) => this.productService.pageHasNext(+params['id'], this.page))
                 .subscribe(hasNext => this.hasNext = hasNext);
+            if (this.page != 1) {
+                this.hasPrev = true;
+            }
+            if (this.page == 1) {
+                this.hasPrev = false;
+            }
         }
         else {
             this.hasPrev = false;
