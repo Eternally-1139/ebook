@@ -72,7 +72,6 @@ func (this *WebController) ListMarket(){
 		output["Image"]=product.Image
 		output["Buy"]=product.Buy
 		output["Content"]=product.Content
-
 		outputs=append(outputs,output)
 	}
 

@@ -60,6 +60,14 @@ export class ProductService {
         return response.json().products as Product[]
       }).catch(this.handleError);
   }
+  pageHasNext(id:number,page:number){
+    const pageUrl=`${this.purl}/${id}?p=${page}`;
+    return this.http.get(pageUrl)
+      .toPromise()
+      .then(response =>{
+        return response.json().hasNext
+      }).catch(this.handleError);
+  }
 
   private extractData(res: Response) {
     let body = res.json();//解析为json

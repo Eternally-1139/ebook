@@ -26,16 +26,14 @@
           </div>
         </a>
       </div>
-
-      <nav aria-label="..." style="text-align: center">
-        <ul class="pager">
-          <li><a (click)="plus()" href="javascript:void(0)">下一页</a></li>
-        </ul>
-      </nav>
-
     </div>
     <br>
 
+    <nav aria-label="..." style="text-align: center" *ngIf="hasNext">
+      <ul class="pager">
+        <li><a (click)="plus()" href="javascript:void(0)">下一页</a></li>
+      </ul>
+    </nav>
   </div>
 </div>
 

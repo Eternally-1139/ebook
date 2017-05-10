@@ -12,7 +12,7 @@ import { Location }               from '@angular/common';
 export class ProductComponent implements OnInit {
   products: Product[];
   page:number = 1;
-  nextDisabled:boolean=false;
+  hasNext:boolean=true;
   errorMessage: string;
   constructor(
     private productService: ProductService,
@@ -25,6 +25,9 @@ export class ProductComponent implements OnInit {
     this.route.params
       .switchMap((params: Params) => this.productService.pageProduct(+params['id'],this.page))
       .subscribe(products => this.products = products);
+    this.route.params
+      .switchMap((params: Params) => this.productService.pageHasNext(+params['id'],this.page))
+      .subscribe(hasNext => this.hasNext = hasNext);
   }
 
 
@@ -32,6 +35,9 @@ export class ProductComponent implements OnInit {
     this.route.params
       .switchMap((params: Params) => this.productService.pageProduct(+params['id'],this.page))
       .subscribe(products => this.products = products);
+    this.route.params
+      .switchMap((params: Params) => this.productService.pageHasNext(+params['id'],this.page))
+      .subscribe(hasNext => this.hasNext = hasNext);
   }
 
 }
