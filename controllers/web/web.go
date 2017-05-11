@@ -85,8 +85,6 @@ func (this *WebController) IsLogin(){
 	}else {
 		this.ReturnSuccess()
 	}
-
-
 }
 
 //@router /createwxmenu [*]

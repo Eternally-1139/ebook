@@ -72,8 +72,10 @@
             <input id="username" type="text" class="form-control" value="" placeholder="username">
             <div class="margin-top-15"></div>
             <input id="password" type="password" class="form-control" value="" placeholder="password">
+            <input hidden id="codeid" />
+            <div><img src="" id="codeimg" onclick="refreshCode()"></div>
         </form>
-
+        
         <button id="registerButton" class="btn btn-info colorLogin" onclick="register()"> 登录 </button><br>
     </section>
 </div>
@@ -85,6 +87,33 @@
 <link rel="stylesheet" href="/web-static/admin/css/yifanToast.css">
 <script src="/web-static/admin/js/yifanToast.js" type="text/javascript"></script>
 <script>
+    //加载完成后刷新
+    $(document).ready(function(){
+       refreshCode()
+    });
+    // ajax 刷新验证码
+    function refreshCode(){
+        $.ajax({
+            url: '/api/code',
+            type: 'get',
+            dataType: 'json',
+            contentType: 'application/x-www-form-urlencoded;charset=UTF-8',
+            cache: false,
+            success: function(data) {
+                if(data.status===10000){
+                    $('#codeid').val(data.id);
+                    $('#codeimg').attr('src',data.src)
+                }else{
+                    yifanToast('您的网络异常!!！','toast-md');
+                }
+
+            },
+            error : function() {
+                yifanToast('服务器失去响应，请检查您的网络！','toast-md');
+            }
+        })
+    }
+    
     function keyLogin(){
         if (event.keyCode==13)  //回车键的键值为13
             register();

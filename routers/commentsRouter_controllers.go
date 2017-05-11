@@ -29,13 +29,6 @@ func init() {
 
 	beego.GlobalControllerRouter["ebook/controllers:ApiController"] = append(beego.GlobalControllerRouter["ebook/controllers:ApiController"],
 		beego.ControllerComments{
-			Method: "UserRegister",
-			Router: `/api/userRegister`,
-			AllowHTTPMethods: []string{"*"},
-			Params: nil})
-
-	beego.GlobalControllerRouter["ebook/controllers:ApiController"] = append(beego.GlobalControllerRouter["ebook/controllers:ApiController"],
-		beego.ControllerComments{
 			Method: "GetUserInfo",
 			Router: `/api/getUserInfo`,
 			AllowHTTPMethods: []string{"*"},

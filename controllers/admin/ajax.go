@@ -12,9 +12,11 @@ type AjaxController struct {
 	beego.Controller
 }
 
+
+
 // @router /admin
 func (this *AjaxController) Login(){
-	this.TplName="admin/login.tpl"
+	this.TplName="admin/login.html"
 }
 
 // @router /admin/login [post]
